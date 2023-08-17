@@ -1,0 +1,215 @@
+extends layoutfaq
+
+block content
+    .section.section__documenthero
+      .section--wrapper
+        .bgimage.antimoderate.antimoderate-bg(data-hdsrc='/imgs/getstarted_bg.png', data-antimoderate-scale='1', data-ldsrc='/imgs/getstarted_bg_alt.png', classnames='bgimage')
+
+    .section__group.section__group--offset.bg--darkgray
+
+      section.section.section__documents
+        .section--wrapper
+          .row
+            .col.s12.m12
+              .step__doc.anim(data-anim='fadeInDown', data-delay='0s', data-duration='1s')
+                h1.step__doc__label #{title}
+                .step__doc__form
+                  .faq
+                    .faq__search
+                      .faq__search__wrapper
+                        .faq__search__icon 
+                          i.material-icons search
+                        .faq__search__field
+                          input.faq__search__input(type='text', placeholder='Search')
+                        a.faq__search__clear(href='#clear')
+                          i.material-icons clear
+                    .faq__page
+                      .emptyLabel #{data.err_txt_sorry_no_result_found.en}
+                        |
+                        a.noresultsfoundclear(href='#clear') #{data.err_txt_click_here_to_clear.en}
+                      .faq__group
+                        h3.faq__group__title Top FAQs
+                        ol.faq__list
+                          li.faq__list__item
+                            a.faq__list__item--question(href='#faq') How do I register my device?
+                            .faq__list__item--answer
+                              p Download our app from the App Store or Google Play Store.
+                              a.faq__store__link(href='https://apps.apple.com/us/app/instaprotek/id1456989327', target='_blank', title='Download on the Apple Store')
+                                img(src='/imgs/download_apple_store.png', alt='Download on the Apple Store')
+                              a.faq__store__link(href='https://play.google.com/store/apps/details?id=com.instaprotek.app&hl=en_US', target='_blank', title='Get it on Google Play') 
+                                img(src='/imgs/download_google_play.png', alt='Get it on Google Play')
+
+                          li.faq__list__item
+                            a.faq__list__item--question(href='#faq') What is the step by step process of registration using the app? 
+                            .faq__list__item--answer
+                              p Registration is easy on the app. See our video below for the step by step process.
+                              .faq__video.vertical_video
+                                p Android
+                                video(id='my-video', class='video-js', controls, preload='auto', data-setup='{"aspectRatio":"16:9"}', poster='./imgs/instaprotek_video_poster.jpg')
+                                  source(src='./instaprotek_Android_Video_STEPS_09_11_19.mp4', type='video/mp4')
+                                  p(class='vjs-no-js') To view this video please enable JavaScript, and consider upgrading to a web browser that
+                              .faq__video.vertical_video
+                                p iOS (iPhone / iPad)
+                                video(id='my-video', class='video-js', controls, preload='auto', data-setup='{"aspectRatio":"16:9"}', poster='./imgs/instaprotek_video_poster.jpg')
+                                  source(src='./instaprotek_IOS_Video_STEPS_09_11_19.mp4', type='video/mp4')
+                                  p(class='vjs-no-js') To view this video please enable JavaScript, and consider upgrading to a web browser that
+                          li.faq__list__item
+                            a.faq__list__item--question(href='#faq') How long does my limited warranty last?
+                            .faq__list__item--answer
+                              p It lasts for 1 year from date of purchase of the product.
+                          li.faq__list__item
+                            a.faq__list__item--question(href='#faq') How can I file a claim?
+                            .faq__list__item--answer
+                              p You can easily file a claim using the app. Just log-in to your account and click on FILE A CLAIM. You can also do it online by going to 
+                                |
+                                a(href='//register.instaprotek.com/myaccount', target='_blank') register.instaprotek.com/myaccount 
+                                | or you can simply give us a call and our friendly representatives will be happy to help you in filing a claim. You can reach us at 
+                                span.text--bold (888) 908-2078 
+                                | or email us at 
+                                a(href='mailto:support@instaprotek.com') support@instaprotek.com
+                              .faq__video
+                                video(id='my-video', class='video-js', controls, preload='auto', data-setup='{"aspectRatio":"16:9"}', poster='./imgs/warranty/video_poster.jpg')
+                                  source(src='./instaprotek_File_a_Claim_STEPS_09_09_19.mp4', type='video/mp4')
+                                  p(class='vjs-no-js') To view this video please enable JavaScript, and consider upgrading to a web browser that
+                          
+
+                      .faq__group
+                        h3.faq__group__title Warranty And Replacement
+                        ol.faq__list
+                          li.faq__list__item
+                            a.faq__list__item--question(href='#faq') How long does my limited warranty last?
+                            .faq__list__item--answer
+                              p It lasts for 1 year from date of purchase of the product.
+                          li.faq__list__item
+                            a.faq__list__item--question(href='#faq') Do you cover the replacement of the screen protector if it's damaged or faulty?
+                            .faq__list__item--answer
+                              p No. We only cover the breakage of the screen of the device and not of the screen protector. Kindly contact the manufacturer of the screen protector in reference to their product warranty.
+                          li.faq__list__item
+                            a.faq__list__item--question(href='#faq') How will I know if I am eligible to file a claim?
+                            .faq__list__item--answer
+                              p You just need to make sure you have already registered your device and you are still within 1-year of your limited warranty.
+                          
+
+                      .faq__group
+                        h3.faq__group__title Registration
+                        ol.faq__list
+                          li.faq__list__item
+                            a.faq__list__item--question(href='#faq') How do I register my device?
+                            .faq__list__item--answer
+                              p Download our app from the App Store or Google Play Store.
+                              a.faq__store__link(href='https://apps.apple.com/us/app/instaprotek/id1456989327', target='_blank', title='Download on the Apple Store')
+                                img(src='/imgs/download_apple_store.png', alt='Download on the Apple Store')
+                              a.faq__store__link(href='https://play.google.com/store/apps/details?id=com.instaprotek.app&hl=en_US', target='_blank', title='Get it on Google Play') 
+                                img(src='/imgs/download_google_play.png', alt='Get it on Google Play')
+                          li.faq__list__item
+                            a.faq__list__item--question(href='#faq') What is the step by step process of registration using the app? 
+                            .faq__list__item--answer
+                              p Registration is easy on the app. See our video below for the step by step process.
+                              .faq__video.vertical_video
+                                p Android
+                                video(id='my-video', class='video-js', controls, preload='auto', data-setup='{"aspectRatio":"16:9"}', poster='./imgs/instaprotek_video_poster.jpg')
+                                  source(src='./instaprotek_Android_Video_STEPS_09_11_19.mp4', type='video/mp4')
+                                  p(class='vjs-no-js') To view this video please enable JavaScript, and consider upgrading to a web browser that
+                              .faq__video.vertical_video
+                                p iOS (iPhone / iPad)
+                                video(id='my-video', class='video-js', controls, preload='auto', data-setup='{"aspectRatio":"16:9"}', poster='./imgs/instaprotek_video_poster.jpg')
+                                  source(src='./instaprotek_IOS_Video_STEPS_09_11_19.mp4', type='video/mp4')
+                                  p(class='vjs-no-js') To view this video please enable JavaScript, and consider upgrading to a web browser that
+                          li.faq__list__item
+                            a.faq__list__item--question(href='#faq') What is the purchase receipt being asked to be uploaded? Is it for my device?
+                            .faq__list__item--answer
+                              p The purchase receipt is pertaining to the screen protection you have purchased and not for the device.
+                          li.faq__list__item
+                            a.faq__list__item--question(href='#faq') I am having trouble with the app during the registration, what can I do?
+                            .faq__list__item--answer
+                              p Give us a call right away at 
+                                |
+                                span.text--bold (888) 908-2078 
+                                | or email us at 
+                                a(href='mailto:support@instaprotek.com') support@instaprotek.com
+                          
+
+                      .faq__group
+                        h3.faq__group__title Claim Process
+                        ol.faq__list
+                          li.faq__list__item
+                            a.faq__list__item--question(href='#faq') How can I file a claim?
+                            .faq__list__item--answer
+                              p You can easily file a claim using the app. Just log-in to your account and click on FILE A CLAIM. You can also do it online by going to 
+                                |
+                                a(href='//register.instaprotek.com/myaccount', target='_blank') register.instaprotek.com/myaccount 
+                                | or you can simply give us a call and our friendly representatives will be happy to help you in filing a claim. You can reach us at 
+                                span.text--bold (888) 908-2078 
+                                | or email us at 
+                                a(href='mailto:support@instaprotek.com') support@instaprotek.com
+                              .faq__video
+                                video(id='my-video', class='video-js', controls, preload='auto', data-setup='{"aspectRatio":"16:9"}', poster='./imgs/warranty/video_poster.jpg')
+                                  source(src='./instaprotek_File_a_Claim_STEPS_09_09_19.mp4', type='video/mp4')
+                                  p(class='vjs-no-js') To view this video please enable JavaScript, and consider upgrading to a web browser that
+                          li.faq__list__item
+                            a.faq__list__item--question(href='#faq') What is the claims process?
+                            .faq__list__item--answer
+                              p Once you have submitted a claim via our app, online or over a call with our representative, you have a maximum of 30 days to have your device fixed at any repair center or you can use your existing phone insurance for a replacement if your phone is beyond repair.
+                              p When you already have your receipt from the repair center or your confirmation email and receipt from your insurance company, you need to take a photo of it and upload it using your app or online. Or you can simply email the receipt to claims@instaprotek.com with your claim number as the subject line. 
+                              p After we receive it, we will then validate the receipt with the repair center or the insurance company. Once validated, the status will change to approve and we will have our claims team process the reimbursement.
+                              p Reimbursement will take a maximum of 10 banking days and will be sent to the address we have on your account.
+                              p You will be notified via email once the reimbursement will be mailed to you.
+                          li.faq__list__item
+                            a.faq__list__item--question(href='#faq') How much would be my coverage amount?
+                            .faq__list__item--answer
+                              p It depends on the product you have purchased however, we only have 2 amounts available -- $100 and $250. This would show on your account once you register or at the back of the product packaging you have purchased.
+                      
+                      
+                      .faq__group
+                        h3.faq__group__title Troubleshooting
+                        ol.faq__list
+                          li.faq__list__item
+                            a.faq__list__item--question(href='#faq') Can’t proceed with the screen test?
+                            .faq__list__item--answer
+                              p Check if there are unfilled areas on your screen.
+                              p If there are, slide your fingers on your phone’s screen continuously until you fully fill them up.
+                              .faq__video.vertical_video
+                                //- p Android
+                                video(id='my-video', class='video-js', controls, preload='auto', data-setup='{"aspectRatio":"16:9"}', poster='./imgs/instaprotek_video_poster.jpg')
+                                  source(src='./instaprotek_How to Screen Swiping.mp4', type='video/mp4')
+                                  p(class='vjs-no-js') To view this video please enable JavaScript, and consider upgrading to a web browser that
+                          li.faq__list__item
+                            a.faq__list__item--question(href='#faq') Can’t proceed with the PIN verification?
+                            .faq__list__item--answer
+                              p Check the validity of your PIN.
+                              p If your PIN is invalid or expired, contact customer support at 
+                                |
+                                span.text--bold (888) 908-2078 
+                                | for assistance.
+                          li.faq__list__item
+                            a.faq__list__item--question(href='#faq') If you’re unable to install the InstaProtek app, follow these steps:
+                            .faq__list__item--answer
+                              .sublist
+                                .sublist__item Go to your phone’s 
+                                  | 
+                                  span.text--bold(style='margin: 0 0.25rem;') “Settings” 
+                                .sublist__item
+                                  | Tap 
+                                  span.text--bold(style='margin: 0 0.25rem;') "Apps"
+                                .sublist__item 
+                                  | Scroll down and tap 
+                                  span.text--bold(style='margin: 0 0.25rem;') “Google Play Store” 
+                                .sublist__item 
+                                  | Tap 
+                                  span.text--bold(style='margin: 0 0.25rem;') “Storage” 
+                                  | and tap 
+                                  span.text--bold(style='margin: 0 0.25rem;') “Clear cache” 
+                                  | and 
+                                  span.text--bold(style='margin: 0 0.25rem;') “Clear data” 
+                                .sublist__item Open Google Play Store again and redownload the InstaProtek App
+
+                              .faq__video.vertical_video
+                                p Android
+                                video(id='my-video', class='video-js', controls, preload='auto', data-setup='{"aspectRatio":"16:9"}', poster='./imgs/instaprotek_video_poster.jpg')
+                                  source(src='./instaprotek_Trouble Shooting Steps.mp4', type='video/mp4')
+                                  p(class='vjs-no-js') To view this video please enable JavaScript, and consider upgrading to a web browser that
+
+
+              .step__footer
+                a.backtop.btn-floating.btn-large.waves-effect.waves-light.red(href='#backtotop')
+                  i.material-icons keyboard_arrow_up

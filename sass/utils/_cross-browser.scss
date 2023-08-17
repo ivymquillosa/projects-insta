@@ -1,0 +1,33 @@
+html {
+	// IE (FFS STOP REVIVING THIS ZOMBIE!!!)
+	&.browser-explorer {
+		.bgimage {
+			img {
+				width: 100%;
+				height: auto;
+			}
+		}
+
+    .section__title, .section__subtitle {
+      display: block;
+
+      span {
+        display: block;
+        width: 100%;
+      }
+    }
+
+    .main__nav {
+      margin-right: 1em;
+    }
+	}
+
+  // SAFARI
+  &.browser-safari {
+    .btn.anim {
+      opacity: 1 !important;
+      visibility: visible !important;
+      animation: none !important;
+    }
+  }
+}

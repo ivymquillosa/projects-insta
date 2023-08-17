@@ -1,0 +1,21 @@
+extends layout404
+
+block content
+  .section.section__documenthero
+    .section--wrapper
+      .bgimage.antimoderate.antimoderate-bg(data-hdsrc='/imgs/getstarted_bg.png', data-antimoderate-scale='1', data-ldsrc='/imgs/getstarted_bg_alt.png', classnames='bgimage')
+
+  .section__group.section__group--offset.bg--darkgray
+
+    section.section.section__documents.error404
+      .section--wrapper
+        .row
+          .col.s12.m12
+            .step__doc.anim(data-anim='fadeInDown', data-delay='0s', data-duration='1s')
+              h1.step__doc__label Oops!
+              .step__doc__content
+                  h3 Error 404: Page Not Found
+                  p Sorry, but the page you were trying to view does not exist.
+            .step__footer
+              a.btn-floating.btn-large.waves-effect.waves-light.green(href='/')
+                i.material-icons home

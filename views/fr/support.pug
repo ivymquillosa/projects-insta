@@ -1,0 +1,222 @@
+extends layoutfaq
+
+block content
+    .section.section__documenthero
+      .section--wrapper
+        .bgimage.antimoderate.antimoderate-bg(data-hdsrc='/img/getstarted_bg.webp' alt='Instaprotek Background', data-antimoderate-scale='1', data-ldsrc='/imgs/getstarted_bg_alt.png', classnames='bgimage')
+
+    .section__group.section__group--offset.bg--darkgray
+
+      section.section.section__documents
+        .section--wrapper
+          .row
+            .col.s12.m12
+              .step__doc.anim(data-anim='fadeInDown', data-delay='0s', data-duration='1s')
+                h1.step__doc__label #{title}
+                .step__doc__form
+                  .faq
+                    .faq__search
+                      .faq__search__wrapper
+                        .faq__search__icon
+                          i.material-icons search
+                        .faq__search__field
+                          input.faq__search__input(type='text', placeholder=data.txt_search.fr)
+                        a.faq__search__clear(href='#clear')
+                          i.material-icons clear
+                    .faq__page
+                      .emptyLabel #{data.err_txt_sorry_no_result_found.fr}
+                        |
+                        a.noresultsfoundclear(href='#clear') #{data.err_txt_click_here_to_clear.fr}
+                      .faq__group
+                        h3.faq__group__title #{data.lbl_top_faqs.fr}
+                        ol.faq__list
+                          li.faq__list__item
+                            a.faq__list__item--question(href='#faq') #{data.lbl_how_do_i_register_my_device.fr}
+                            .faq__list__item--answer
+                              p #{data.lbl_download_our_app_app_store_google_playstore.fr}
+                              a.faq__store__link(href='https://apps.apple.com/us/app/instaprotek/id1456989327', target='_blank', title='Download on the Apple Store')
+                                img(src='/img/download_app_store_fr.webp' alt='Apple brand logo')
+                              a.faq__store__link(href='https://play.google.com/store/apps/details?id=com.instaprotek.app&hl=en_US', target='_blank', title='Get it on Google Play') 
+                                img(src='/img/download_google_play_fr.webp' alt='Get it on Google Play in french')
+
+                          li.faq__list__item
+                            a.faq__list__item--question(href='#faq') #{data.lbl_what_is_the_step_by_step_process.fr} 
+                            .faq__list__item--answer
+                              p #{data.lbl_registration_is_easy_on_the_app.fr}
+                              .faq__video
+                                p.video_header #{data.lbl_android.fr}
+                                video(id='my-video', class='video-js', controls, preload='auto', data-setup='{"aspectRatio":"16:9"}', poster="https://acdn.dnamicro.net/instaprotek/android_poster_registration_eng.png")
+                                  source(src="https://acdn.dnamicro.net/instaprotek/registration_eng.mp4", type='video/mp4')
+                                  p(class='vjs-no-js') To view this video please enable JavaScript, and consider upgrading to a web browser that
+                              .faq__video
+                                p.video_header #{data.lbl_ios.fr}
+                                video(id='my-video', class='video-js', controls, preload='auto', data-setup='{"aspectRatio":"16:9"}', poster="https://acdn.dnamicro.net/instaprotek/iOS_poster_registration_eng.png")
+                                  source(src="https://acdn.dnamicro.net/instaprotek/registration_iOS.mp4", type='video/mp4')
+                                  p(class='vjs-no-js') To view this video please enable JavaScript, and consider upgrading to a web browser that
+                          li.faq__list__item
+                            a.faq__list__item--question(href='#faq') #{data.lbl_how_long_does_my_limited_warranty_last.fr}
+                            .faq__list__item--answer
+                              p #{data.lbl_it_last_for_1_year_from_date_purchase.fr}
+                          li.faq__list__item
+                            a.faq__list__item--question(href='#faq') #{data.lbl_how_can_i_file_a_claim.fr}
+                            .faq__list__item--answer
+                              p !{data.lbl_you_can_easily_file_a_claim_using_the_app.fr}
+                              .faq__video
+                                p.video_header #{data.lbl_android.fr}
+                                video(id='my-video', class='video-js', controls, preload='auto', data-setup='{"aspectRatio":"16:9"}', poster="https://acdn.dnamicro.net/instaprotek/claim_video_poster.png")
+                                  source(src="https://acdn.dnamicro.net/instaprotek/claim_process_android_eng.mp4", type='video/mp4')
+                                  p(class='vjs-no-js') To view this video please enable JavaScript, and consider upgrading to a web browser that
+                              .faq__video
+                                p.video_header #{data.lbl_ios.fr}
+                                video(id='my-video', class='video-js', controls, preload='auto', data-setup='{"aspectRatio":"16:9"}', poster="https://acdn.dnamicro.net/instaprotek/claim_video_poster.png")
+                                  source(src="https://acdn.dnamicro.net/instaprotek/claim_process_iOS_eng.mp4", type='video/mp4')
+                                  p(class='vjs-no-js') To view this video please enable JavaScript, and consider upgrading to a web browser that
+                          li.faq__list__item
+                            a.faq__list__item--question(href='#faq') #{data.lbl_what_device_are_not_covered.fr}
+                            .faq__list__item--answer
+                              ul
+                                //- li Samsung Galaxy Fold
+                                //- li Samsung Galaxy Z Fold
+                                //- li Samsung Galaxy Z Fold 2 
+                                //- li Samsung Galaxy Z Fold 2 5G
+                                //- li Samsung Galaxy Z Flip
+                                //- li Samsung Galaxy Z Flip 5G
+                                li Verizon Gizmo Watch 2
+                              p 
+                                br
+                                | !{data.lbl_note_this_list_will_be_updated_periodically.fr}
+                          
+                      .faq__group
+                        h3.faq__group__title #{data.lbl_warranty_and_replacement.fr}
+                        ol.faq__list
+                          li.faq__list__item
+                            a.faq__list__item--question(href='#faq') #{data.lbl_how_long_does_my_limited_warranty_last.fr}
+                            .faq__list__item--answer
+                              p #{data.lbl_it_last_for_1_year_from_date_purchase.fr}
+                          li.faq__list__item
+                            a.faq__list__item--question(href='#faq') #{data.lbl_do_you_cover_the_replacement_of_the_screen.fr}
+                            .faq__list__item--answer
+                              p #{data.lbl_no_we_only_cover_the_breakage_of_the_screen.fr}
+                          li.faq__list__item
+                            a.faq__list__item--question(href='#faq') #{data.lbl_how_will_i_know_if_im_eligible_to_file_a_claim.fr}
+                            .faq__list__item--answer
+                              p #{data.lbl_you_just_need_to_make_sure_you_have_already_registered.fr}
+
+                      .faq__group
+                        h3.faq__group__title #{data.lbl_registration.fr}
+                        ol.faq__list
+                          li.faq__list__item
+                            a.faq__list__item--question(href='#faq') #{data.lbl_how_do_i_register_my_device.fr}
+                            .faq__list__item--answer
+                              p #{data.lbl_download_our_app_app_store_google_playstore.fr}
+                              a.faq__store__link(href='https://apps.apple.com/us/app/instaprotek/id1456989327', target='_blank', title='Download on the Apple Store')
+                                img(src='/img/download_app_store_fr.webp', alt='Apple brand logo')
+                              a.faq__store__link(href='https://play.google.com/store/apps/details?id=com.instaprotek.app&hl=en_US', target='_blank', title='Get it on Google Play') 
+                                img(src='/img/download_google_play_fr.webp', alt='Get it on Google Play')
+                          li.faq__list__item
+                            a.faq__list__item--question(href='#faq') #{data.lbl_what_is_the_step_by_step_process.fr} 
+                            .faq__list__item--answer
+                              p #{data.lbl_registration_is_easy_on_the_app.fr}
+                              .faq__video
+                                p.video_header #{data.lbl_android.fr}
+                                video(id='my-video', class='video-js', controls, preload='auto', data-setup='{"aspectRatio":"16:9"}', poster="https://acdn.dnamicro.net/instaprotek/android_poster_registration_eng.png")
+                                  source(src="https://acdn.dnamicro.net/instaprotek/registration_eng.mp4", type='video/mp4')
+                                  p(class='vjs-no-js') To view this video please enable JavaScript, and consider upgrading to a web browser that
+                              .faq__video
+                                p.video_header #{data.lbl_ios.fr}
+                                video(id='my-video', class='video-js', controls, preload='auto', data-setup='{"aspectRatio":"16:9"}', poster="https://acdn.dnamicro.net/instaprotek/iOS_poster_registration_eng.png")
+                                  source(src="https://acdn.dnamicro.net/instaprotek/registration_iOS.mp4", type='video/mp4')
+                                  p(class='vjs-no-js') To view this video please enable JavaScript, and consider upgrading to a web browser that
+                          li.faq__list__item
+                            a.faq__list__item--question(href='#faq') #{data.lbl_what_is_the_purchase_receipt.fr}
+                            .faq__list__item--answer
+                              p #{data.lbl_the_purchase_receipt_is_pertaining_to_the_screen.fr}
+                          li.faq__list__item
+                            a.faq__list__item--question(href='#faq') #{data.lbl_i_am_having_trouble_with_the_app_during_rthe_egistration.fr}
+                            .faq__list__item--answer
+                              p !{data.lbl_give_us_call_right_away.fr}
+                          li.faq__list__item
+                            a.faq__list__item--question(href='#faq') #{data.lbl_what_device_are_not_covered.fr}
+                            .faq__list__item--answer
+                              ul
+                                //- li Samsung Galaxy Fold
+                                //- li Samsung Galaxy Z Fold
+                                //- li Samsung Galaxy Z Fold 2 
+                                //- li Samsung Galaxy Z Fold 2 5G
+                                //- li Samsung Galaxy Z Flip
+                                //- li Samsung Galaxy Z Flip 5G
+                                li Verizon Gizmo Watch 2
+                              p 
+                                br
+                                | !{data.lbl_note_this_list_will_be_updated_periodically.fr}
+                              
+                      .faq__group
+                        h3.faq__group__title #{data.lbl_claim_process.fr}
+                        ol.faq__list
+                          li.faq__list__item
+                            a.faq__list__item--question(href='#faq') #{data.lbl_how_can_i_file_a_claim_process.fr}
+                            .faq__list__item--answer
+                              p !{data.lbl_you_can_easily_file_a_claim_using_the_app.fr}
+                              .faq__video
+                                p.video_header #{data.lbl_android.fr}
+                                video(id='my-video', class='video-js', controls, preload='auto', data-setup='{"aspectRatio":"16:9"}', poster="https://acdn.dnamicro.net/instaprotek/claim_video_poster.png")
+                                  source(src="https://acdn.dnamicro.net/instaprotek/claim_process_android_eng.mp4", type='video/mp4')
+                                  p(class='vjs-no-js') To view this video please enable JavaScript, and consider upgrading to a web browser that
+                              .faq__video
+                                p.video_header #{data.lbl_ios.fr}
+                                video(id='my-video', class='video-js', controls, preload='auto', data-setup='{"aspectRatio":"16:9"}', poster="https://acdn.dnamicro.net/instaprotek/claim_video_poster.png")
+                                  source(src="https://acdn.dnamicro.net/instaprotek/claim_process_iOS_eng.mp4", type='video/mp4')
+                                  p(class='vjs-no-js') To view this video please enable JavaScript, and consider upgrading to a web browser that
+                          li.faq__list__item
+                            a.faq__list__item--question(href='#faq') #{data.lbl_what_is_the_claim_process.fr}
+                            .faq__list__item--answer
+                              p #{data.lbl_once_you_have_submitted_a_claim_via_our_app.fr}
+                              p !{data.lbl_when_you_already_have_your_receipt_from_the_repair_center.fr} 
+                              p #{data.lbl_after_we_receive_it_we_will_then_validate_the_receipt.fr}
+                              p #{data.lbl_reimbursement_will_take_a_maximum_of_10_banking_days.fr}
+                              p #{data.lbl_you_will_be_notified_via_email.fr}
+                          li.faq__list__item
+                            a.faq__list__item--question(href='#faq') #{data.lbl_how_much_would_be_my_coverage_amount.fr}
+                            .faq__list__item--answer
+                              p #{data.lbl_it_depends_on_the_product_you_have_purchased.fr}
+                      
+                      
+                      .faq__group
+                        h3.faq__group__title #{data.lbl_troubleshooting.fr}
+                        ol.faq__list
+                          li.faq__list__item
+                            a.faq__list__item--question(href='#faq') #{data.lbl_cant_proceed_with_the_screen_test.fr}
+                            .faq__list__item--answer
+                              p #{data.lbl_check_if_there_are_unfilled_aread_on_your_screen.fr}
+                              p #{data.lbl_if_there_are_slide_your_finger_on_your_phones_screen.fr}
+                              .faq__video.vertical_video
+                                img.support_gif(src="https://acdn.dnamicro.net/instaprotek/phone_screen_test_frn.gif", alt="screen test gif version")
+                                //- //- p Android
+                                //- video(id='my-video', class='video-js', controls, preload='auto', data-setup='{"aspectRatio":"16:9"}', poster='./imgs/instaprotek_video_poster.jpg')
+                                //-   source(src='../videos/instaprotek_How to Screen Swiping.mp4', type='video/mp4')
+                                //-   p(class='vjs-no-js') To view this video please enable JavaScript, and consider upgrading to a web browser that
+                          li.faq__list__item
+                            a.faq__list__item--question(href='#faq') #{data.lbl_cant_proceed_with_the_pin_verification.fr}
+                            .faq__list__item--answer
+                              p #{data.lbl_check_the_validity_of_your_pin.fr}
+                              p !{data.lbl_if_your_pin_is_invalid_or_expired_contact_customer_support.fr}
+                          li.faq__list__item
+                            a.faq__list__item--question(href='#faq') #{data.lbl_if_your_unable_to_install_the_instaprotek_app.fr}
+                            .faq__list__item--answer
+                              .sublist
+                                .sublist__item !{data.lbl_go_to_your_phones_settings.fr}
+                                .sublist__item !{data.lbl_tap_apps.fr}
+                                .sublist__item !{data.lbl_scroll_down_and_tap.fr}
+                                .sublist__item !{data.lbl_storage_and_tap_clear_cache.fr}
+                                .sublist__item !{data.lbl_open_google_play_store_again.fr}
+
+                              .faq__video.vertical_video
+                                p #{data.lbl_android.fr}
+                                video(id='my-video', class='video-js', controls, preload='auto', data-setup='{"aspectRatio":"16:9"}', poster='../img/instaprotek_video_poster.webp')
+                                  source(src="https://acdn.dnamicro.net/instaprotek/clear_cache_eng.mp4", type='video/mp4')
+                                  p(class='vjs-no-js') To view this video please enable JavaScript, and consider upgrading to a web browser that
+
+
+              .step__footer
+                a.backtop.btn-floating.btn-large.waves-effect.waves-light.red(href='#backtotop')
+                  i.material-icons keyboard_arrow_up

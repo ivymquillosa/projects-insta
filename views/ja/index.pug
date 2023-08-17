@@ -1,0 +1,106 @@
+extends layout
+
+block content
+
+    section.section.section__hero
+      .section--wrapper.ja_slider_only
+        .slider
+          .slide-item
+            .slide-captions2
+              .slide-context
+                h1.section__title.hide-mobile
+                  span.anim.reanim(data-anim='fadeInUp', data-delay='1s', data-duration='1s') #{data.lbl_set_your_product_apart_using_an_itelligent_product.ja}
+                  //- span.anim.reanim(data-anim='fadeInUp', data-delay='1.3s', data-duration='1s') bbbb
+                  //- span.anim.reanim(data-anim='fadeInUp', data-delay='1.6s', data-duration='1s') abbbbaa
+                h3.section__subtitle.anim.reanim.hide-mobile(data-anim='fadeInUp', data-delay='1.9s', data-duration='1s')
+                  span #{data.lbl_a_low_cost_and_easy_to_use_prodiuct_guarantee.ja}
+
+                .show-mobile.anim.reanim(data-anim='fadeInUp', data-delay='0s', data-duration='1s')
+                  h1.section__title
+                    | #{data.lbl_set_your_product_apart_using_an_itelligent_product.ja}
+                  h3.section__subtitle
+                    | #{data.lbl_a_low_cost_and_easy_to_use_prodiuct_guarantee.ja}
+
+                //- .hero__buttons
+                  //- button.waves-effect.waves-light.btn.calltoaction.calltoaction--primary.anim.reanim.modal-trigger(data-target='modalGetStarted', data-anim='fadeInDown', data-delay='3s', data-duration='1s', href='#getstartednow')
+                  //-   span.btn__text #{data.btn_get_started_now.ja}
+
+              //- .slide-video.anim.reanim(data-anim='fadeInRight', data-delay='1s', data-duration='1s')
+              //-   video(id='my-video', class='video-js', controls, preload='auto', data-setup='{"aspectRatio":"16:9"}', poster='./imgs/warranty/video_poster.jpg')
+              //-     source(src='./videos/instaprotek_video_jap.mp4', type='video/mp4')
+              //-     p(class='vjs-no-js') To view this video please enable JavaScript, and consider upgrading to a web browser that
+            .bgimage.tint2.antimoderate.antimoderate-bg(data-hdsrc='/img/warranty/Hero2.webp' alt='Instaprotek hero lady holding her phone', data-antimoderate-scale='1', data-ldsrc='/img/warranty/Hero2_alt.webp', classnames='bgimage tint2')
+
+    //- section.section.section__1.section--withbg
+    //-   .section--wrapper
+    //-     .row
+    //-       .col.s12.m6.subsection1.anim(data-anim='zoomIn', data-delay='0s', data-duration='1s')
+    //-         .device__box--warranty
+    //-           .download__phoneimg1
+    //-             img(src='/imgs/warranty/device_1_alt.png').antimoderate(data-hdsrc='/imgs/warranty/device_1_ja.png', data-antimoderate-scale='1', ldsrc='/imgs/warranty/device_1_alt.png' alt="Instaprotek App Register Product page displaying on Smartphone's screen ")
+    //-           .download__phoneimg2
+    //-             img(src='/imgs/warranty/device_2_alt.png').antimoderate(data-hdsrc='/imgs/warranty/device_2_ja.png' alt="Instaprotek App Device Registration page displaying on a Smartphone's screen", data-antimoderate-scale='1', ldsrc='/imgs/warranty/device_2_alt.png')
+
+    //-       .col.s12.m6.subsection2
+    //-         h4.section__title.hide-mobile.anim(data-anim='fadeInRight', data-delay='0.3s', data-duration='1s')
+    //-           span #{data.lbl_frictionless_app_driven_registration.ja}
+    //-         .show-mobile.anim(data-anim='fadeInUp', data-delay='0s', data-duration='1s')
+    //-           h4.section__title #{data.lbl_frictionless_app_driven_registration.ja}
+
+    //-   .bgimage.antimoderate.antimoderate-bg(data-hdsrc='/imgs/warranty/bg_1.png', data-antimoderate-scale='1', data-ldsrc='/imgs/warranty/bg_1.png', classnames='bgimage')
+
+    //- section.section.section__2.section--withbg
+    //-   .section--wrapper
+    //-     .row
+    //-       .col.s12.m6.subsection1
+    //-         h4.hide-mobile.section__title.anim(data-anim='fadeInLeft', data-delay='0s', data-duration='1s')
+    //-           span #{data.lbl_smart_and_modern_platform.ja}
+    //-         .show-mobile.anim(data-anim='fadeInUp', data-delay='0s', data-duration='1s')
+    //-           h4.section__title #{data.lbl_smart_and_modern_platform.ja}
+
+    //-       .col.s12.m6.subsection2.anim(data-anim='fadeInRight', data-delay='0.3s', data-duration='1s')
+    //-         img(src='/imgs/warranty/2_alt.png').antimoderate(data-hdsrc='/imgs/warranty/2_ja.png' alt='Instaprotek CRM PortalProduct page and send Notification page overlapping each other', data-antimoderate-scale='1', ldsrc='/imgs/warranty/2_alt.png')
+
+    //- section.section.section__3
+    //-   .section--wrapper
+    //-     .row
+    //-       .col.s12.m4.subsection1.anim(data-anim='fadeInLeft', data-delay='0s', data-duration='1s')
+    //-         img(src='/imgs/warranty/anti-fraud_alt.png').antimoderate(data-hdsrc='/imgs/warranty/anti-fraud.png' alt='No Fraudster sign next to a Smartphone with security check icon', data-antimoderate-scale='1', ldsrc='/imgs/warranty/anti-fraud_alt.png')
+
+    //-       .col.s12.m8.subsection2
+    //-         h4.hide-mobile.section__title.anim(data-anim='fadeInRight', data-delay='0.3s', data-duration='1s')
+    //-           span #{data.lbl_reduce_fruad_through_efficient_app.ja}
+    //-         .show-mobile.anim(data-anim='fadeInUp', data-delay='0s', data-duration='1s')
+    //-           h4.section__title #{data.lbl_reduce_fruad_through_efficient_app.ja}
+
+    //- section.section.section__4.section--withbg
+    //-   .section--wrapper
+    //-     .row
+    //-       .col.s12.m6.subsection1
+    //-         h4.hide-mobile.section__title.anim(data-anim='fadeInLeft', data-delay='0s', data-duration='1s')
+    //-           span #{data.lbl_full_access_to_customizable_analytics.ja}
+    //-         .show-mobile.anim(data-anim='fadeInUp', data-delay='0s', data-duration='1s')
+    //-           h4.section__title #{data.lbl_full_access_to_customizable_analytics.ja}
+
+    //-       .col.s12.m6.subsection2.anim(data-anim='fadeInRight', data-delay='0.3s', data-duration='1s')
+    //-         img(src='/imgs/warranty/4_alt.png').antimoderate(data-hdsrc='/imgs/warranty/4_ja.png' alt='Registration by Device Bar Chart overlapping with App Installs Wave Chart', data-antimoderate-scale='1', ldsrc='/imgs/warranty/4_alt.png')
+
+    //- section.section.section__5
+    //-   .section--wrapper
+    //-       .hide-mobile.section__title.anim(data-anim='fadeInUp', data-delay='0s', data-duration='1s')
+    //-         span #{data.lbl_increase_your_revenue_even_more.ja} 
+    //-         //- a(href='//register.instaprotek.com') #{data.btn_registration_app.ja}
+    //-       .show-mobile.section__title.anim(data-anim='fadeInUp', data-delay='0s', data-duration='1s') #{data.lbl_increase_your_revenue_even_more.ja} 
+    //-         //- | 
+    //-         //- a(href='//register.instaprotek.com') #{data.btn_registration_app.ja}
+
+
+    //-       .section_image.anim(data-anim='fadeInDown', data-delay='0.5s', data-duration='1s')
+    //-         img(src='/imgs/warranty/last_alt.png').antimoderate(data-hdsrc='/imgs/warranty/last_ja.png' alt='Screen of two Smartphones displaying products for sale and product protection plan', data-antimoderate-scale='1', ldsrc='/imgs/warranty/last_alt.png')
+
+    //- section.section.section__getstarted
+    //-   .section--wrapper
+    //-     .row
+    //-       h1.section__title.anim.reanim(data-anim='fadeInUp', data-delay='0s', data-duration='1s') #{data.lbl_contact_us_to_learn_how_instaprotek.ja}
+    //-       a.waves-effect.waves-light.btn.calltoaction.calltoaction--secondary.anim.reanim.modal-trigger(href='#getstartednow', data-target='modalGetStarted', data-anim='fadeInDown', data-delay='0.8s', data-duration='1s') #{data.btn_get_started_now.ja}
+    //-   .bgimage.antimoderate.antimoderate-bg(data-hdsrc='/imgs/getstarted_bg.png' alt='Instaprotek Background', data-antimoderate-scale='1', data-ldsrc='/imgs/getstarted_bg_alt.png', classnames='bgimage')

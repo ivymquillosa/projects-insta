@@ -1,0 +1,114 @@
+extends layoutwarranty
+
+block content
+
+    section.section.section__hero
+      .section--wrapper
+        .slider
+          .slide-item
+            .slide-captions
+              h1.section__title.hide-mobile
+                span.anim.reanim(data-anim='fadeInUp', data-delay='1s', data-duration='1s') Affordable protection plan
+                span.anim.reanim(data-anim='fadeInUp', data-delay='1.3s', data-duration='1s') for all your electronics
+              h1.section__title.show-mobile.anim.reanim(data-anim='fadeInUp', data-delay='1s', data-duration='1s')
+                | Affordable protection plan for all your electronics
+              h3.section__subtitle.anim.reanim.hide-mobile(data-anim='fadeInUp', data-delay='1.6s', data-duration='1s')
+                span Reliable protection for all your tech right in
+                span the palm of your hands.
+                span Easy-to-use. Cancel anytime.
+              h3.section__subtitle.anim.reanim.show-mobile(data-anim='fadeInUp', data-delay='1.6s', data-duration='1s')
+                | Reliable protection for all your tech right in the palm of your hands. Easy-to-use. Cancel anytime.
+              .hero__buttons
+                button.waves-effect.waves-light.btn.calltoaction.calltoaction--primary.anim.reanim.modal-trigger(data-target='modalGetStarted', data-anim='fadeInDown', data-delay='2s', data-duration='1s', href='#getstartednow')
+                  span.btn__text Get Started Now
+            .bgimage.tint2.antimoderate.antimoderate-bg(data-hdsrc='/imgs/slider/hero_bg.jpg', data-antimoderate-scale='1', data-ldsrc='/imgs/slider/hero_bg_alt.jpg', classnames='bgimage tint2')
+
+          .slide-item
+            .slide-captions
+              h1.section__title.hide-mobile
+                span.anim.reanim(data-anim='fadeInUp', data-delay='1s', data-duration='1s') Affordable protection plan
+                span.anim.reanim(data-anim='fadeInUp', data-delay='1.3s', data-duration='1s') for all your electronics
+              h1.section__title.show-mobile.anim.reanim(data-anim='fadeInUp', data-delay='1s', data-duration='1s')
+                | Affordable protection plan for all your electronics
+              h3.section__subtitle.anim.reanim.hide-mobile(data-anim='fadeInUp', data-delay='1.6s', data-duration='1s')
+                span Reliable protection for all your tech right in
+                span the palm of your hands.
+                span Easy-to-use. Cancel anytime.
+              h3.section__subtitle.anim.reanim.show-mobile(data-anim='fadeInUp', data-delay='1.6s', data-duration='1s')
+                | Reliable protection for all your tech right in the palm of your hands. Easy-to-use. Cancel anytime.
+              .hero__buttons
+                button.waves-effect.waves-light.btn.calltoaction.calltoaction--primary.anim.reanim.modal-trigger(data-target='modalGetStarted', data-anim='fadeInDown', data-delay='2s', data-duration='1s', href='#getstartednow')
+                  span.btn__text Get Started Now
+            .bgimage.tint2.antimoderate.antimoderate-bg(data-hdsrc='/imgs/slider/hero_bg2.jpg', data-antimoderate-scale='1', data-ldsrc='/imgs/slider/hero_bg2_alt.jpg', classnames='bgimage tint2')
+    .section__group.bg--gray
+
+      section.section.section__steps
+        .section--wrapper
+          .row
+            .col.s12.m4
+              .step__box.anim(data-anim='fadeInDown', data-delay='0s', data-duration='1s')
+                .step__icon
+                  img.anim(src='/imgs/icons/icon_affordable.png', data-anim='zoomIn', data-delay='1.0s', data-duration='0.3s')
+                h2.step__label Affordable
+                .step__description
+                  p
+                    | Smart platform combined with sophisticated app allowing for lower cost and deductible.
+            .col.s12.m4
+              .step__box.anim(data-anim='fadeInDown', data-delay='0.4s', data-duration='1s')
+                .step__icon
+                  img.anim(src='/imgs/icons/icon_easytouse.png', data-anim='zoomIn', data-delay='1.3s', data-duration='0.3s')
+                h2.step__label Easy To Use
+                .step__description
+                  p
+                    | On-demand, easy-to-use, app-driven protection that enables purchases with the push of a button.
+            .col.s12.m4
+              .step__box.anim(data-anim='fadeInDown', data-delay='0.8s', data-duration='1s')
+                .step__icon
+                  img.anim(src='/imgs/icons/icon_greatcoverage.png', data-anim='zoomIn', data-delay='1.6s', data-duration='0.3s')
+                h2.step__label Competitive
+                .step__description
+                  p
+                    | Unmatched nationwide coverage backed by a top-rated provider and reliable 24/7 support.
+
+      section#download-app.section.section__download
+        .section--wrapper
+          .row
+            .col.s12.m6.download--left
+              .device__box.anim.reanim(data-anim='zoomIn', data-delay='0s', data-duration='1s')
+                .download__phoneimg1
+                  img(src='/imgs/device_hero_alt.png').antimoderate(data-hdsrc='/imgs/device_hero.png', data-antimoderate-scale='1', ldsrc='/imgs/device_hero_alt.png')
+                .download__phoneimg2
+                  img(src='/imgs/device_registration_alt.png').antimoderate(data-hdsrc='/imgs/device_registration.png', data-antimoderate-scale='1', ldsrc='/imgs/device_registration_alt.png')
+            .col.s12.m6.download--right
+              h2.download__title.anim.reanim(data-anim='fadeInRight', data-delay='0.4s', data-duration='1s')
+                span On demand, easy to use,
+                span app driven protection
+      .bgimage
+        svg#Layer_1(version='1.0', xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink', x='0px', y='0px', width='100px', height='75px', viewBox='0 0 100 100', enable-background='new 0 0 100 75', xml:space='preserve', preserveAspectRatio='none')
+          lineargradient#SVGID_1_(gradientUnits='userSpaceOnUse', x1='0', y1='37.5', x2='100', y2='37.5')
+            stop(offset='0', style='stop-color:#59ACB0')
+            stop(offset='1', style='stop-color:#67AD6E')
+          polygon(fill='url(#SVGID_1_)', points='100,71.5 0,51.5 0,3.5 100,23.5 ')
+
+    section#chart.section.section__chart
+      .section--wrapper
+        .row
+          h1.col.s12.section__title.anim.reanim(data-anim='fadeInUp', data-delay='0s', data-duration='1s') Same reliable coverage at lower prices!
+          .col.s12
+            .pricingChart
+              .pricingChart__title
+                .pricingChart__titleGroup
+                  h2 Device Title
+                  h3 Protect your electronics, the way you protect your money
+              .pricingChart__legend
+              .pricingChart__graph
+              .pricingChart__devices
+
+    section#getstarted.section.section__getstarted
+      .section--wrapper
+        .row
+          h1.section__title.anim.reanim(data-anim='fadeInUp', data-delay='0s', data-duration='1s') Protect your electronics, the way you protect your money
+          h3.section__subtitle.anim.reanim(data-anim='fadeInUp', data-delay='0.3s', data-duration='1s') No-hassle, electronics protection with the tap of a finger.
+          a.waves-effect.waves-light.btn.calltoaction.calltoaction--secondary.anim.reanim.modal-trigger(href='#getstartednow', data-target='modalGetStarted', data-anim='fadeInDown', data-delay='0.8s', data-duration='1s') Get Started Now
+
+      .bgimage.antimoderate.antimoderate-bg(data-hdsrc='/imgs/getstarted_bg.png', data-antimoderate-scale='1', data-ldsrc='/imgs/getstarted_bg_alt.png', classnames='bgimage')

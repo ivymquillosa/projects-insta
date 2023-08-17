@@ -1,0 +1,72 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(http-equiv='X-UA-Compatible' content='IE=edge')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    meta(property='og:image' content='https://acdn.dnamicro.net/instaprotek/instaprotek_logo.png' alt='Instaprotek logo') 
+    title #{name}
+    link(rel='stylesheet' href='/css/product.css')
+    link(rel='stylesheet' href='/css/preloader.css')
+    link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css')
+    link(rel='stylesheet' href='/css/jquery.bxslider.min.css')
+    link(href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css')
+    link(rel='icon' type='image/png' sizes='192x192' href='/imgs/favicon/android-icon-192x192.png')
+    link(rel='icon' type='image/png' sizes='32x32' href='/imgs/favicon/favicon-32x32.png')
+    link(rel='icon' type='image/png' sizes='96x96' href='/imgs/favicon/favicon-96x96.png')
+    link(rel='icon' type='image/png' sizes='16x16' href='/imgs/favicon/favicon-16x16.png')
+    script(src='/js/jquery.v3.3.1.min.js')
+    script(src='/js/jquery.inview.min.js')
+    script(src='/js/jquery.formatter.min.js')
+    script(async, src="https://www.googletagmanager.com/gtag/js?id=UA-139720945-1")
+    script(type="text/javascript").
+      localStorage.setItem('lbl_loading', `!{getTranslation('lbl_loading', lang)}`)
+      localStorage.setItem('lbl_see_all_reviews', `!{getTranslation('lbl_see_all_reviews', lang)}`)
+
+      localStorage.setItem('lbl_not_protective', `!{getTranslation('lbl_not_protective', lang)}`)
+      localStorage.setItem('lbl_difficult', `!{getTranslation('lbl_difficult', lang)}`)
+      localStorage.setItem('lbl_manageable', `!{getTranslation('lbl_manageable', lang)}`)
+      localStorage.setItem('lbl_ok', `!{getTranslation('lbl_ok', lang)}`)
+      localStorage.setItem('lbl_super_easy', `!{getTranslation('lbl_super_easy', lang)}`)
+      localStorage.setItem('lbl_excellent', `!{getTranslation('lbl_excellent', lang)}`)
+
+      localStorage.setItem('lbl_see_less', `!{getTranslation('lbl_see_less', lang)}`)
+      localStorage.setItem('lbl_read_more', `!{getTranslation('lbl_read_more', lang)}`)
+      localStorage.setItem('lbl_read_less', `!{getTranslation('lbl_read_less', lang)}`)
+      localStorage.setItem('review_questions_string', `!{review_questions_string}`)
+
+  body.products--page(class= noReview ? 'error__message-otterbox' : '')
+    //- #main-preloader.preloader
+    //-   svg.preloader__spinner(width='120px' height='120px' viewbox='0 0 130 130' xmlns='http://www.w3.org/2000/svg')
+    //-     circle.preloader__path(fill='none' stroke-width='10' stroke-linecap='round' cx='65' cy='65' r='60')
+    //-   img.preloader__logo(src='/imgs/preloader.png' alt='Instaprotek preloader')
+    
+    block nav
+    .main__header.main__header--products
+      img#back__button(src="/imgs/products/img/back-button-blue.png", alt="")
+      .main__header--wrapper
+        .branding
+          a
+            img.branding__image.dark(src='/imgs/logo_full_dark.png' alt='Insaprotek logo dark')
+      div#done__button 
+        p Done
+    block content
+    block footer
+      
+      footer.footer.otterbox
+        .container
+          .row
+            img.otterbox(src='/imgs/promo/liquipel_instaprotek/insta-06.png')
+            p #{getTranslation('lbl_the_instaprotek_shield_is_the_stamp_that_you_can_trust', lang)}
+    script.
+      $(document).ready(function(){
+        $('.preloader').addClass('done')
+        //- document.getElementsByClassName("slider").disabled = true;
+      })
+    // Scripts
+    // Google Analytics: change UA-XXXXX-X to be your site's ID.
+    script.
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-139720945-1');

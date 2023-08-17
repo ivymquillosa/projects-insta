@@ -1,0 +1,292 @@
+extends layoutdoc
+
+block content
+    .section.section__documenthero
+      .section--wrapper
+        .bgimage.antimoderate.antimoderate-bg(data-hdsrc='/img/getstarted_bg.webp' alt='Instaprotek Background', data-antimoderate-scale='1', data-ldsrc='/img/getstarted_bg_alt.webp', classnames='bgimage')
+
+    .section__group.section__group--offset.bg--darkgray
+
+      section.section.section__documents
+        .section--wrapper
+          .row
+            .col.s12.m12
+              .step__doc.anim(data-anim='fadeInDown', data-delay='0s', data-duration='1s')
+                h1.step__doc__label #{data.lbl_privacy_policy.en}
+                .step__doc__content.privacy-top
+                  //- p #{data.lbl_instprotek_is_commited_to_the_protection_and_proper_use_of_our_customers_personal_information.en}
+                  //- p !{data.lbl_if_you_have_any_questions_or_concerns.en}
+
+                  //- h3 #{data.lbl_personal_information_we_collect.en}
+
+                  //- p #{data.lbl_we_may_collect_personally_identifiable_information.en}                  
+                  //- p #{data.lbl_we_may_also_collect_certain_additional_information.en}
+                  //- h3 #{data.lbl_how_we_use_and_disclose_your_personal_information.en}
+                  //- p #{data.lbl_we_use_your_personal_information_to_conduct_our_business.en}
+                  //- ul
+                  //-   li #{data.lbl_we_may_use_your_personal_information_to_help_us_develop.en}
+                  //-   li #{data.lbl_we_may_use_your_personal_information_to_contact_you_regarding_upcoming_events.en}
+                  //-   li #{data.lbl_we_may_share_your_information_with_third_party_service_providers.en}
+                  //-   li #{data.lbl_we_may_disclose_your_personal_information_when_we_have_reason_to_believe_that_it_is_necessary.en}
+                  //-   li #{data.lbl_we_may_disclose_your_personal_information_when_you_ask_us_to_do_so.en}
+                  //-   li #{data.lbl_we_may_use_your_personal_information_for_internal_purposes.en}
+                  //-   li #{data.lbl_we_may_use_your_personal_information_to_administer_programs.en}
+                  //-   li #{data.lbl_we_may_use_your_information_to_administer_our_websites.en}
+
+                  //- p #{data.lbl_instaprotek_maintains_certain_protocols_in_order_to_protect_the_security.en}
+
+                  //- ul
+                  //-   li #{data.lbl_we_communicate_our_privacy_policy_and_security_guidelines_to_instaprotek_employees.en}
+                  //-   li !{data.lbl_we_utilize_secure_socket_layer.en}
+                  //-   li #{data.lbl_in_addition_to_encrypting_your_credit_card_information.en}
+
+                  //- p !{data.lbl_if_you_prefer_to_submit_your_order_by_telephone.en}
+
+                  //- p #{data.lbl_if_you_are_receiving_promotional_texts_from_instaprotek.en}
+
+                  p #{data.lbl_instaProtek_us_we_or_instaProtek_is_committed.en}
+                  p #{data.lbl_we_do_not_knowingly_or_intentionally_attempt_to_solicit.en}
+                  p !{data.lbl_what_this_privacy_policy_covers.en}
+                  p #{data.lbl_this_privacy_policy_describes_our_practices_in_connection.en}
+                  ul
+                    li #{data.lbl_through_the_publicly_accessible_websites_we_operate.en}
+                    li #{data.lbl_through_our_mobile_apps.en}
+                    li #{data.lbl_through_our_social_media_pages_on_platforms.en}
+                    li #{data.lbl_through_emails_we_send.en}
+                    li #{data.lbl_that_relates_to_our_customers_users_of_our_services.en}
+                  p #{data.lbl_collectively_we_refer_to_the_above_mentioned_as_our_service.en}
+                  p #{data.lbl_this_privacy_policy_does_not_apply_to_the_processing.en}
+                  p #{data.lbl_we_need_to_collect_personal_information.en}
+                  p !{data.lbl_what_is_personal_information.en}
+                  p #{data.lbl_as_used_in_this_privacy_policy_personal_information.en}
+                  
+                  p !{data.lbl_the_types_of_personal_information_we_collect.en}
+                  p #{data.lbl_we_may_collect_the_following_categories.en}
+                  ul
+                    li !{data.lbl_identifiers_like_your_name_mailing_address_telephone_number.en}
+                    li !{data.lbl_commercial_information_including_your_registration_status.en}
+                    li !{data.lbl_internet_activity_like_your_browsing_history.en}
+                    li !{data.lbl_location_data_like_your_street_address_city_zip_code.en}
+                    li !{data.lbl_professional_or_employment_related_information_like_your_occupation.en}
+                    li !{data.lbl_other_personal_information_that_you_voluntarily.en}
+                    li !{data.lbl_inferences_drawn_from_the_personal_information_we_collect.en}
+                  
+                  p !{data.lbl_how_we_collect_your_personal_information.en}
+                  p #{data.lbl_we_collect_and_process_personal_information_in_the_following_ways.en}
+                  p <u>#{data.lbl_personal_information_you_provide_directly_to_us.en}</u>
+                  p #{data.lbl_instaProtek_collects_personal_information_from_you_when_you.en}
+                  ul
+                    li !{data.lbl_contact_us_via_email_or_phone_to_communicate_with_us.en}
+                    li !{data.lbl_engage_with_our_services_when_you_use_our_apps.en}
+                    li !{data.lbl_provide_your_contact_information_on_a_form_and_submit_it_to_us.en}
+                    li !{data.lbl_connect_with_our_social_media_pages.en}
+                    li !{data.lbl_submit_a_survey_response_or_provide_a_review_of_our_services.en}
+
+                  p <u>#{data.lbl_personal_information_we_collect_automatically.en}</u>
+                  p #{data.lbl_when_you_visit_websites_we_and_our_service.en}
+                  ul
+                    li #{data.lbl_device_information_including_the_type_of_device.en}
+                    li #{data.lbl_data_related_to_the_use_our_websites.en}
+
+                  p <u>#{data.lbl_personal_information_we_collect_from_other_sources.en}</u>
+                  p #{data.lbl_on_occasion_instaProtek_receives_personal_information.en}
+                  ul
+                    li #{data.lbl_publicly_available_databases_and_social_media_sites.en}
+                    li #{data.lbl_our_advertising_and_marketing_partners.en}
+                    li #{data.lbl_when_you_pay_with_a_payment_card.en}
+
+                  p !{data.lbl_cookies_and_other_tracking_technologies.en}
+                  p #{data.lbl_we_use_cookies_which_are_pieces_of_information.en}
+                  p #{data.lbl_you_have_a_choice_about_the_placement_of_cookies.en}
+                  
+                  p #{data.lbl_you_can_also_find_additional_information_on_cookie_controls_and_advertisement_here.en}
+                  ul
+                    li !{data.lbl_network_advertising_initiative.en}
+                    li !{data.lbl_digital_advertising_alliance.en}
+                    li !{data.lbl_google_allows_users_to_opt_out_of_tracking_by_google_analytics.en}
+                  
+                  p !{data.lbl_user_of_personal_information.en}
+                  p #{data.lbl_we_and_our_services_providers_use_personal_information.en}
+                  ul
+                    li #{data.lbl_providing_your_our_services.en}
+                      ul
+                        li #{data.lbl_to_provide_our_websites_and_engage.en}
+                        li #{data.lbl_to_provide_our_customer_service.en}
+                        li #{data.lbl_to_respond_to_your_inquiries.en}
+                        li #{data.lbl_to_send_administrative_information.en}
+                    li #{data.lbl_providing_you_with_marketing_materials.en}
+                    li #{data.lbl_ensuring_our_services_are_safe.en}
+                    li #{data.lbl_analysis_of_personal_information_for_business.en}
+                      ul
+                        li #{data.lbl_to_analyze_our_customers_and_potential_customers.en}
+                        li #{data.lbl_to_better_understand_your_preferences_so_that_we_can_deliver_content.en}
+                        li #{data.lbl_to_better_understand_your_preferences_so_that_we_can_personalize_our_interactions.en}
+                    li #{data.lbl_for_our_business_operations_purposes_including.en}
+                      ul
+                        li #{data.lbl_for_developing_new_products_and_services.en}
+                        li #{data.lbl_for_enhancing_improving_or_modifying.en}
+                        li #{data.lbl_for_determining_the_effectiveness_of_our_promotional_campaigns.en}
+                        li #{data.lbl_for_identifying_usage_trends.en}
+                        li #{data.lbl_for_operating_and_expanding_our_business_activities.en}
+
+                  p !{data.lbl_how_we_share_information_with_others.en}
+                  p #{data.lbl_we_disclose_personal_information.en}
+                  ul
+                    li #{data.lbl_with_our_service_providers.en}
+                      ul
+                        li #{data.lbl_data_processing_contractors_that_provide.en}
+                        li #{data.lbl_web_hosting_or_web_development_firms.en}
+                        li #{data.lbl_our_customer_service_fulfillment.en}
+                        li #{data.lbl_billing_providers_that_process_payment.en}
+                        li #{data.lbl_mailing_firms_that_will_assist.en}
+                        li #{data.lbl_marketing_firms_that_will_assist.en}
+                        li #{data.lbl_data_analytics_firms.en}
+                    li #{data.lbl_with_our_third_party_marketing_and_advertising.en}
+                    li #{data.lbl_with_relevant_business_partners.en}
+                      ul
+                        li #{data.lbl_with_whom_we_jointly_offer_products.en}
+                        li #{data.lbl_to_facilitate_a_direct_relationship.en}
+                        li #{data.lbl_to_enable_electronic_communications.en}
+                    li #{data.lbl_with_a_purchaser_of_instaProtek.en}
+                    li #{data.lbl_to_comply_with_legal_orders.en}
+                    li #{data.lbl_to_combat_fraud_or_criminal_activity.en}
+                    li #{data.lbl_in_response_to_a_subpoena_or_similar_legal_process.en}
+                  
+                  p !{data.lbl_your_choices_regarding_your_personal_information.en}
+                  p #{data.lbl_we_give_you_choices_regarding_our_use.en}
+                  ul
+                    li !{data.lbl_receiving_electronic_communications_from_us.en}
+                    li !{data.lbl_opt_out_of_text_message_marketing.en}
+                    li !{data.lbl_google_analytics_we_use_googles_website.en}
+                  p !{data.lbl_how_we_secure_your_data.en}
+                  p #{data.lbl_we_use_appropriate_security_measures.en}
+                  p !{data.lbl_how_you_can_access_change_or_request_deletion.en}
+                  p !{data.lbl_if_you_would_like_to_request_to_access_correct.en}
+                  p #{data.lbl_for_your_protection_we_may_only_implement_requests.en}
+                  p !{data.lbl_third_party_links.en}
+                  p #{data.lbl_our_services_may_from_time_to_time_contain_links.en}
+                  p !{data.lbl_california_residents.en}
+                  p #{data.lbl_residents_from_california_should_read.en}
+                  p !{data.lbl_international_users.en}
+                  p #{data.lbl_your_personal_information_will_be_collected_and_stored.en}
+                  p !{data.lbl_do_not_track_disclosure.en}
+                  p #{data.lbl_regulatory_agencies_such_as_the_u_s_ederal_trade.en}
+                  p !{data.lbl_changes_to_our_privacy_policy.en}
+                  p #{data.lbl_the_last_updated_legend_at_the_top.en}
+                  p !{data.lbl_contact_information_for_complaints_or_concerns.en}
+                  p #{data.lbl_if_you_have_any_questions_about_this_policy.en}
+                  p
+                    a(href='//www.instaprotek.com') https://www.instaprotek.com
+                    |
+                    span.breakline 1 Wrigley
+                    |
+                    span.breakline Irvine, CA 92618
+                    |
+                    span.breakline U.S.A
+                    | 
+                    a(href='mailto:support@instaprotek.com') support@instaprotek.com
+                  
+                  h3(style='text-align: center;') #{data.lbl_instaProtek_privacy_policy_for_california_residents.en}
+                  //- p !{data.lbl_last_updated.en}
+                  p !{data.lbl_this_privacy_policy_for_california_residents_supplements.en}
+
+                  p(style='text-align: center;') <u>!{data.lbl_information_we_collect.en}</u>
+                  p !{data.lbl_we_collect_information_that_identifies_relates.en}
+                  p #{data.lbl_publicly_available_information_from_government.en}
+                  p #{data.lbl_deidentified_or_aggregated_consumer_information.en}
+                  p #{data.lbl_in_particular_we_have_collected_the_following_categories.en}
+                  
+                  table
+                    tr
+                      th !{data.lbl_table_header_category.en}
+                      th !{data.lbl_table_header_examples.en}
+                      th !{data.lbl_table_header_collected.en}
+                    tr
+                      td #{data.lbl_table_a_identifiers.en}
+                      td #{data.lbl_table_a_real_name_alias_postal_address.en}
+                      td #{data.lbl_table_yes.en}
+                    tr
+                      td #{data.lbl_table_b_personal_information.en}
+                      td 
+                        p #{data.lbl_table_a_name_signature_social_security_number.en}
+                        |
+                        p #{data.lbl_table_some_personal_information.en}
+                      td #{data.lbl_table_yes.en}
+                    tr
+                      td #{data.lbl_table_c_protected_classification.en}
+                      td #{data.lbl_table_age_40_years_or_older_race_color.en}
+                      td #{data.lbl_table_yes.en}
+                    tr
+                      td #{data.lbl_table_d_commercial_information.en}
+                      td #{data.lbl_table_records_of_personal_property.en}
+                      td #{data.lbl_table_no.en}
+                    tr
+                      td #{data.lbl_table_e_biometric_information.en}
+                      td #{data.lbl_table_genetic_physiological_behavioral.en}
+                      td #{data.lbl_table_yes.en}
+                    tr
+                      td #{data.lbl_table_f_internet_or_other.en}
+                      td #{data.lbl_table_browsing_history_search_history.en}
+                      td #{data.lbl_table_no.en}
+                    tr
+                      td #{data.lbl_table_g_geolocation_data.en}
+                      td #{data.lbl_table_physical_location_or_movements.en}
+                      td #{data.lbl_table_no.en}
+                    tr
+                      td #{data.lbl_table_h_sensory_data.en}
+                      td #{data.lbl_table_audio_electronic.en}
+                      td #{data.lbl_table_no.en}
+                    tr
+                      td #{data.lbl_table_i_professional_or_employment.en}
+                      td #{data.lbl_table_current_or_past_job.en}
+                      td #{data.lbl_table_no.en}
+                    tr
+                      td #{data.lbl_table_j_non_public_education_information.en}
+                      td #{data.lbl_table_education_records_directly.en}
+                      td #{data.lbl_table_no.en}
+                    tr
+                      td #{data.lbl_table_k_Inferences_drawn.en}
+                      td #{data.lbl_table_profile_reflecting_a_person.en}
+                      td #{data.lbl_table_yes.en}
+
+                  p #{data.lbl_we_obtain_the_categories_of_personal_information.en}
+
+                  p(style='text-align: center;') <u>!{data.lbl_use_of_personal_information.en}</u>
+                  p #{data.lbl_we_may_use_or_disclose_the_personal_information_we_collect_for_one.en}
+                  ul
+                    li !{data.lbl_sell_your_personal_information.en}
+                    li !{data.lbl_process_your_personal_information_for.en}
+                    li !{data.lbl_retain_use_or_disclose_your_personal.en}
+                  p #{data.lbl_for_the_avoidance_of_doubt_we_are_not_sharing.en}
+
+                  p(style='text-align: center;') <u>!{data.lbl_your_rights_and_choices.en}</u>
+                  p #{data.lbl_the_california_consumer_privacy_act.en}
+                  ul
+                    li !{data.lbl_right_to_know_and_access.en}
+                    li !{data.lbl_right_to_request_deletion.en}
+                    li !{data.lbl_right_to_opt_out_of_the_sale.en}
+                    li !{data.lbl_right_to_non_discrimination.en}
+                  p !{data.lbl_to_exercise_your_rights_to_know_or_delete.en}
+                  p #{data.lbl_your_request_to_know_or_delete_must_provide.en}
+                  
+                  p(style='text-align: center;') <u>!{data.lbl_california_residents.en}</u>
+                  p #{data.lbl_residents_from_california_should_read.en}
+                  
+                  p(style='text-align: center;') <u>!{data.lbl_contact_informations.en}</u>
+
+                  p #{data.lbl_if_you_have_any_questions_or_comments_about_this_notice.en}
+
+                  p.step__address
+                    span.breakline https://www.instaprotek.com
+                    |
+                    span.breakline 1 Wrigley
+                    |
+                    span.breakline Irvine, CA 92618
+                    |
+                    span.breakline U.S.A
+                    | 
+                    span.breakline support@instaprotek.com
+
+              .step__footer
+                a.backtop.btn-floating.btn-large.waves-effect.waves-light.red(href='#backtotop')
+                  i.material-icons keyboard_arrow_up

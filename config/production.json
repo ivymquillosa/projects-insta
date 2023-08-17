@@ -1,0 +1,11 @@
+{
+	"gzip": true,
+	"listen_port": "4003",
+	"sendgrid_api_key": "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",
+	"API": "https://api-prod-v2.instaprotek.com",
+	"API_OTTERBOX": "https://otterbox-api.instaprotek.com",
+	"API_USERNAME": "instaprotek",
+  "API_PASSWORD": "F0nch3rt0",
+	"UPLOAD_API": "https://upload-v2.instaprotek.com",
+	"UPLOAD_API_OTTERBOX": "https://otterbox-upload.instaprotek.com"
+}

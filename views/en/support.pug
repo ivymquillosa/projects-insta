@@ -1,0 +1,255 @@
+extends layoutfaq
+
+block content
+    .section.section__documenthero
+      .section--wrapper
+        .bgimage.antimoderate.antimoderate-bg(data-hdsrc='/img/getstarted_bg.webp' alt='Instaprotek Background', data-antimoderate-scale='1', data-ldsrc='/img/getstarted_bg_alt.webp', classnames='bgimage')
+
+    .section__group.section__group--offset.bg--darkgray
+
+      section.section.section__documents
+        .section--wrapper
+          .row
+            .col.s12.m12
+              .step__doc.anim(data-anim='fadeInDown', data-delay='0s', data-duration='1s')
+                h1.step__doc__label #{title}
+                .step__doc__form
+                  .faq
+                    .faq__search
+                      .faq__search__wrapper
+                        .faq__search__icon
+                          i.material-icons search
+                        .faq__search__field
+                          input.faq__search__input(type='text', placeholder=data.txt_search.en)
+                        a.faq__search__clear(href='#clear')
+                          i.material-icons clear
+                    .faq__page
+                      .emptyLabel Sorry, no results found...
+                        |
+                        a.noresultsfoundclear(href='#clear') Click here to clear search query.
+                      .faq__group
+                        h3.faq__group__title #{data.lbl_top_faqs.en}
+                        ol.faq__list
+                          li.faq__list__item
+                            a.faq__list__item--question(href='#faq') #{data.lbl_how_do_i_register_my_device.en}
+                            .faq__list__item--answer
+                              p #{data.lbl_get_started_with_insta.en}
+                              p #{data.lbl_scan_qr_code.en}
+                              p #{data.lbl_download_app_manually.en}
+                              a.faq__store__link(href='https://apps.apple.com/us/app/instaprotek/id1456989327', target='_blank', title='Download on the Apple Store')
+                                img(src='/img/download_apple_store.webp' alt='Apple brand logo')
+                              a.faq__store__link(href='https://play.google.com/store/apps/details?id=com.instaprotek.app&hl=en_US', target='_blank', title='Get it on Google Play') 
+                                img(src='/img/download_google_play.webp' alt='Google play logo')
+
+                          li.faq__list__item
+                            a.faq__list__item--question(href='#faq') #{data.lbl_what_is_the_step_by_step_process.en} 
+                            .faq__list__item--answer
+                              p #{data.lbl_registration_is_easy.en}
+                              .faq__video
+                                p.video_header #{data.lbl_android.en}
+                                video(id='my-video', class='video-js', controls, preload='auto', data-setup='{"aspectRatio":"16:9"}', poster="https://acdn.dnamicro.net/instaprotek/Instaprotek_registration_thumbnail.png")
+                                  source(src="https://acdn.dnamicro.net/instaprotek/others/FINAL_Instaprotek_android_registration_June_2023.mp4", type='video/mp4')
+                                  p(class='vjs-no-js') To view this video please enable JavaScript, and consider upgrading to a web browser that
+                              .faq__video
+                                p.video_header #{data.lbl_ios.en}
+                                video(id='my-video', class='video-js', controls, preload='auto', data-setup='{"aspectRatio":"16:9"}', poster="https://acdn.dnamicro.net/instaprotek/Instaprotek_registration_thumbnail.png")
+                                  source(src="https://acdn.dnamicro.net/instaprotek/FINAL_Instaprotek_iOS_Registration_June_2023.mp4", type='video/mp4')
+                                  p(class='vjs-no-js') To view this video please enable JavaScript, and consider upgrading to a web browser that
+                          li.faq__list__item
+                            a.faq__list__item--question(href='#faq') #{data.lbl_how_can_i_register_my_product.en}
+                            .faq__list__item--answer
+                              p #{data.lbl_register_within_30days.en}
+                          li.faq__list__item
+                            a.faq__list__item--question(href='#faq') #{data.lbl_how_long_does_my_limited_warranty_last.en}
+                            .faq__list__item--answer
+                              p #{data.lbl_lasts_for_1_year_from_date_purchase.en}
+                          li.faq__list__item
+                            a.faq__list__item--question(href='#faq') #{data.lbl_how_can_i_file_a_claim.en}
+                            .faq__list__item--answer
+                              p !{data.lbl_easily_file_a_claim_using_the_app.en}
+                              .faq__video
+                                p.video_header #{data.lbl_android.en}
+                                video(id='my-video', class='video-js', controls, preload='auto', data-setup='{"aspectRatio":"16:9"}', poster="https://acdn.dnamicro.net/instaprotek/Instaprotek-HowtoSelfClaim_thumbnail.png")
+                                  source(src="https://acdn.dnamicro.net/instaprotek/Instaprotek-HowtoSelfClaim_android_July-25-2023.mp4", type='video/mp4')
+                                  p(class='vjs-no-js') To view this video please enable JavaScript, and consider upgrading to a web browser that
+                              .faq__video
+                                p.video_header #{data.lbl_ios.en}
+                                video(id='my-video', class='video-js', controls, preload='auto', data-setup='{"aspectRatio":"16:9"}', poster="https://acdn.dnamicro.net/instaprotek/Instaprotek-HowtoSelfClaim_thumbnail.png")
+                                  source(src="https://acdn.dnamicro.net/instaprotek/FINAL_Instaprotek_iOS_Claim_June_2023.mp4", type='video/mp4')
+                                  p(class='vjs-no-js') To view this video please enable JavaScript, and consider upgrading to a web browser that
+                          li.faq__list__item
+                            a.faq__list__item--question(href='#faq') #{data.lbl_can_i_file_a_claim_after_my_device.en}
+                            .faq__list__item--answer
+                              p !{data.lbl_before_proceeding_with_the_repair.en}
+                          
+                      .faq__group
+                        h3.faq__group__title #{data.lbl_warranty_and_replacement.en}
+                        ol.faq__list
+                          li.faq__list__item
+                            a.faq__list__item--question(href='#faq') #{data.lbl_how_long_does_my_limited_warranty_last.en}
+                            .faq__list__item--answer
+                              p #{data.lbl_limited_warranty_for_your_product.en}
+                          li.faq__list__item
+                            a.faq__list__item--question(href='#faq') #{data.lbl_do_you_cover_the_replacement_of_the_screen.en}
+                            .faq__list__item--answer
+                              p #{data.lbl_yes_if_your_product_comes.en}
+                          li.faq__list__item
+                            a.faq__list__item--question(href='#faq') #{data.lbl_how_will_i_know_if_im_eligible_to_file_a_claim.en}
+                            .faq__list__item--answer
+                              p #{data.lbl_to_determine_your_eligibility.en}
+                          
+
+                      .faq__group
+                        h3.faq__group__title #{data.lbl_registration.en}
+                        ol.faq__list
+                          li.faq__list__item
+                            a.faq__list__item--question(href='#faq') #{data.lbl_how_do_i_register_my_device.en}
+                            .faq__list__item--answer
+                              p #{data.lbl_get_started_with_insta.en}
+                              p #{data.lbl_scan_qr_code.en}
+                              p #{data.lbl_download_app_manually.en}
+                              a.faq__store__link(href='https://apps.apple.com/us/app/instaprotek/id1456989327', target='_blank', title='Download on the Apple Store')
+                                img(src='/img/download_apple_store.webp', alt='Apple brand logo')
+                              a.faq__store__link(href='https://play.google.com/store/apps/details?id=com.instaprotek.app&hl=en_US', target='_blank', title='Get it on Google Play') 
+                                img(src='/img/download_google_play.webp', alt='Google play logo')
+                          li.faq__list__item
+                            a.faq__list__item--question(href='#faq') #{data.lbl_what_is_the_step_by_step_process.en} 
+                            .faq__list__item--answer
+                              p #{data.lbl_registration_is_easy.en}
+                              .faq__video
+                                p.video_header #{data.lbl_android.en}
+                                video(id='my-video', class='video-js', controls, preload='auto', data-setup='{"aspectRatio":"16:9"}', poster="https://acdn.dnamicro.net/instaprotek/Instaprotek_registration_thumbnail.png")
+                                  source(src="https://acdn.dnamicro.net/instaprotek/others/FINAL_Instaprotek_android_registration_June_2023.mp4", type='video/mp4')
+                                  p(class='vjs-no-js') To view this video please enable JavaScript, and consider upgrading to a web browser that
+                              .faq__video
+                                p.video_header #{data.lbl_ios.en}
+                                video(id='my-video', class='video-js', controls, preload='auto', data-setup='{"aspectRatio":"16:9"}', poster="https://acdn.dnamicro.net/instaprotek/Instaprotek_registration_thumbnail.png")
+                                  source(src="https://acdn.dnamicro.net/instaprotek/FINAL_Instaprotek_iOS_Registration_June_2023.mp4", type='video/mp4')
+                                  p(class='vjs-no-js') To view this video please enable JavaScript, and consider upgrading to a web browser that
+                          li.faq__list__item
+                            a.faq__list__item--question(href='#faq') #{data.lbl_what_is_the_purchase_receipt.en}
+                            .faq__list__item--answer
+                              p #{data.lbl_purchase_receipt_to_upload.en}
+                          li.faq__list__item
+                            a.faq__list__item--question(href='#faq') #{data.lbl_i_am_having_trouble_with_the_app_during_rthe_egistration.en}
+                            .faq__list__item--answer
+                              p !{data.lbl_you_can_reach_us.en}
+
+                      .faq__group
+                        h3.faq__group__title #{data.lbl_claim_process.en}
+                        ol.faq__list
+                          li.faq__list__item
+                            a.faq__list__item--question(href='#faq') #{data.lbl_how_can_i_file_a_claim.en}
+                            .faq__list__item--answer
+                              p !{data.lbl_filing_a_claim.en}
+                              .faq__video
+                                p.video_header #{data.lbl_android.en}
+                                video(id='my-video', class='video-js', controls, preload='auto', data-setup='{"aspectRatio":"16:9"}', poster='https://acdn.dnamicro.net/instaprotek/Instaprotek-HowtoSelfClaim_thumbnail.png')
+                                  source(src="https://acdn.dnamicro.net/instaprotek/Instaprotek-HowtoSelfClaim_android_July-25-2023.mp4", type='video/mp4')
+                                  p(class='vjs-no-js') To view this video please enable JavaScript, and consider upgrading to a web browser that
+                              .faq__video
+                                p.video_header #{data.lbl_ios.en}
+                                video(id='my-video', class='video-js', controls, preload='auto', data-setup='{"aspectRatio":"16:9"}', poster="https://acdn.dnamicro.net/instaprotek/Instaprotek-HowtoSelfClaim_thumbnail.png")
+                                  source(src="https://acdn.dnamicro.net/instaprotek/FINAL_Instaprotek_iOS_Claim_June_2023.mp4", type='video/mp4')
+                                  p(class='vjs-no-js') To view this video please enable JavaScript, and consider upgrading to a web browser that
+                          li.faq__list__item
+                            a.faq__list__item--question(href='#faq') #{data.lbl_what_is_the_claim_process.en}
+                            .faq__list__item--answer
+                              p #{data.lbl_after_submitting_a_claim.en}
+                              p #{data.lbl_the_repair_receipt.en}
+                              p
+                               ul
+                                li #{data.lbl_repair_store_name_and_phone.en}
+                                li #{data.lbl_repair_date.en}
+                                li #{data.lbl_imei_or_serial_number.en}
+                                li #{data.lbl_device_make_and_model.en}
+                                li #{data.lbl_type_of_repair.en}
+                                li #{data.lbl_amount_paid.en}
+
+                              p #{data.lbl_to_submit_the_receipt.en}
+                              p
+                               ul #{data.lbl_upload_a_photo.en}
+                               ul !{data.lbl_email_the_photo.en}
+
+                              p #{data.lbl_upon_receiving_the_receipt.en}
+                              p #{data.lbl_we_offer_different_reimbursement.en}
+
+                              p
+                               ul
+                                li #{data.lbl_ach_transfer.en}
+                                li #{data.lbl_paypal.en}
+                                li #{data.lbl_check.en}
+
+                              p #{data.lbl_select_your_preferred_reimbursement.en}
+
+                          li.faq__list__item
+                            a.faq__list__item--question(href='#faq') #{data.lbl_can_i_file_a_claim_after_my_device.en}
+                            .faq__list__item--answer
+                              p !{data.lbl_before_proceeding_with_the_repair_of_your_device.en}
+                          li.faq__list__item
+                            a.faq__list__item--question(href='#faq') #{data.lbl_how_much_would_be_my_coverage_amount.en}
+                            .faq__list__item--answer
+                              p #{data.lbl_the_coverage_amount.en}
+
+
+                      .faq__group
+                        h3.faq__group__title #{data.lbl_troubleshooting.en}
+                        ol.faq__list
+                          li.faq__list__item
+                            a.faq__list__item--question(href='#faq') #{data.lbl_encountering_difficulties_installing.en}
+                            .faq__list__item--answer
+                              .sublist
+                                .sublist__item !{data.lbl_go_to_settings.en}
+                                .sublist__item !{data.lbl_tap_on_apps.en}
+                                .sublist__item !{data.lbl_scroll_down_and_locate.en}
+                                .sublist__item !{data.lbl_tap_on_google_play.en}
+                                .sublist__item !{data.lbl_tap_on_storage.en}
+                                .sublist__item !{data.lbl_look_for_options.en}
+                                .sublist__item !{data.lbl_exit_the_settings.en}
+                                .sublist__item !{data.lbl_open_google_play_store.en}
+                                .sublist__item !{data.lbl_search_for_instaprotek.en}
+                                .sublist__item !{data.lbl_by_following_these_steps.en}
+
+                              .faq__video.vertical_video
+                                p #{data.lbl_android.en}
+                                video(id='my-video', class='video-js', controls, preload='auto', data-setup='{"aspectRatio":"16:9"}', poster='../img/instaprotek_video_poster.webp')
+                                  source(src="https://acdn.dnamicro.net/instaprotek/clear_cache_eng.mp4", type='video/mp4')
+                                  p(class='vjs-no-js') To view this video please enable JavaScript, and consider upgrading to a web browser that
+
+                  .col.s12.m12.business(style="margin:0 !important;")
+                    .col.s12(style="display:flex; justify-content:space-between; margin: 50px 14.5px 50px 14.5px;")
+                      .border-right(style="flex-direction:row;width:53%;background-color:white;padding-left:0 !important;padding-right:0 !important;margin-left:-40px;")
+                        p.icontext(style="margin-bottom:24px;")
+                          //- span.icontext-label-otterbox instaProtek
+                          img.insta-logo(style="width:300px;")(src='https://acdn.dnamicro.net/instaprotek/instaprotek_logo.png'
+                           alt='Insaprotek logo dark')
+                        p.icontext
+                          span.icontext-icon
+                            i.material-icons.prefix email
+                          span.icontext-label
+                            a(href='mailto:support@instaprotek.com') support@instaprotek.com
+                        p.icontext
+                          span.icontext-icon
+                            i.material-icons.prefix access_time
+                          span.icontext-label
+                            span.breaklineclass.faq__group__title #{data.lbl_customer_service_hours.en}
+                            span.breakline #{data.lbl_instaprotek_service_hours.en}
+                            //- span.breakline Saturday-Sunday: 9 AM - 6 PM PST
+                      .border-right(style="flex-direction:column; width:53%;background-color:white;padding-left:0 !important;padding-right:0 !important;")
+                        p.icontext
+                          //- span.icontext-label-otterbox OtterBox Protection Program
+                          img(style="width:300px;")(src='https://acdn.dnamicro.net/otterbox/otterbox_logo.png')
+                        p.icontext
+                          span.icontext-icon
+                            i.material-icons.prefix email
+                          span.icontext-label
+                            a(href='mailto:ottersupport@instaprotek.com') ottersupport@instaprotek.com
+                        p.icontext
+                          span.icontext-icon
+                            i.material-icons.prefix access_time
+                          span.icontext-label
+                            span.breaklineclass.faq__group__title #{data.lbl_customer_service_hours.en}
+                            span.breakline #{data.lbl_otterbox_service_hours.en}
+                  .step__footer
+                    a.backtop.btn-floating.btn-large.waves-effect.waves-light.red(href='#backtotop')
+                      i.material-icons keyboard_arrow_up

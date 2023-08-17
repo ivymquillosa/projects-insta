@@ -1,0 +1,80 @@
+.antimoderate-wrapper {
+  position: relative;
+
+  .antimoderate--float {
+  	position: absolute;
+  	top: 0;
+  	left: 0;
+  	z-index: 1;
+  }
+
+  .antimoderate-hd {
+  	position: relative;
+  	z-index: 2;
+  }
+}
+
+.antimoderate {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: auto;
+}
+
+.antimoderate-hd {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  height: auto;
+}
+
+.antimoderate-bg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  &.antimoderate--float {
+  	position: absolute;
+  	top: 0;
+  	left: 0;
+  	z-index: 1;
+  }
+}
+
+.antimoderate-bghd {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+
+.delay1000 {
+	animation-delay: 1000ms;
+}
+
+.delay1500 {
+	animation-delay: 1500ms;
+}
+
+.delay1500 {
+  animation-delay: 2000ms;
+}
+
+.delay2500 {
+  animation-delay: 2500ms;
+}

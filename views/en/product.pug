@@ -1,0 +1,153 @@
+extends layoutproduct
+
+block content
+  .section__group.section__group--offset.bg--darkgray
+    section.section.section__documents
+      .section--wrapper
+        .row
+          .item__display--container
+            //- .product__showcase
+              //- .item
+              //-   img(src='/imgs/products/img/products/1.jpeg' alt='' onmouseover='displayImage(this)')
+              //- .item
+              //-   img(src='/imgs/products/img/products/2.jpeg' alt='' onmouseover='displayImage(this)')
+              //- .item
+              //-   img(src='/imgs/products/img/products/3.jpeg' alt='' onmouseover='displayImage(this)')
+              //- .item
+              //-   img(src='/imgs/products/img/products/4.jpeg' alt='' onmouseover='displayImage(this)')
+            .product__display
+              h2#product__title #{name}
+              if (file_path)
+                img#displayedImg(src=image_path)
+          .product__description
+            
+            h2#product__title #{name}
+            //- if (avg_rating)
+
+            h3.align__center.largeText
+              .overallRatings
+                | #{getTranslation('lbl_overall_rating', lang)}
+                img(class='shield--rating__img',src='/imgs/products/img/shield_rating.png')
+                //- p.overAll__totalCount
+                //-   |
+                //-   a.overAll__totalCount--count #{formatNumber(product_reviews.count)}
+                //-   |  reviews
+                span#shield--rating= avg_rating
+            //- else 
+            //-   h3.align__center
+            //-     .overallRatings
+            //-       | Overall Rating 
+            //-       img(src='/imgs/products/img/shield_rating.png')
+            //-     h4 No Ratings
+            #product__ratings
+              if (!avg_rating)
+                h4 #{getTranslation('lbl_not_rated', lang)}
+              if (avg_rating)
+                each review_question, index in review_questions
+                  div
+                    h4= review_question.translated_title
+                    .input__container.installation
+                      span.review__option= review_question.translated_option
+                      //- input#ratings__installation.slider.installation(type='range' class=`review_question_${index}` name=review_question.translated_option min=review_question.minOption max=review_question.maxOption step='0.1' value=review_question.avg_question_rating disabled)
+                      div.slider
+                        div(class=`review_question_${index} thumb`)
+                    .color__rating
+              //- if (avg_ease_of_installation)
+              //-   div
+              //-     h4 #{getTranslation('lbl_ease_of_installation', lang)}
+              //-     .input__container.installation
+              //-       input#ratings__installation.slider.installation(type='range' min='1' max='3' step='0.1' value=avg_ease_of_installation disabled)
+              //-     .color__rating
+              //- if (avg_product_quality)
+              //-   div
+              //-     h4 #{getTranslation('lbl_product_quality', lang)}
+              //-     .input__container.quality
+              //-       input#ratings__quality.slider.quality(type='range' min='1' max='3' step='0.1' value=avg_product_quality disabled)
+              //-     .color__rating
+            if(description)
+              .description(class=!avg_ease_of_installation && !avg_product_quality ? 'long--text' : '')
+                h3 #{getTranslation('lbl_product_description', lang)}
+                div.descriptionContainer
+                  p !{(description)}
+              a.readMore #{getTranslation('lbl_read_more', lang)}
+    section.section__comments.section
+      div.section--wrapper
+        h1#customer_reviews_title.reviews__title #{getTranslation('lbl_customer_review', lang)}
+          p.review__totalCount
+            span.review__totalCount--count #{formatNumber(product_reviews.count)}
+            span  reviews
+        div.rating__cotainer
+          div.review_stars
+            - for (let i=5; i>0; i--)
+              - const count = numberToWord(i)
+              div(class=`review_stars--${count}`)
+                div.reivew__stars
+                    -for (let j=0; j<5; j++)
+                      if (j<i) 
+                        span.fa.fa-star.checked
+                      else 
+                        span.fa.fa-star.unchecked
+                div.review__percentage
+                  div.review--percentage
+                    if (!rating_percentage.hasOwnProperty(`rating_${i}`))
+                      div.review--percentage_bar
+                        label.review--label-l 0%
+                    else
+                      div.review--percentage_bar(style={width:`${Number(rating_percentage[`rating_${i}`])}%`})
+                        if (Number(rating_percentage[`rating_${i}`]) < 10)
+                          label.review--label-l=rating_percentage[`rating_${i}`]+'%'
+                        else
+                          label.review--label-r=rating_percentage[`rating_${i}`]+'%'
+          div.review__filter
+            select.review__filter--select
+              option(value="", selected=true) Most recent
+              option(value="5") 5 star
+              option(value="4") 4 star
+              option(value="3") 3 star
+              option(value="2") 2 star
+              option(value="1") 1 star
+            p.reviewCount 
+              span.reviewCount--count #{formatNumber(product_reviews.count)} reviews
+        div#reviews_container
+          if (!product_reviews.count)
+            div.no--reviews-div
+              //- img(src="")
+              h4 #{getTranslation('lbl_no_review_yet', lang)}
+          else
+          each customer in product_reviews.data
+            .review__container
+              .user__container
+                .comment_user
+                  .user_logo= customer.customer_last_name[0]
+                  //- img(src='/imgs/products/img/reviews/D.png')
+              .review__title
+                h2= customer.review_title
+                div.review_stars
+                  each star in customer.formatted_rating
+                    if (star === 'green_star')
+                      span.fa.fa-star.checked
+                    else
+                      span.fa.fa-star.unchecked
+                h4= customer.formatted_name
+                h5= customer.formatted_date
+              .review__description
+                div
+                  p.review__content= customer.review_message
+                  a.readMore(onclick="readMore(this)") #{getTranslation('lbl_read_more', lang)}
+        if product_reviews.data.length < product_reviews.count
+          .seeAllReviews
+            a.reviews #{getTranslation('lbl_see_all_reviews', lang)}
+  script(src='/js/product.js')
+  script.
+    function shouldFetch() {
+      const reviewsTotal = localStorage.getItem('reviewsTotalCount')
+      const allReviewsTotal = reviewsTotal ? reviewsTotal :  JSON.parse('!{product_reviews.count}');
+      const fetchedTotal = document.querySelectorAll('.review__container').length
+      var seeAllReviewsContainer = document.querySelector(".seeAllReviews");
+      var seeAllReviews = document.querySelector(".seeAllReviews a");
+      return document.querySelector(".reviews").innerHTML !== localStorage.getItem('lbl_see_all_reviews')
+        && fetchedTotal < allReviewsTotal
+        && !(seeAllReviews.innerHTML === localStorage.getItem('lbl_loading') && seeAllReviewsContainer.style.display === 'block')
+      }
+
+      

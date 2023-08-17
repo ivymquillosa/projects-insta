@@ -1,0 +1,157 @@
+.preloader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 100000;
+  background-color: rgba(255, 255, 255, 1);
+  opacity: 1;
+  visibility: visible;
+  transform-origin: center center;
+}
+.preloader:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -55px;
+  margin-left: -55px;
+  z-index: 100001;
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 1;
+  transform: scale(0);
+  animation: preloadIntro_bounce 0.3s ease-in-out 1 both;
+}
+.preloader .preloader__logo {
+  width: 100%;
+  max-width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -50px;
+  margin-left: -50px;
+  z-index: 100002;
+  animation: preloadIntro_bounce 0.3s ease-in-out 1 both 0.3s;
+}
+.preloader .preloader__spinner {
+  animation: rotator 1.5s linear infinite;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -60px;
+  margin-left: -60px;
+  z-index: 100003;
+}
+.preloader .preloader__spinner .preloader__path {
+  opacity: 0;
+  stroke-dasharray: 360;
+  stroke-dashoffset: 0;
+  transform-origin: center;
+  animation: preloadIntro_fadeIn 1s ease-in-out 1 both 0.5s, dash 1.5s ease-in-out infinite, colors 12s ease-in-out infinite;
+}
+.preloader.done {
+  animation: preloaderHide 0.3s ease-in-out 1 both 1s;
+}
+.preloader.show {
+  animation: preloaderShow 0.3s ease-in-out 1 both;
+}
+@keyframes rotator {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes preloadIntro_bounce {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes preloadIntro_circle {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes preloadIntro_fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes colors {
+  0% {
+    stroke: #ffd7d6;
+  }
+  25% {
+    stroke: #f8ee06;
+  }
+  50% {
+    stroke: #2ca1d8;
+  }
+  75% {
+    stroke: #d826ac;
+  }
+  100% {
+    stroke: #ffd7d6;
+  }
+}
+@keyframes dash {
+  0% {
+    stroke-dashoffset: 360;
+    transform: rotate(0deg);
+  }
+  50% {
+    stroke-dashoffset: 36;
+    transform: rotate(90deg);
+  }
+  100% {
+    stroke-dashoffset: 360;
+    transform: rotate(360deg);
+  }
+}
+@keyframes preloaderHide {
+  0% {
+    opacity: 1;
+    visibility: visible;
+  }
+  99% {
+    opacity: 0;
+    visibility: visible;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+@keyframes preloaderShow {
+  0% {
+    visibility: hidden;
+    opacity: 0;
+  }
+  0% {
+    visibility: visible;
+    opacity: 0;
+  }
+  100% {
+    visibility: visible;
+    opacity: 1;
+  }
+}

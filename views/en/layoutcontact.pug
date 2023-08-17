@@ -1,0 +1,154 @@
+doctype html
+html(lang='en' class=htmlClass)
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible' content='IE=Edge,chrome=1')
+    meta(name='viewport' content='width=device-width, minimum-scale=1.0, maximum-scale=5.0')
+    title=title
+    meta(name='application-name' content=data.lbl_instaprotek.en)
+    meta(name='author' content='{dna:micro}')
+    meta(name='description' content=data.meta_description.en)
+    meta(name='keywords' content=data.meta_keywords.en)
+    meta(name='robots' content=data.meta_robots.en)
+    meta(property='og:type' content=data.lbl_instaprotek.en)
+    meta(property='og:url' content='https://www.instaprotek.com')
+    meta(property='og:title' content=data.lbl_instaprotek.en)
+    meta(property='og:image' content='https://acdn.dnamicro.net/instaprotek/instaprotek_logo.png')
+    meta(property='og:description' content=data.meta_description.en)
+    meta(property='og:site_name' content=data.lbl_instaprotek.en)
+    meta(property='og:locale' content='en_US')
+    link(rel='apple-touch-icon' sizes='57x57' href='/img/favicon/apple-icon-57x57.webp')
+    link(rel='apple-touch-icon' sizes='60x60' href='/img/favicon/apple-icon-60x60.webp')
+    link(rel='apple-touch-icon' sizes='72x72' href='/img/favicon/apple-icon-72x72.webp')
+    link(rel='apple-touch-icon' sizes='76x76' href='/img/favicon/apple-icon-76x76.webp')
+    link(rel='apple-touch-icon' sizes='114x114' href='/img/favicon/apple-icon-114x114.webp')
+    link(rel='apple-touch-icon' sizes='120x120' href='/img/favicon/apple-icon-120x120.webp')
+    link(rel='apple-touch-icon' sizes='144x144' href='/img/favicon/apple-icon-144x144.webp')
+    link(rel='apple-touch-icon' sizes='152x152' href='/img/favicon/apple-icon-152x152.webp')
+    link(rel='apple-touch-icon' sizes='180x180' href='/img/favicon/apple-icon-180x180.webp')
+    link(rel='icon' type='image/png' sizes='192x192' href='/img/favicon/android-icon-192x192.webp')
+    link(rel='icon' type='image/png' sizes='32x32' href='/img/favicon/favicon-32x32.webp')
+    link(rel='icon' type='image/png' sizes='96x96' href='/img/favicon/favicon-96x96.webp')
+    link(rel='icon' type='image/png' sizes='16x16' href='/img/favicon/favicon-16x16.webp')
+    link(rel='manifest' href='/manifest.json')
+    meta(name='msapplication-TileColor' content='#2896EB')
+    meta(name='msapplication-TileImage' content='/img/favicon/ms-icon-144x144.webp')
+    meta(name='theme-color' content='#2896EB')
+    link(rel='stylesheet' href='/css/preloader.css')
+    script(async, src="https://www.googletagmanager.com/gtag/js?id=UA-139720945-1")
+    script(src='/js/jquery.v3.3.1.min.js')
+    link(rel='stylesheet' href='/css/main.css')
+    
+    // Begin Inspectlet Asynchronous Code
+    script(type="text/javascript").
+      (function() {
+        window.__insp = window.__insp || [];
+        __insp.push(['wid', 817283740]);
+        var ldinsp = function(){
+          if(typeof window.__inspld != "undefined") return; window.__inspld = 1; var insp = document.createElement('script'); insp.type = 'text/javascript'; insp.async = true; insp.id = "inspsync"; insp.src = ('https:' == document.location.protocol ? 'https' : 'http') + '://cdn.inspectlet.com/inspectlet.js?wid=817283740&r=' + Math.floor(new Date().getTime()/3600000); var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(insp, x);
+        };
+        setTimeout(ldinsp, 0);
+      })();
+    // End Inspectlet Asynchronous Code
+
+    // Start of Tawk.to Script
+    script(type="text/javascript").
+      var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+      (function(){
+        var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+        s1.async=true;
+        s1.src='https://embed.tawk.to/5d76a9e7eb1a6b0be60bc9c1/default';
+        s1.charset='UTF-8';
+        s1.setAttribute('crossorigin','*');
+        s0.parentNode.insertBefore(s1,s0);
+      })();
+    // End of Tawk.to Script
+  
+  body.sticky--header
+
+    //- #main-preloader.preloader
+    //-   svg.preloader__spinner(width='120px' height='120px' viewbox='0 0 130 130' xmlns='http://www.w3.org/2000/svg')
+    //-     circle.preloader__path(fill='none' stroke-width='10' stroke-linecap='round' cx='65' cy='65' r='60')
+    //-   img.preloader__logo(src='/img/preloader.webp' alt='Insaprotek preloader')
+
+    #app-container
+      .page__home
+        
+        block nav
+          header.main__header
+            .main__header--wrapper
+              .branding
+                a(href='/')
+                  img.branding__image.light(src='/img/logo_full_dark.webp' alt='Insaprotek logo light')
+                  img.branding__image.dark(src='/img/logo_full_dark.webp' alt='Insaprotek logo dark')
+            .main__nav
+              a.responsive.dropdown-trigger(href='#' data-target="languages" id='country')
+                img.lang__flag(src="/img/icons/flag_us.webp" alt='dropdown menu USA flag' width='25px' height='18px')
+                i.material-icons keyboard_arrow_down
+              ul.language-list.dropdown-content(id='languages')
+                li.language-list-item(data='en')
+                  a(href='/en/contact')
+                    img.lang__flag(src="/img/icons/flag_us.webp" alt='dropdown menu USA flag' width='25px' height='18px')
+                    label English
+                li.language-list-item(data='fr')
+                  a(href='/fr/contact')
+                    img.lang__flag(src="/img/icons/flag_france.webp" alt='dropdown menu France flag' width='25px' height='18px')
+                    label French
+                li.language-list-item(data='ja')
+                  a(href='/ja/contact')
+                    img.lang__flag(src="/img/icons/flag_japan.webp" alt='dropdown menu Japan flag' width='25px' height='18px')
+                    label Japanese
+                //- li.language-list-item(data='es')
+                //-   a(href='/es')
+                //-     img.lang__flag(src="/imgs/icons/flag_spain.png" alt='dropdown menu Spain flag' width='25px' height='18px')
+                //-     label Spanish
+              a.main__nav--toggle(href='#menu-toggle')
+                span
+                span
+                span
+              .list.list--horizontal.lang_responsive
+                .list__item
+                  a(href='/en/support') #{data.menu_support.en}
+                .list__item
+                  a(href='/en/contact') #{data.menu_contact_us.en}
+                //- .list__item
+                //-   a(href='/en/warranty') #{data.menu_warranty_program.en}
+
+        .page--wrapper
+          block content
+
+          block footer
+            footer.footer
+              .container
+                .row
+                  .col.s12.m12
+                    p.text--small.footer__text
+                      | #{data.lbl_instaprotek_copyright.en}
+                  .col.s12.m12
+                    ul.footer__list.list.list--horizontal
+                      li.list__item
+                        a(href='/en/privacy') #{data.menu_privacy_statement.en}
+                      li.list__item
+                        a(href='/en/terms') #{data.menu_terms_and_condition.en}
+                      li.list__item
+                        a(href='/en/support') #{data.menu_support.en}
+                      li.list__item
+                        a(href='/en/contact') #{data.menu_contact_us.en}
+
+    link(rel='stylesheet' href='/css/jquery.bxslider.min.css')
+    link(rel='stylesheet' href='/css/main.css')
+    script(src='/js/browserdetect.js')
+    script(src='/js/iefix.js')
+    script(src='/js/jquery.inview.min.js')
+    script(src='/js/jquery.formatter.min.js')
+    //- script(src='/js/jquery.bxslider.min.js')
+    script(src='/js/slick.js')
+    script(src='/js/materialize.min.js')
+    script(src='/js/bundle.js')
+    // Scripts
+    // Google Analytics: change UA-XXXXX-X to be your site's ID.
+    script.
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-139720945-1');

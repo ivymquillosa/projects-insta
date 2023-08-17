@@ -1,0 +1,68 @@
+extends layoutdoc
+
+block content
+    .section.section__documenthero
+      .section--wrapper
+        .bgimage.antimoderate.antimoderate-bg(data-hdsrc='/imgs/getstarted_bg.png' alt='Instaprotek Background', data-antimoderate-scale='1', data-ldsrc='/imgs/getstarted_bg_alt.png', classnames='bgimage')
+
+    .section__group.section__group--offset.bg--darkgray
+
+      section.section.section__documents
+        .section--wrapper
+          .row
+            .col.s12.m12
+              .step__doc.anim(data-anim='fadeInDown', data-delay='0s', data-duration='1s')
+                h1.step__doc__label #{data.lbl_privacy_policy.fr}
+                .step__doc__content.privacy-top
+                  p #{data.lbl_instprotek_is_commited_to_the_protection_and_proper_use_of_our_customers_personal_information.fr}
+                  p !{data.lbl_if_you_have_any_questions_or_concerns.fr}
+
+                  h3 #{data.lbl_personal_information_we_collect.fr}
+
+                  p #{data.lbl_we_may_collect_personally_identifiable_information.fr}                  
+                  p #{data.lbl_we_may_also_collect_certain_additional_information.fr}
+                  h3 #{data.lbl_how_we_use_and_disclose_your_personal_information.fr}
+                  p #{data.lbl_we_use_your_personal_information_to_conduct_our_business.fr}
+                  ul
+                    li #{data.lbl_we_may_use_your_personal_information_to_help_us_develop.fr}
+                    li #{data.lbl_we_may_use_your_personal_information_to_contact_you_regarding_upcoming_events.fr}
+                    li #{data.lbl_we_may_share_your_information_with_third_party_service_providers.fr}
+                    li #{data.lbl_we_may_disclose_your_personal_information_when_we_have_reason_to_believe_that_it_is_necessary.fr}
+                    li #{data.lbl_we_may_disclose_your_personal_information_when_you_ask_us_to_do_so.fr}
+                    li #{data.lbl_we_may_use_your_personal_information_for_internal_purposes.fr}
+                    li #{data.lbl_we_may_use_your_personal_information_to_administer_programs.fr}
+                    li #{data.lbl_we_may_use_your_information_to_administer_our_websites.fr}
+
+                  p #{data.lbl_instaprotek_maintains_certain_protocols_in_order_to_protect_the_security.fr}
+
+                  ul
+                    li #{data.lbl_we_communicate_our_privacy_policy_and_security_guidelines_to_instaprotek_employees.fr}
+                    li !{data.lbl_we_utilize_secure_socket_layer.fr}
+                    li #{data.lbl_in_addition_to_encrypting_your_credit_card_information.fr}
+
+                  p !{data.lbl_if_you_prefer_to_submit_your_order_by_telephone.fr}
+
+                  p #{data.lbl_if_you_are_receiving_promotional_texts_from_instaprotek.fr}
+
+                  //- p If you would like to "opt out" of receiving online advertisements from InstaProtek, please follow the instructions on the links below:
+
+                  //- a(href='#nolink') {LINK TO UNSUBSCRIBE}
+
+                  h3 #{data.lbl_contact_us.fr}
+
+                  p #{data.lbl_if_there_are_any_questions_regarding_this_privacy_policy.fr}
+
+                  p.step__address
+                    a(href='//www.instaprotek.com/fr') https://www.instaprotek.com
+                    |
+                    span.breakline 1 Wrigley
+                    |
+                    span.breakline Irvine, CA 92618
+                    |
+                    span.breakline U.S.A
+                    | 
+                    a(href='mailto:support@instaprotek.com') support@instaprotek.com
+
+              .step__footer
+                a.backtop.btn-floating.btn-large.waves-effect.waves-light.red(href='#backtotop')
+                  i.material-icons keyboard_arrow_up

@@ -1,0 +1,119 @@
+.section__chart {
+	background-color: $color-light;
+
+	.section__title {
+		@include flex(flex-start, center);
+		text-align: center;
+		font-weight: 400;
+	}
+}
+
+.pricing__chart {
+	@include flex(flex-start, center);
+
+	svg {
+		width: 100%;
+		max-width: 800px;
+		margin: auto;
+		height: auto;
+	}
+
+	.group_icon {
+		opacity: 0;
+		transition: 0.5s ease-in-out;
+		.tooltip {
+			opacity: 0;
+			transition: 0.15s ease-in-out;
+		}
+		.circle {
+			opacity: 0;
+			transition: 0.15s ease-in-out;
+		}
+
+		&:hover {
+			.icon {
+				* {
+					stroke: $color-white;
+					fill: currentColor;
+					color: $color-white;
+				}
+			}
+			.circle {
+				opacity: 1;
+			}
+			.tooltip {
+				opacity: 1;
+			}
+		}
+	}
+
+	.bubble {
+		transform: translateY(80px);
+		opacity: 0;
+		transition: 0.5s ease-in-out;
+		transform-origin: center center;
+	}
+	.bubble_line {
+		opacity: 0;
+		transition: 0.5s ease-in-out;
+		transform-origin: center center;
+
+		stroke-dasharray: 1;
+		stroke-dashoffset: 1000;
+	}
+
+	&.animate {
+		.bubble {
+			transform: translateY(0px);
+			opacity: 1;
+		}
+		#bubble_instaprotek {
+			transition: 0.5s ease-in-out 0s;
+		}
+		#bubble_bestbuy {
+			transition: 0.5s ease-in-out 0.3s;
+		}
+		#bubble_squareade {
+			transition: 0.5s ease-in-out 0.6s;
+		}
+		#bubble_verizon {
+			transition: 0.5s ease-in-out 0.9s;
+		}
+
+		.bubble_line {
+			opacity: 1;
+			stroke-dashoffset: 0;
+		}
+		#line_instaprotek {
+			transition: 0.5s ease-in-out 0s;
+		}
+		#line_bestbuy {
+			transition: 0.5s ease-in-out 0.3s;
+		}
+		#line_squareade {
+			transition: 0.5s ease-in-out 0.6s;
+		}
+		#line_verizon {
+			transition: 0.5s ease-in-out 0.9s;
+		}
+
+		.group_icon {
+			opacity: 1;
+		}
+		#icon_tablet {
+			transition: 0.5s ease-in-out 0.9s;
+		}
+		#icon_camera {
+			transition: 0.5s ease-in-out 1.2s;
+		}
+		#icon_laptop {
+			transition: 0.5s ease-in-out 1.5s;
+		}
+		#icon_mobile {
+			transition: 0.5s ease-in-out 1.8s;
+		}
+		#icon_desktop {
+			transition: 0.5s ease-in-out 2.1s;
+		}
+	}
+}

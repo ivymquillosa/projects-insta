@@ -1,0 +1,64 @@
+extends layoutapp_otterbox
+
+block content
+  .step__app.anim(data-anim='fadeInDown', data-delay='0s', data-duration='1s')
+    h1.step__app__label
+    
+    .step__app__promo
+      .step__app__promo__header.download4
+        img.logo--header.tech21(src='/imgs/promo/liquipel_instaprotek/otterbox_logo.png',style='width:150px')
+      .step__app__promo__content
+
+        h3(style='text-align: center;') Tap to download the OtterProtect App from App Store or Google Play Store
+
+        .download_buttons
+          a#instaprotek_ios.download_button(href='https://apps.apple.com/us/app/otterprotect/id1609528349')
+            img.app-store-button(src='/imgs/promo/liquipel_instaprotek/button_apple_app_store.jpg')
+          a#instaprotek_android.download_button(href='https://play.google.com/store/apps/details?id=com.otterbox.app')
+            img.google-play-button(src='/imgs/promo/liquipel_instaprotek/button_google_play.jpg')
+
+        //- h3 Activate your 
+        //-   |
+        //-   span#platform
+        div(style='height: 50px; width: 100%;')
+
+        img.slogan(src='https://acdn.dnamicro.net/otterbox/otterbox_logo.png')
+      .step__app__promo__footer
+        img.footer-logo-instaprotek(src='/imgs/promo/liquipel_instaprotek/insta-06.png')
+
+
+    script.
+      function getMobileOperatingSystem() {
+        const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+            // Windows Phone must come first because its UA also contains "Android"
+          if (/windows phone/i.test(userAgent)) {
+            return "Windows Phone";
+          }
+
+          if (/android/i.test(userAgent)) {
+            return "android";
+          }
+
+          // iOS detection from: http://stackoverflow.com/a/9039885/177710
+          if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+            return "ios";
+          }
+
+          return "other";
+      }
+      $(document).ready(function(){
+        const platform = getMobileOperatingSystem();
+        
+        if(platform === 'ios') {
+          $('#instaprotek_ios').show();
+          $('#instaprotek_android').hide();
+        } else if(platform === 'android') {
+          $('#instaprotek_ios').hide();
+          $('#instaprotek_android').show();
+        } else {
+          $('#instaprotek_ios').show();
+          $('#instaprotek_android').show();
+        }
+        $('.iframe').attr('style', 'display: none !important');
+      })

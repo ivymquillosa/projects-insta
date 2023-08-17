@@ -1,0 +1,124 @@
+// html {
+// 	position: relative;
+// 	top: 0;
+// 	left: 0;
+// 	width: 100vw;
+// 	min-height: 100vh;
+// 	height: auto;
+// 	overflow-x: hidden;
+// 	overflow-y: auto;
+// 	transform: translate(0,0);
+// }
+
+// body {
+// 	position: relative;
+// 	top: 0;
+// 	left: 0;
+// 	width: 100vw;
+// 	min-height: 100vh;
+// 	height: auto;
+// 	transform: translate(0,0);
+// }
+
+body * {
+	font-family: Roboto, sans-serif, Tahoma, Geneva;
+	-webkit-font-smoothing: antialiased;
+}
+
+
+body {
+	font-size: 12px;
+	min-height: calc(100vh - 64px);
+	background-color: $dna-color-bodyBg;
+}
+html {
+	background-color: $dna-color-bodyBg;
+}
+
+#main-content-demo {
+
+	background-color: $dna-color-bodyBg;
+
+	// background-image: url('/imgs/app/backgrounds/main_bg_mascot.png'),
+	// 									url('/imgs/app/backgrounds/main_bg_city.png');
+
+	background-repeat: no-repeat, repeat-x;
+	background-position: 180px 100%, left bottom;
+	background-size: auto 40%, auto;
+	background-attachment: fixed, fixed;
+
+	min-height: calc(100vh - 110px);
+
+	margin-top: 64px;
+	padding-bottom: 38px;
+
+	min-height: calc(100vh - 128px);
+
+
+	@media (max-width: 1024px) {
+		margin-left: 0 !important;
+	}
+
+	// tablet
+	@media only screen
+		and (min-device-width: 768px)
+		and (max-device-width: 1024px) {
+			margin-left: 0;
+
+	}
+
+	// phones
+	@media only screen
+		and (min-device-width: 320px)
+		and (max-device-width: 736px) {
+	}
+
+	// padding-bottom: 300px;
+
+	> div:last-child > div:last-child > .md-grid {
+		padding: 0;
+	}
+
+	> div:last-child > div:last-child {
+		padding: 0;
+	}
+}
+
+.mainContent {
+}
+
+.text-normal {
+	font-weight: normal !important;
+}
+.text-bold {
+	font-weight: 900 !important;
+}
+.text-komix {
+	font-family: 'komika_axisregular';
+}
+
+.text-impact {
+	font-family:  Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black", "sans serif";
+}
+.text--large {
+	font-size: 64px;
+}
+
+.displayNone {
+	display: none !important;
+}
+
+
+html.md-no-scroll {
+	width: 100vw;
+}
+
+
+.md-tooltip-container * {
+	font-size: 14px;
+	font-weight: 100;
+}
+
+.md-no-scroll {
+	overflow: hidden;
+}

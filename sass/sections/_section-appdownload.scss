@@ -1,0 +1,116 @@
+.step__app {
+  position: relative;
+  @include flex(flex-start, stretch);
+  flex-direction: column;
+  background-color: $color-white;
+
+  // box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+.step__app {
+  min-height: calc(100vh - 60px);
+  @include flex(flex-start, center);
+  flex-direction: column;
+  padding-top: 1rem;
+  &__label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    color: #fff;
+
+    font-family: 'Montserrat', 'Open Sans', sans-serif;
+    font-weight: 700 !important;
+    font-size: 1.8rem;
+    margin: 0;
+    padding: 0.5rem 1rem;
+    line-height: 1.4;
+
+    text-align: center;
+
+    background-color: $color-accent;
+
+    @media only screen and #{$responsive-phone} {
+      padding-left: 0;
+      text-align: center;
+    }
+  }
+  &__promo {
+    height: 100%;
+    @include flex(flex-start, flex-start);
+    flex-direction: column;
+    flex-grow: 1;
+    &__header {
+      @include flex(center, center);
+      flex-wrap: nowrap;
+      img {
+        width: 100%;
+        height: auto;
+        max-width: 400px;
+      }
+      .tech21 {
+        padding: 3rem 0;
+        width: 400px;
+      }
+      &.ijoy {
+        padding-top: 0.25rem;
+      }
+      &.download4 {
+        // margin-left: 5rem;
+        width: 100%;
+      }
+    }
+    &__content {
+      @include flex(flex-start, flex-start);
+      flex-wrap: nowrap;
+      flex-direction: column;
+      flex-grow: 1;
+      h3 {
+        width: 100%;
+        max-width: calc(600px - 2rem);
+        display: block;
+        padding: 0 2rem;
+        font-size: 1.75rem;
+        margin: 1rem 0;
+
+        @media #{$responsive-phone} {
+          font-size: 1.25rem;
+        }
+      }
+      img {
+        width: 100%;
+        height: auto;
+        max-width: 600px;
+      }
+
+      .download_buttons {
+        @include flex(center, center);
+        flex-wrap: nowrap;
+        padding: 0 1rem;
+        width: 100%;
+        max-width: calc(600px - 2rem);
+        .download_button {
+          width: 70%;
+          display: none;
+          @include flex(center, center);
+          img {
+            width: 100%;
+            height: auto;
+            max-width: 300px;
+          }
+        }
+      }
+    }
+    &__footer {
+      width: 100%;
+      padding-top: 4rem;
+      @include flex(center, center);
+      img {
+        width: 100%;
+        height: auto;
+        max-width: 300px;
+      }
+    }
+  }
+}

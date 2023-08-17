@@ -1,0 +1,35 @@
+extends layout-thankyou
+
+block content
+    .section.section__documenthero
+      .section--wrapper
+        .bgimage.antimoderate.antimoderate-bg(data-hdsrc='/img/getstarted_bg.webp', data-antimoderate-scale='1', data-ldsrc='/img/getstarted_bg_alt.webp', classnames='bgimage')
+
+    .section__group.section__group--offset.bg--darkgray
+
+      section.section.section__documents
+        .section--wrapper
+          .row
+            .col.s12.m12
+              .step__doc.anim(data-anim='fadeInDown', data-delay='0s', data-duration='1s')
+                h1.step__doc__label #{data.lbl_contact_us.en}
+                .step__doc__form
+
+                  form.form__getstarted.form.formjs
+                    input(type='hidden', id='form_targetname', value='InstaProtek Support')
+                    input(type='hidden', id='form_targetemail', value='sales@instaprotek.com')
+                    input(type='hidden', id='form_emailtitle', value='InstaProtek Contact')
+                    .form__process
+                      .spinner__wrapper
+                        span.spinner
+                        span.spinner__text #{data.lbl_processing.en}...
+                   
+                    .form__container.form__container--thank-you
+                      .row
+                        .col.s12
+                          h2 #{data.lbl_thank_you_for_interest.en}
+                          h3 #{data.lbl_please_allow_24_hours_for_us_to_process.en}
+
+              .step__footer
+                a.backtop.btn-floating.btn-large.waves-effect.waves-light.red(href='#backtotop')
+                  i.material-icons keyboard_arrow_up

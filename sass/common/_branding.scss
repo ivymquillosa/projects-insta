@@ -1,0 +1,9 @@
+.branding {
+	width: 100%;
+	max-width: 160px;
+	@include flex(center, center);
+	&__image {
+		width: 100%;
+		height: auto;
+	}
+}

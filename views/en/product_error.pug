@@ -1,0 +1,10 @@
+extends layoutproduct
+
+block content
+  .section__group.section__group--offset.bg--darkgray.no__code
+    section.section.section__documents.no--barcode
+      div
+        //- if (!hideIcon)
+        //-   img.error-img(src="/imgs/products/img/no-barcode.png")
+        h1 #{message}
+  script(src='/js/product.js')

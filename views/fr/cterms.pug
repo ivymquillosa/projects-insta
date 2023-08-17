@@ -1,0 +1,379 @@
+extends layoutcterms
+
+block content
+  .cterms
+    section.section.section__head
+      .section--wrapper
+        .row
+          .col.s12
+            h1.section__title #{data.lbl_general_operations.fr}
+            p.section__desc #{data.lbl_please_keep_this_important_terms_and_conditions.fr}
+            h5.section__bold #{data.lbl_service_contract_contains_a_binding_arbitration.fr}
+    section.section.section__definition
+      .section--wrapper
+        .row
+          .col.s12
+            h1.section__title #{data.lbl_definitions.fr}
+        .row.row__definition
+          .col.s6.definition__col
+            p !{data.lbl_claim_a_demand_for_service_or_payment.fr}
+            p !{data.lbl_contract_fee_means_the_payment_amount_required.fr}
+            p !{data.lbl_contract_term_the_period_of_time.fr}
+            p !{data.lbl_covered_products_an_item_listed.fr}
+            p !{data.lbl_distributors_the_party_autorized.fr}
+            p !{data.lbl_msrp_the_manufacturer.fr}
+            p !{data.lbl_original_purchase_price.fr}
+          .col.s6.definition__col
+            p !{data.lbl_service_contract_includes_this_provision.fr}
+            p !{data.lbl_service_fee_the_amount_you_are_required_to_pay.fr}
+            p !{data.lbl_you_your_and_contract_holder.fr}
+            p !{data.lbl_waiting_period.fr}
+            p !{data.lbl_we_us_and_our_indicate.fr}
+    section.section.section__normal
+      .section--wrapper
+        .row
+          .col.s12
+            h1.section__title #{data.lbl_definitions.fr}
+        .row
+          .col.s12
+            p.section__desc #{data.lbl_subject_to_all_the_provisions.fr}
+            ol.section__list
+              li.section__list__item #{data.lbl_it_is_included_in_the_list.fr}
+              li.section__list__item #{data.lbl_it_is_used_in_manners.fr}
+              li.section__list__item #{data.lbl_it_is_fully_operational.fr}
+    section.section.section__normal
+      .section--wrapper
+        .row
+          .col.s12
+            h1.section__title #{data.lbl_your_responsibilities.fr}
+        .row
+          .col.s12
+            p.section__desc !{data.lbl_product_protection_if_damage_or_breakdown.fr}
+            p.section__desc !{data.lbl_maintenance_and_inspections.fr}
+    section.section.section__normal
+      .section--wrapper
+        .row
+          .col.s12
+            h1.section__title #{data.lbl_effective_date_of_coverage.fr}
+        .row
+          .col.s12
+            p.section__desc !{data.lbl_product_protection_if_damage_or_breakdown.fr}
+            p.section__desc #{data.lbl_your_contract_start_date_is_shown.fr}
+    section.section.section__normal
+      .section--wrapper
+        .row
+          .col.s12
+            h1.section__title #{data.lbl_plan_and_renewability.fr}
+        .row
+          .col.s12
+            p.section__desc #{data.lbl_the_plan_and_renewablility_options.fr}
+        .row
+          .col.s12
+            p.section__desc !{data.lbl_annnual_or_other_term_plan.fr}
+            p.section__desc #{data.lbl_at_the_end_of_the_initial_contract.fr}
+            p.section__desc #{data.lbl_if_you_submmit_a_claim.fr}
+    section.section.section__normal
+      .section--wrapper
+        .row
+          .col.s12
+            h1.section__title #{data.lbl_what_is_covered.fr}
+        .row
+          .col.s12
+            p.section__desc #{data.lb_this_contract_may_provide_coverage_for.fr}
+          .col.s12
+            ol.section__list
+              li.section__list__item
+                p.section__desc !{data.lbl_mechanical_or_electrical_breakdown.fr}
+              li.section__list__item
+                p.section__desc !{data.lbl_power_surge.fr}
+              li.section__list__item 
+                p.section__desc !{data.lbl_additional_benefits.fr}
+          .col.s12
+            p.section__desc !{data.lb_important_disclosures_regarding.fr}
+    section.section.section__normal
+      .section--wrapper
+        .row
+          .col.s12
+            h1.section__title #{data.lbl_if_you_need_to_file_a_claim.fr}
+            h5.section__bold !{data.lbl_important_the_submission_of_claim_does_not.fr}
+        .row
+          .col.s12
+            p.section__desc #{data.lbl_your_confirmation_page_shows_how_to_reach_us.fr}
+            p.section__desc #{data.lbl_after_confirmation_of_claim.fr}
+        .row
+          .col.s12
+            p.section__desc !{data.lbl_service_fee_you_may_be_required_to_pay.fr}
+        .row
+          .col.s12
+            p.section__desc !{data.lbl_service_type_in_the_event_of.fr}
+            ol.section__list
+              li.section__list__item
+                p.section__desc !{data.lbl_repair_labor_and_or_parts_necessary.fr}
+              li.section__list__item
+                p.section__desc !{data.lbl_replacement_a_replacement_of.fr}
+            p.section__desc #{data.lbl_upon_replacement_of_a_covered_product.fr}
+            p.section__bold #{data.lbl_all_service_types_described.fr}
+        .row
+          .col.s12
+            p.section__desc !{data.lbl_service_locations.fr}
+        .row
+          .col.s12
+            ol.section__list
+              li.section__list__item
+                p.section__desc !{data.lbl_in_home_on_site_service.fr}
+                ol.section__list.letters
+                  li.section__list__item #{data.lbl_easy_accessibility_to_the_product.fr}
+                  li.section__list__item #{data.lbl_a_non_threatening_and_safe_environment.fr}
+                  li.section__list__item #{data.lbl_an_adult_over_the_age_of_18.fr}
+                p.section__desc #{data.lbl_in_the_event_its_necessary.fr}
+              li.section__list__item
+                p.section__desc !{data.lbl_depot_service.fr}
+              li.section__list__item
+                p.section__desc !{data.lbl_mail_in_carry_in_service.fr}
+            p.section__desc #{data.lbl_if_we_authorize_service_for_claim.fr}
+            p.section__desc !{data.lbl_international_service.fr}
+    section.section.section__normal
+      .section--wrapper
+        .row
+          .col.s12
+            h1.section__title #{data.lbl_limit_of_liability.fr}
+        .row
+          .col.s12
+            ol.section__list
+              li.section__list__item 
+                p.section__desc !{data.lbl_product_claim_limit.fr}
+              li.section__list__item 
+                p.section__desc !{data.lbl_aggregated_claim_limit.fr}
+    section.section.section__normal
+      .section--wrapper
+        .row
+          .col.s12
+            h1.section__title #{data.lbl_what_is_not_covered_general_exclusions.fr}
+            h5.section__bold #{data.lbl_as_related_and_applicable.fr}
+        .row
+          .col.s12
+            ol.section__list.letters.bold_items
+              li.section__list__item  #{data.lbl_any_claim_submitted_during.fr}
+              li.section__list__item #{data.lbl_a_pre_existing_condition_known.fr}
+              li.section__list__item #{data.lbl_any_claim_for_service_to_or_replacement.fr}
+              li.section__list__item #{data.lbl_failure_or_damage.fr}
+              li.section__list__item #{data.lbl_any_merchandise_that_has_been_confirmed.fr}
+              li.section__list__item #{data.lbl_initial_delivery_or_installation.fr}
+              li.section__list__item #{data.lbl_fortuitous_events.fr}
+              li.section__list__item #{data.lbl_breakdown_or_damage_that_is_covered.fr}
+              li.section__list__item #{data.lbl_any_merchandise_that_has_been_used.fr}
+              li.section__list__item #{data.lbl_any_work_that_cannot_be_perform.fr}
+              li.section__list__item #{data.lbl_correction_or_upgrade_of_the_product.fr}
+              li.section__list__item #{data.lbl_abuse_meaning_the_international_mistreatment.fr}
+              li.section__list__item #{data.lbl_theft_or_mysterious_disappearance.fr}
+              li.section__list__item #{data.lbl_rust_corrosion_wraping.fr}
+              li.section__list__item #{data.lbl_operations_outside_the_manufacturer.fr}
+              li.section__list__item #{data.lbl_product_upgrades.fr}
+              li.section__list__item #{data.lbl_damage_to_computer_hardware.fr}
+              li.section__list__item #{data.lbl_virus_programs_or_applications.fr}
+              li.section__list__item #{data.lbl_unauthorized_access.fr}
+              li.section__list__item #{data.lbl_any_consumer_replaceable_items.fr}
+              li.section__list__item #{data.lbl_improper_removal_or_installation.fr}
+              li.section__list__item #{data.lbl_periodic_or_preventive_maintenance.fr}
+              li.section__list__item #{data.lbl_lack_of_providing_manufactures.fr}
+              li.section__list__item #{data.lbl_adjustment_manipulation_modification.fr}
+              li.section__list__item #{data.lbl_any_kind_of_manufacturer_recall.fr}
+        .row
+          .col.s12
+            h1.section__title #{data.lbl_what_is_not_covered.fr}
+            h5.section__bold.underlined #{data.lbl_in_addition_to_that_which_is_noted_above.fr}
+        .row
+          .col.s12
+            p.section__desc !{data.lbl_important.fr}
+            p.section__desc !{data.lbl_transferable.fr}
+    section.section.section__normal
+      .section--wrapper
+        .row
+          .col.s12
+            h1.section__title #{data.lbl_cancellation.fr}
+        .row
+          .col.s12
+            p.section__desc.bold #{data.lbl_you_may_cancel_this_service.fr}
+          .col.s12
+            p.section__desc.bold #{data.lbl_if_you_cancel_this_service_contract.fr}
+            ol.section__list
+              li.section__list__item
+                p.section__desc #{data.lbl_within_30_days.fr}
+              li.section__list__item
+                p.section__desc #{data.lbl_after_30_days.fr}
+          .col.s12
+            p.section__desc #{data.lbl_if_your_refund_is_not_paid.fr}
+            p.section__desc !{data.lbl_notice_if_you_cancel_this.fr}
+          .col.s12
+            p.section__desc.bold #{data.lbl_we_may_only_cancel.fr}
+            ol.section__list
+              li.section__list__item #{data.lbl_non_payment_of_the_contract_fee.fr}
+              li.section__list__item #{data.lbl_material_misrepresentation.fr}
+              li.section__list__item #{data.lbl_substantial_breach_of_duties.fr}
+          .col.s12
+            p.section__desc #{data.lbl_if_we_cancel_this_service_contract.fr}
+    section.section.section__normal
+      .section--wrapper
+        .row
+          .col.s12
+            h1.section__title #{data.lbl_gaurantee.fr}
+        .row
+          .col.s12
+            p.section__desc #{data.lbl_this_is_not_isuraance_policy.fr}
+    section.section.section__normal
+      .section--wrapper
+        .row
+          .col.s12
+            h1.section__title #{data.lbl_binding_arbibration_and_class_action_waiver.fr}
+        .row
+          .col.s12
+            p.section__desc
+              | PLEASE READ THIS SECTION CAREFULLY. IT AFFECTS YOUR RIGHTS. Any controversy or claim arising out of or
+              | relating to this Service Contract, or breach thereof, will be settled by binding arbitration in accordance with the Commercial
+              | Arbitration Rules of the American Arbitration Association (“AAA”). You and We both agree to give up the right to resolve
+              | a controversy or claim by a judge and/or jury. Prior to filing any arbitration, We jointly agree to seek to resolve any dispute
+              | between us by mediation conducted by the AAA with all mediator fees and expenses paid by Us. Unless the arbitrator
+              | determines that the claim was frivolous, or brought for improper or harassing purposes, We will reimburse Your arbitration
+              | filing fees and pay the AAA’s and arbitrator’s fees and expenses. The decision of the arbitrator shall be final and binding
+              | on all parties and may be entered as a judgment in any State or Federal court of competent jurisdiction. Any claim must
+              | be brought by You or Us in an individual capacity, and not as a class representative or class member in any class action
+              | litigation, and/or class arbitration or any consolidation of individual arbitrations.
+            p.section__desc.bold 
+              | Many states have consumer specific requirements governing Service Contract provisions, as shown below.
+            p.section__desc
+              | #[span.bold Arizona -] You may cancel the Service Contract at any time and receive a pro rata refund. No claim incurred or paid shall be deducted
+              | from the amount to be returned. The Service Contract may not be cancelled by the service company due to acts or omissions of the
+              | service company, its assignees or subcontractors for their failure to provide correct information or their failure to perform the services or
+              | repairs provided in a timely, competent, workmanlike manner. This Service Contract cannot be cancelled nor coverage voided due to preexisting
+              | conditions; prior use or unlawful acts relating to the product or for misrepresentation by either the service company or its
+              | subcontractor. The Service Contract may be cancelled due to fraud or misrepresentation by You when filing a claim.
+            p.section__desc
+              | #[span.bold California -] If You cancel this Service Contract within the first sixty (60) days after receipt of this Service Contract You will receive a full
+              | refund of the Contract Fee paid, less any claims paid. If You cancel after the first sixty (60) days from receipt of this Service Contract,
+              | You will receive a pro rata refund based on the time remaining on Your Service Contract less any claims paid. If We cancel the Service
+              | Contract, You will be refunded the unearned pro rata Contract Fee, less any claims paid.
+            p.section__desc
+              | #[span.bold Connecticut -] You have the right to file a complaint to the Connecticut Insurance Department, Attention: Consumer Affairs, P. O. Box
+              | 816, Hartford, CT 06142. The written complaint must describe the dispute, the product purchase price, the repair costs and a copy of
+              | Your Service Contract. If Your Service Contract is for less than one year, the term of Your Service Contract will be automatically extended
+              | for the period during which Your product is in Our custody for repair.
+            p.section__desc
+              | #[span.bold Florida -] The rate charged for this Service Contract is not subject to regulation by the Florida Department of Insurance.
+
+            p.section__desc
+              | #[span.bold Georgia -] The #[span.bold WHAT IS NOT COVERED ] provision is modified as follows: Section b. regarding pre-existing condition is deleted and
+              | replaced with “b. A pre-existing condition known to You. “Pre-existing condition” refers to a condition which existed prior to the Contract
+              | Start Date that was known to You or reasonably should have been known to You.” The #[span.bold WE MAY CANCEL THIS CONTRACT FOR ]
+              | provision is modified by deleting items 3. The #[span.bold ANNUAL OR OTHER TERM PLAN ] provision is modified by deleting the sentence reading
+              | “If any payment due is not received by Us by the due date, this Service contract will automatically terminate and not be eligible for
+              | reinstatement or any refund” and replacing it with the following: “If any payment due is not received by Us by the due date, We will provide
+              | You with a 30-day written notice of cancellation.” The #[span.bold CANCELLATION ] provision is modified as follows: 1. No claim incurred or paid shall
+              | be deducted from the amount to be returned. 2. Section 2.b. is modified by deleting “…ten percent (10%) of the Contract Fee paid…” and
+              | replacing it with “…ten percent (10%) of the pro-rata refund amount…”. 3. For cancellations by Us, there is no administrative or
+              | cancellation fee. The #[span.bold BINDING ARBITRATION AND CLASS ACTION WAIVER] provision is amended to add the following: “Nothing
+              | contained in the arbitration provision shall affect Your right to file a direct claim under the terms of this Service Contract against the
+              | Contract Insurer shown on Your Confirmation Page, if applicable, pursuant to O.C.G.A. 33-7-6.”
+            
+            p.section__desc
+              | #[span.bold Hawaii -] THE OBLIGATIONS OF THE PROVIDER UNDER THIS SERVICE CONTRACT ARE BACKED BY THE FULL FAITH AND
+              | CREDIT OF THE PROVIDER AND ARE NOT GUARANTEED UNDER A SERVICE CONTRACT REIMBURSEMENT INSURANCE
+              | POLICY.
+            
+            p.section__desc
+              | #[span.bold Iowa -] The issuer of this contract is subject to regulation by the insurance division of the department of commerce of the state of Iowa.
+              | Complaints which are not settled by the issuer may be sent to the insurance division.
+
+            p.section__desc
+              | #[span.bold Nevada -] The obligations under this Service Contract are insured by a contractual liability insurance policy provided by Bankers
+              | Insurance Company, 11101 Roosevelt Blvd. N, St. Petersburg, FL 33716. The cost of claims paid or services provided will not be
+              | deducted from any refund. #[span.underline.bold THE SERVICE CONTRACT MAY INCLUDE A WAITING PERIOD AS SHOWN ON THE CONFIRMATION PAGE. ] 
+              | In the event You require emergency service on a covered product that is essential to Your health and safety,
+              | repairs will commence within 24 hours after report of Your claim. If repairs cannot be completed within three (3) calendar days after the
+              | report of the claim, We will provide You and the Commissioner by electronic mail at pcinsinfo@doi.nv.gov with a status report regarding
+              | Your claim. This Service Contract may not be cancelled by Us before the expiration date of the agreed term if it has been in effect at
+              | least seventy (70) days except for the following reasons: Your failure to pay an amount when due; Your conviction for a crime which
+              | results in an increase in the service required under the Service Contract; or in presenting a claim for service there under; discovery of
+              | an act or omission by You, or a violation by You of any condition of the Service Contract which occurred after the Contract Start Date
+              | and which substantially and materially increases the service required under the Service Contract; or a material change in the nature or
+              | extent of the required service or repair which occurs after the Contract Start Date and which causes the required service or repair to be
+              | substantially and materially increased beyond that contemplated at the time that the Service Contract was issued or sold. This Contract
+              | will not cover any unauthorized or non-manufacturer-recommended modifications to the Covered Product, or any damages arising from
+              | such unauthorized or non-manufacturer-recommended modifications. However, if the Covered Product is modified or repaired in an
+              | unauthorized or nonmanufacturer-recommended manner, We will not automatically suspend all coverage. Rather, this Contract will
+              | continue to provide any applicable coverage that is not related to the unauthorized or nonmanufacturer-recommended modification or
+              | any damages arising therefrom, unless such coverage is otherwise excluded by the terms of this Contract. If You are not satisfied with
+              | the manner in which the provider is handling the claim on the contract, You may contact the Commissioner by use of the toll-free number
+              | of the Division, (888) 872-3234.
+
+            p.section__desc
+              | #[span.bold New Mexico -] This Service Contract may not be cancelled by Us before the expiration date of the agreed term if it has been in effect at
+              | least seventy (70) days except for the following reasons: Your failure to pay an amount when due; Your conviction for a crime which
+              | results in an increase in the service required under the Service Contract; or in presenting a claim for service there under; discovery of an
+              | act or omission by You, or a violation by You of any condition of the Service Contract which occurred after the Contract Start Date and
+              | which substantially and materially increases the service required under the Service Contract; or a material change in the nature or extent
+              | of the required service or repair which occurs after the Contract Start Date and which causes the required service or repair to be
+              | substantially and materially increased beyond that contemplated at the time that the Service Contract was issued or sold.
+
+            p.section__desc
+              | #[span.bold North Carolina -] The purchase of this Service Contract is not required in order to obtain financing for the product.
+            
+            p.section__desc
+              | #[span.bold Oklahoma -] Coverage afforded under this service contract is not guaranteed by the Oklahoma Insurance Guaranty Association. The
+              | obligations under this Service Contract are insured by a contractual liability insurance policy provided by Bankers Insurance Company,
+              | 11101 Roosevelt Blvd. N, St. Petersburg, FL 33716,1-800-627-0000. The Oklahoma license number for Bankers Warranty Group of
+              | #[span.bold Oklahoma, Inc. is 44199241. THIS SERVICE CONTRACT IS NOT ISSUED BY THE MANUFACTURER OR WHOLESALE COMPANY MARKETING THE PRODUCT COVERED BY THIS SERVICE CONTRACT. THIS SERVICE CONTRACT WILL NOT BE HONORED BY SUCH MANUFACTURER OR WHOLESALE COMPANY. This is not an insurance contract.] Coverage afforded under this service
+              | contract is not guaranteed by the Oklahoma Insurance Guaranty Association. Oklahoma Service Warranty Statutes do not apply to
+              | commercial use references in service warranty contracts.
+            
+            p.section__desc
+              | #[span.bold Oregon -] In the event You have an emergency situation and are unable to reach Us, you may proceed with repairs. We will reimburse
+              | You in accordance with the Service Contract provisions. The Binding Arbitration and Class Action Waiver clause is amended to add the
+              | following: #[span.underline.bold “Any award rendered in accordance with this Contract’s Arbitration Agreement shall be a nonbinding award against You, ]
+              | provided that you reject the arbitration decision in writing to Us within forty-five (45) days of the arbitrator’s award. Under no
+              | circumstances shall a legal proceeding be filed in a federal, state or local court until such time as both You and We obtain an arbitration
+              | award pursuant to this Arbitration Agreement. This Arbitration Agreement does not require You to waive Your right to a jury trial in any
+              | individual legal proceeding You may file. Any arbitration occurring under this Contract shall be administered in accordance with the
+              | Arbitration Rules unless any procedural requirement of the Arbitration Rules is inconsistent with the Oregon Uniform Arbitration Act in
+              | which case the Oregon Uniform Arbitration Act shall control as to such procedural requirement.”
+
+            p.section__desc
+              | #[span.bold South Carolina -] In the event of a dispute with the provider of this contract, you may contact the South Carolina Department of Insurance,
+              | Capitol Center, 1201 Main Street, Ste. 1000. Columbia, South Carolina 29201 or (800) 768-3467. This agreement is not an insurance
+              | contract.
+            
+            p.section__desc
+              | #[span.bold Tennessee -] The expiration date of the Service Contract will automatically be extended by the duration that the covered product is
+              | withheld from Your use while being repaired, plus two (2) days.
+            
+            p.section__desc
+              | #[span.bold Texas -] If You have a question or complaint, You may contact the Texas Department of Licensing and Regulations, P. O. Box 12157,
+              | Austin, TX 78711, (800) 803-9202 or (512) 463-6599.
+            
+            p.section__desc
+              | #[span.bold Utah -] Failure to give any notice or file any proof of loss required by the Service Contract within the time specified in the Service Contract
+              | does not invalidate a claim made by You, if You show that it was not reasonably possible to give the notice or file the proof of loss within
+              | the prescribed time and that notice was given or proof of loss filed as soon as reasonably possible. This Service Contract is subject to
+              | limited regulation by the Utah Insurance Department. To file a complaint, contact the Utah Insurance Department. Coverage afforded
+              | under this Service Contract is not guaranteed by the Property and Casualty Guaranty Association.
+            
+            p.section__desc
+              | #[span.bold Washington -] The Binding Arbitration and Class Action Waiver clause is amended to add the following: “(1) TO RESOLVE DISPUTES,
+              | YOU MAY CHOOSE EITHER BINDING ARBITRATION, PURSUANT TO THE ARBITRATION AGREEMENT PROVISION OF THIS
+              | CONTRACT, OR SMALL CLAIMS COURT. BY AGREEING TO THIS CONTRACT, YOU AND WE WAIVE THE RIGHT TO HAVE
+              | DISPUTES RESOLVED THROUGH COURTS OF GENERAL JURISDICTION, THE RIGHT TO TRIAL BY JURY, AND TO PARTICPATE
+              | IN CLASS ARBITRATIONS AND CLASS ACTIONS;” and the sentence “The enforcement and interpretation of this arbitration agreement
+              | is governed by the Federal Arbitration Act.” is deleted in its entirety
+            
+            p.section__desc
+              | #[span.bold Wisconsin - THIS SERVICE CONTRACT IS SUBJECT TO LIMITED REGULATION BY THE OFFICE OF THE COMMISSIONER OF INSURANCE.]
+              | Claims paid or the cost of repairs performed shall not be deducted from the amount to be refunded upon cancellation of
+              | the Service Contract. A claim may not be denied solely because the contract holder did not obtain preauthorization. Failure to give notice
+              | or proof within the time required by the Service Contract does not invalidate or reduce the claim unless We are prejudiced thereby and it
+              | was reasonably possible to meet the time limit. The #[span.bold BINDING ARBITRATION AND CLASS ACTION WAIVER] provision is deleted and
+              | replaced with: #[span.bold CLASS ACTION WAIVER ] – Any claim must be brought by You or Us in an individual capacity, and not as a class
+              | representative or class member in any class action litigation.
+
+            p.section__desc
+              | #[span.bold Wyoming -] The Binding Arbitration and Class Action Waiver is replaced with the following: “If there are disputes between You and Us
+              | that are not resolved by negotiations, You and We may in a separate written agreement voluntarily consent to arbitration. Any arbitration
+              | proceedings shall be conducted within the state of Wyoming.”

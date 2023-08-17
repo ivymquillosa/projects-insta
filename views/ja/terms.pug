@@ -1,0 +1,232 @@
+extends layoutterms
+
+block content
+    .section.section__documenthero
+      .section--wrapper
+        .bgimage.antimoderate.antimoderate-bg(data-hdsrc='/img/getstarted_bg.webp' alt='Instaprotek Background', data-antimoderate-scale='1', data-ldsrc='/img/getstarted_bg_alt.webp', classnames='bgimage')
+
+    .section__group.section__group--offset.bg--darkgray
+
+      section.section.section__documents
+        .section--wrapper
+          .row
+            .col.s12.m12
+              .step__doc.anim(data-anim='fadeInDown', data-delay='0s', data-duration='1s')
+                h1.step__doc__label #{data.lbl_terms_and_condition.ja}
+                .step__doc__content
+                  h3.main-title #{data.lbl_limited_product_guarantee.ja}
+                  p !{data.lbl_LIQUIPEL_PROTECTION_LLC.ja}
+
+                  //- 1. Program Overview.
+                  p !{data.lbl_program_overview_new.ja}
+                  p !{data.lbl_your_authentic.ja}
+                  p.padd-left !{data.lbl_eligibility.ja}
+                  p.padd-left !{data.lbl_registration_new.ja}
+                  p.padd-left !{data.lbl_how_to_file_a_claim.ja}
+
+                  //- 2. Device Protection Limited Guarantee.
+                  p !{data.lbl_device_protection_guarantee.ja}
+                  p !{data.lbl_whats_covered.ja}
+                  p !{data.lbl_whats_excluded.ja}
+                  p !{data.lbl_your_eligible_device.ja}
+
+                  //- 3. Eligibility Requirements.
+                  p !{data.lbl_eligibility_requirements_new.ja}
+                  p.padd-left !{data.lbl_program_eligibility_is_conditioned_new.ja}
+                  p.padd-left2 !{data.lbl_you_must_be_an_individual_consumer.ja}
+                  p.padd-left2 !{data.lbl_you_must_be_a_valid_resident.ja}
+                  p.padd-left2 !{data.lbl_you_must_have_purchased.ja}
+                  p.padd-left2 !{data.lbl_you_must_have_validly_registered.ja}
+                  p.padd-left2 !{data.lbl_you_must_submit_a_claim_new.ja}
+                  p.padd-left2 !{data.lbl_the_eligible_device.ja}
+
+                  //- 4 Registration Process.
+                  p !{data.lbl_registration_process_new.ja}
+                  p !{data.lbl_as_part_of_the_eligibility_requirements_new.ja}
+                  p.padd-left !{data.lbl_within_the_registration_period_new.ja}
+                  p.padd-left !{data.lbl_using_your_eligible_device.ja}
+                  p.padd-left2 !{data.lbl_your_original_dated_proof.ja}
+                  p.padd-left2 !{data.lbl_the_imei_number_for_the_eligible_device.ja}
+                  p.padd-left2 !{data.lbl_any_pertinent_personal_information_new.ja}
+                  p.padd-left2 !{data.lbl_for_a_complete_description_of_how.ja}
+
+                  p.padd-left !{data.lbl_you_must_successfully_pass.ja}
+                  p.padd-left !{data.lbl_after_successfully_completing.ja}
+                  p.padd-left !{data.lbl_once_you_are_registered_new.ja}
+
+                  //- 5 Claim Submissions.
+                  p !{data.lbl_claim_submissions.ja}
+                  p !{data.lbl_submit_a_Claim_as_follows.ja}
+                  p.padd-left !{data.lbl_initiate_a_claim_through.ja}
+                  p.padd-left !{data.lbl_your_claim_must_be_verified_new.ja}
+
+                  p.padd-left2 !{data.lbl_name_of_person_submitting_claim.ja}
+                  p.padd-left2 !{data.lbl_the_SIMPLE_product_was_registered.ja}
+                  p.padd-left2 !{data.lbl_all_required_information.ja}
+                  p.padd-left2 !{data.lbl_the_SIMPLE_product_is_authentic.ja}
+                  p.padd-left2 !{data.lbl_your_device_is_an_eligible_device.ja}
+
+                  p.padd-left !{data.lbl_you_will_be_required_to_submit.ja}
+                  p.padd-left !{data.lbl_if_your_claim_passes_the_verification_process_new.ja}
+                  p.padd-left !{data.lbl_you_will_have_thirty.ja}
+
+                  p.padd-left2 !{data.lbl_repair_provider_name.ja}
+                  p.padd-left2 !{data.lbl_repair_provider_phone_number.ja}
+                  p.padd-left2 !{data.lbl_make_model_of_device_repaired.ja}
+                  p.padd-left2 !{data.lbl_imei_SIMPLE.ja}
+                  p.padd-left2 !{data.lbl_type_of_repair_screen_SIMPLE.ja}
+                  p.padd-left2 !{data.lbl_total_cost_of_repair_SIMPLE.ja}
+                  p.padd-left2 !{data.lbl_date_of_repair_after_claim_filed_SIMPLE.ja}
+
+                  p.padd-left2 !{data.lbl_you_will_be_reimbursed.ja}
+                  p.padd-left !{data.lbl_once_the_Claim_has_been_completed.ja}
+
+                  //- 6 Additional Terms and Conditions.
+                  p !{data.lbl_additional_terms_and_conditions_new.ja}
+                  p.padd-left !{data.lbl_repairs_by_a_third_party_new.ja}
+                  p.padd-left !{data.lbl_program_modifications_new.ja}
+                  p.padd-left !{data.lbl_WARRANTY_DISCLAIMERS.ja}
+                  p.padd-left !{data.lbl_LIMITATION_OF_LIABILITY.ja}
+                  p.padd-left !{data.lbl_ARBITRATION.ja}
+                  p.padd-left !{data.lbl_savings_clause.ja}
+                  p.padd-left !{data.lbl_repairs.ja}
+                  
+                  //- otterbox 
+                  h3.title #{data.lbl_otterbox_protection_program.ja}
+                  h3(style='text-align: center;') #{data.lbl_eligible_device_mobile_phones.ja}
+                    br
+                    | #{data.lbl_product_tempered_glass.ja} 
+                  p !{data.lbl_program_eligibility.ja}
+                  p !{data.lbl_otter_products_llc.ja}
+
+                  p !{data.lbl_program_overview.ja}
+                  p !{data.lbl_if_you_purchase_an_otterBox_branded.ja}
+
+                  p !{data.lbl_device_protection_limited_guarantee.ja}
+                  p !{data.lbl_the_limited_guarantee_is_limited_eligible_device.ja}
+                  p #{data.lbl_the_limited_guarantee_does_not_cover_any_loss_or_theft.ja}
+
+                  p !{data.lbl_eligibility_requirements.ja}
+                  p !{data.lbl_program_eligibility_is_conditioned.ja}
+
+                  p.padd-left 
+                    | !{data.lbl_you_must_be_a_valid_resident_of_the_continental.ja}
+                  p.padd-left 
+                    | !{data.lbl_you_must_have_purchased_the_otterbox_product.ja}
+                  p.padd-left 
+                    | !{data.lbl_you_must_have_validly_registered_the_otterbox_product.ja}
+                  p.padd-left 
+                    | !{data.lbl_you_must_submit_a_claim.ja}
+                  p.padd-left 
+                    | !{data.lbl_the_eligible_device_must_be_activated_and_undamaged.ja}
+                  //- 5. registration process 
+                  p !{data.lbl_registration_process.ja}
+                  p #{data.lbl_as_part_of_the_eligibility_requirements.ja}
+                  p.padd-left
+                    | !{data.lbl_within_the_registration_period.ja}
+                  p.padd-left 
+                    | !{data.lbl_register_the_otterbox_product.ja}
+                  p.padd-left2 !{data.lbl_your_original_receipt_for_your_otter_box_product_purchase.ja}
+                  p.padd-left2 !{data.lbl_the_imei_number_for_the_eligible_device.ja}
+                  p.padd-left2 !{data.lbl_any_pertinent_personal_information.ja}
+                  p.padd-left2 !{data.lbl_for_a_complete_description_of_how_otterbox.ja}
+
+                  p.padd-left 
+                    | !{data.lbl_after_successfully_completing_each_of_the_registration.ja}
+                  p.padd-left 
+                    | !{data.lbl_once_you_are_registered.ja}
+                  //- 6. claim 
+                  p !{data.lbl_claim.ja}
+                  p !{data.lbl_you_are_responsible_to_use_the_otter_box_product_properly.ja}
+                  p.padd-left !{data.lbl_initiate_a_claim_through_the_registration_app.ja}
+                  p.padd-left !{data.lbl_your_claim_must_be_verified.ja}
+                  //- 6.2 a
+                  p.padd-left2 !{data.lbl_name_of_person_submitting_claim_matches.ja}
+                  p.padd-left2 !{data.lbl_the_otter_box_product_was_registered_within.ja}
+                  p.padd-left2 !{data.lbl_all_required_information_was_submitted.ja}
+                  p.padd-left2 !{data.lbl_the_otter_box_product_is_authentic.ja}
+                  p.padd-left2 !{data.lbl_the_date_on_the_image_of_the_about_page_during_the_registration_process.ja}  
+                  p.padd-left2 !{data.lbl_your_device_is_an_eligible_device_and_the_damage_to_your_eligible_device.ja}
+                  //- 6.3
+                  p.padd-left !{data.lbl_if_your_claim_passes_the_verification_process.ja}
+                  p.padd-left2 !{data.lbl_repair_store_name.ja}
+                  p.padd-left2 !{data.lbl_phone_number_of_repair_place.ja}
+                  p.padd-left2 !{data.lbl_make_model_of_device.ja}
+                  p.padd-left2 !{data.lbl_imei.ja}
+                  p.padd-left2 !{data.lbl_type_of_repair_screen.ja}
+                  p.padd-left2 !{data.lbl_total_cost_of_repair.ja}
+                  p.padd-left2 !{data.lbl_date_of_repair_after_claim_filed.ja}
+                  p.padd-left2 !{data.lbl_you_will_be_reimbursed_based_on_the_amount.ja}
+
+                  //- 6.4. claim 
+                  p.padd-left !{data.lbl_once_the_claim_has_been_completed.ja}
+                  //- 7
+                  p !{data.lbl_additional_terms_and_conditions.ja}
+                  p.padd-left !{data.lbl_repairs_by_a_third_party.ja}
+                  p.padd-left !{data.lbl_program_modifications.ja}
+                  p.padd-left !{data.lbl_warranty_disclaimers.ja}
+                  p.padd-left !{data.lbl_limitation_of_liability.ja}
+                  p.padd-left !{data.lbl_arbitration.ja}
+
+                  h3.title #{data.lbl_case_guarantee.ja}
+                  h3(style='text-align: center;') #{data.lbl_eligible_device_mobile.ja}
+                    br
+                    | #{data.lbl_product_protection_case.ja}
+                  p !{data.lbl_this_limited_device_protection_guarantees.ja}
+                  p !{data.lbl_register_your_device_protection_after.ja}
+                  p !{data.lbl_if_you_successfully_complete_all.ja}
+                  p !{data.lbl_device_protection_coverage.ja}
+                  p !{data.lbl_claim_process_you_are_responsible_to_ensure.ja}
+                  p !{data.lbl_if_you_do_so_and_accidental_physical.ja}
+                  p !{data.lbl_a_claim_can_be_denied_if_the_product_cannot_be_repaired_and_must_be_replaced.ja}
+
+
+                  h3.title #{data.lbl_CLG_camera_lens_guarantee.ja}
+                  h3(style='text-align: center;') #{data.lbl_CLG_eligible_device_mobile_phones.ja}
+                    br
+                    | #{data.lbl_CLG_product_tempered_glass_protection.ja}
+                  p !{data.lbl_CLG_this_limited_device_protection.ja}
+                  p !{data.lbl_CLG_register_your_device_protection_after.ja}
+                  p !{data.lbl_CLG_if_you_successfully_complete_all_of_the_registration_steps.ja}
+                  p !{data.lbl_CLG_camera_protection_coverage.ja}
+                  p !{data.lbl_CLG_claim_process.ja}
+                  p !{data.lbl_CLG_if_you_do_so_and_accidental_physical_damage.ja}
+                  p !{data.lbl_CLG_a_claim_can_be_denied.ja}
+                
+
+                  h3.title #{data.lbl_warranty_replacement.ja}
+                  h3(style='text-align: center;') #{data.lbl_eligible_device.ja}
+                    br
+                    | #{data.lbl_product_protection_case_accessories.ja}
+                  p !{data.lbl_the_coverage.ja}
+                  p !{data.lbl_one_year_limited_warranty.ja}
+                  p !{data.lbl_two_year_limited_warranty.ja}
+                  p !{data.lbl_register_your_product.ja}
+                  p !{data.lbl_claim_process_you_are.ja}
+                    li !{data.lbl_complete_the_warranty.ja}
+                    li !{data.lbl_allow_business.ja}
+                    li !{data.lbl_please_note_each_claim.ja}
+                    li !{data.lbl_the_product_being.ja}
+                    li !{data.lbl_replacement_product_is_for_personal_use.ja}
+
+                    //- p #{data.lbl_once_the_service_request_has_been_completed.ja}
+
+                  p
+                    |
+                    span.text--capitalized !{data.lbl_legal_rights_notice.ja}
+                    br
+                    | #{data.lbl_this_limited_device_protection_sets_out_the_full_extent_of_our_responsibilities.ja}
+                  p
+                    |
+                    span.text--capitalized !{data.lbl_please_note.ja}
+                    br
+                    | #{data.lbl_some_devices_may_not_be_qualified.ja}
+                    br
+                    | #{data.lbl_our_service_center_shall_have_no_responsibility.ja}
+                  p
+                    |
+                    span.text--capitalized #{data.lbl_instaprotek_reserve_the_right_to_modify_the_processes.ja}
+
+              .step__footer
+                a.backtop.btn-floating.btn-large.waves-effect.waves-light.red(href='#backtotop')
+                  i.material-icons keyboard_arrow_up

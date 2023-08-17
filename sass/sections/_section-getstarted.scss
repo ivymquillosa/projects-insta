@@ -1,0 +1,38 @@
+.section__getstarted {
+	// background-color: $color-secondary;
+	// background-image: url('/imgs/getstarted_bg.png');
+	// background-position: center center;
+	// background-repeat: no-repeat;
+	// background-size: cover;
+
+	min-height: 80vh;
+
+	@include flex(center, center, !important);
+
+	color: $color-white;
+
+	text-align: center;
+
+	position: relative;
+
+	.section__title {
+		text-align: center;
+		@include flex(center, center, !important);
+	}
+	
+	.section__subtitle {
+		text-align: center;
+		margin-bottom: 4rem;
+		@include flex(center, center, !important);
+	}
+
+	.calltoaction {
+		background-color: $color-green;
+		text-transform: capitalize;
+	}
+
+	.section--wrapper {
+		position: relative;
+		z-index: 10;
+	}
+}

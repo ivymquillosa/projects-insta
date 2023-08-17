@@ -1,0 +1,205 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+
+  &.sticky--header {
+    .main__header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 1000;
+      background-color: transparent;
+    }
+  }
+}
+
+.page--wrapper {
+  padding: 0rem;
+}
+
+.text--bold {
+  font-weight: bold;
+}
+
+.text--italic {
+  font-style: italic;
+}
+
+.text--outlined {
+  text-decoration: underline;
+  text-decoration-style: wavy;
+  text-decoration-color: #c9c9c9;
+}
+
+.text--small {
+  font-size: 0.8rem;
+  line-height: 1.1;
+}
+
+.breakline {
+  display: block;
+}
+
+.bg--gray {
+  background-color: $color-light;
+}
+.bg--darkgray {
+  background-color: $color-gray;
+}
+
+.calltoaction {
+  border-radius: 0.4rem;
+}
+
+.anim {
+  opacity: 0;
+  visibility: hidden;
+  transform: none;
+  &.animated {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+.show-mobile {
+  display: none !important;
+  @media only screen and #{$responsive-phone} {
+    display: block !important;
+  }
+  @media only screen and #{$responsive-tablet} {
+    display: block !important;
+  }
+}
+.hide-mobile {
+  @media only screen and #{$responsive-phone} {
+    display: none !important;
+  }
+  @media only screen and #{$responsive-tablet} {
+    display: none !important;
+  }
+}
+
+.row.nomargin {
+  margin: 0;
+}
+
+.row {
+  .col {
+    &.m1,
+    &.m2,
+    &.m3,
+    &.m4,
+    &.m5,
+    &.m6,
+    &.m7,
+    &.m8,
+    &.m9,
+    &.m10,
+    &.m11 {
+      @media only screen and #{$responsive-tablet--portrait} {
+        width: 100%;
+      }
+      @media only screen and #{$responsive-phone--portrait} {
+        width: 100%;
+      }
+      @media only screen and #{$responsive-phone--landscape} {
+        width: 100%;
+      }
+    }
+
+    &.m1 {
+      @media only screen and #{$responsive-laptop} {
+        width: 10%;
+      }
+    }
+    &.m2 {
+      @media only screen and #{$responsive-laptop} {
+        width: 16.666666667%;
+      }
+    }
+    &.m3 {
+      @media only screen and #{$responsive-laptop} {
+        width: 25%;
+      }
+    }
+    &.m4 {
+      @media only screen and #{$responsive-laptop} {
+        width: 33.333333333%;
+      }
+    }
+    &.m5 {
+      @media only screen and #{$responsive-laptop} {
+        width: 41.666666667%;
+      }
+    }
+    &.m6 {
+      @media only screen and #{$responsive-laptop} {
+        width: 50%;
+      }
+    }
+    &.m7 {
+      @media only screen and #{$responsive-laptop} {
+        width: 58.333333333%;
+      }
+    }
+    &.m8 {
+      @media only screen and #{$responsive-laptop} {
+        width: 66.666666667%;
+      }
+    }
+    &.m9 {
+      @media only screen and #{$responsive-laptop} {
+        width: 75%;
+      }
+    }
+    &.m10 {
+      @media only screen and #{$responsive-laptop} {
+        width: 83.333333333%;
+      }
+    }
+    &.m10 {
+      @media only screen and #{$responsive-laptop} {
+        width: 91.666666667%;
+      }
+    }
+    &.m12 {
+      @media only screen and #{$responsive-laptop} {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.icontext {
+  @include flex(flex-start, flex-start);
+  &-icon {
+    margin-right: 10px;
+  }
+}
+
+.border-right {
+  background-color: #f6f3f1;
+  padding: 1px 30px !important;
+}
+
+.icontext-label-otterbox {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+
+.padd-left {
+  padding-left: 1rem;
+}
+
+.padd-left2 {
+  padding-left: 2rem;
+}
+
+.padd-left3 {
+  padding-left: 3rem;
+}
+
+html {
+  scroll-behavior: smooth;
+}

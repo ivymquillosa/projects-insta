@@ -1,0 +1,76 @@
+$color-accent: #01a8df;
+$color-primary: #2896eb;
+$color-secondary: #2e917c;
+$color-warning: #f17f42;
+$color-danger: #e53a40;
+$color-info: #30a9de;
+$color-success: #8cd790;
+$color-default: #9c9c9c;
+$color-title: #263238;
+$color-text: #9c9c9c;
+
+
+$color-red: #e53a40;
+$color-green: #41b618;
+$color-blue: #2896eb;
+
+$color-white: #ffffff;
+$color-black: #1e1e1e;
+$color-light: #ececec;
+$color-gray: #ccc;
+$color-dark: #333;
+$color-darkblue:#13283D;
+
+$theme-sidebar: #fff;
+$theme-header: #273135;
+$theme-body: #ececec;
+$theme-footer: #596367;
+$theme-border: #cecece;
+$theme-divider: #ececec;
+$theme-link: #2b90d9;
+
+$header-height: 4rem;
+
+$font-family: "Montserrat", "Open Sans", sans-serif;
+
+$box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.02), 0 1px 5px 0 rgba(0, 0, 0, 0.02), 0 3px 1px -2px rgba(0, 0, 0, 0.09);
+
+$responsive-orientation--landscape: (
+  orientation: landscape
+);
+$responsive-orientation--portrait: (
+  orientation: portrait
+);
+
+$responsive-laptop: (
+  min-device-width: 950px
+);
+$responsive-laptop-size: 950px;
+
+$responsive-tablet: (
+  max-device-width: 1366px
+);
+$responsive-tablet-size: 1260px;
+
+$responsive-tablet--portrait: $responsive-tablet and $responsive-orientation--portrait;
+$responsive-tablet--landscape: $responsive-tablet and $responsive-orientation--landscape;
+
+$responsive-tablet--mini: (
+  max-device-width: 1024px
+);
+$responsive-tablet-size: 960px;
+
+$responsive-tablet--mini--portrait: $responsive-tablet--mini and $responsive-orientation--portrait;
+$responsive-tablet--mini--landscape: $responsive-tablet--mini and $responsive-orientation--landscape;
+
+$responsive-phone: (
+    max-device-width: 812px
+  )
+  and
+  (
+    max-width: 812px
+  );
+$responsive-phone-size: 650px;
+$responsive-phone--portrait: $responsive-phone and $responsive-orientation--portrait;
+$responsive-phone--landscape: $responsive-phone and $responsive-orientation--landscape;
+$responsive-screen--size: 1200px;

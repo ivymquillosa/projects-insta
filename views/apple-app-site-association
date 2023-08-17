@@ -1,0 +1,15 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appID": "2BADYYK3A9.com.instaprotek.app",
+        "paths": ["*"]
+      },
+      {
+        "appID": "CXUD7FAPBU.com.instaProtek.GearProtek",
+        "paths": ["*"]
+      }
+    ]
+  }
+}

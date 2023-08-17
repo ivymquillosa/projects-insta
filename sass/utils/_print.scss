@@ -1,0 +1,52 @@
+@media print {
+	body {
+		-webkit-print-color-adjust: exact;
+		-moz-print-color-adjust: exact;
+		-ms-print-color-adjust: exact;
+		print-color-adjust: exact;
+		
+		font-size: 10pt;
+		margin: 50mm;
+	}
+	header {
+		background-color: $color-gray;
+		padding: 10px;
+		.md-inline-block {
+			display: none;
+		}
+		.md-title {
+			color: $color-white;
+			margin: 0;
+			font-size: 1em;
+			line-height: 1em;
+			height: auto;
+		}
+	}
+	.md-paper {
+		border: none;
+		border-bottom: 1px solid $color-gray;
+		box-shadow: none;
+		
+		section {
+			h3 {
+				font-size: 1em;
+			}
+		}
+	}
+	
+	.md-floating-label--icon-offset {
+		left: 40px;
+		font-size: 10px;
+		-webkit-transform: translate3d(-36px, -10px, 0);
+		transform: translate3d(-36px, -10px, 0);
+		color: #a8a8a8;
+	}
+	
+	.md-text-field-container {
+		width: 100%;
+		display: block;
+		float: none;
+		clear: both;
+		margin-bottom: 10px;
+	}
+}

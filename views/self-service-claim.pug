@@ -1,0 +1,66 @@
+doctype html
+html(lang='en' class=htmlClass)
+	head
+		meta(charset='utf-8')
+		meta(http-equiv='X-UA-Compatible' content='IE=Edge,chrome=1')
+		meta(name='viewport' content='width=device-width, minimum-scale=1.0, maximum-scale=5.0')
+		title #{data.title.en}
+		meta(name='application-name' content=data.lbl_instaprotek.en)
+		meta(name='author' content='{dna:micro}')
+		meta(name='description' content=data.meta_description.en)
+		meta(name='keywords' content=data.meta_keywords.en)
+		meta(name='robots' content=data.meta_robots.en)
+		meta(property='og:type' content=data.lbl_instaprotek.en)
+		meta(property='og:url' content='https://www.instaprotek.com')
+		meta(property='og:title' content=data.lbl_instaprotek.en)
+		meta(property='og:image' content='https://acdn.dnamicro.net/instaprotek/instaprotek_logo.png' alt='Instaprotek logo')
+		meta(property='og:description' content=data.meta_description.en)
+		meta(property='og:site_name' content=data.lbl_instaprotek.en)
+		meta(property='og:locale' content='en_US')
+		link(rel='apple-touch-icon' sizes='57x57' href='/imgs/favicon/apple-icon-57x57.png')
+		link(rel='apple-touch-icon' sizes='60x60' href='/imgs/favicon/apple-icon-60x60.png')
+		link(rel='apple-touch-icon' sizes='72x72' href='/imgs/favicon/apple-icon-72x72.png')
+		link(rel='apple-touch-icon' sizes='76x76' href='/imgs/favicon/apple-icon-76x76.png')
+		link(rel='apple-touch-icon' sizes='114x114' href='/imgs/favicon/apple-icon-114x114.png')
+		link(rel='apple-touch-icon' sizes='120x120' href='/imgs/favicon/apple-icon-120x120.png')
+		link(rel='apple-touch-icon' sizes='144x144' href='/imgs/favicon/apple-icon-144x144.png')
+		link(rel='apple-touch-icon' sizes='152x152' href='/imgs/favicon/apple-icon-152x152.png')
+		link(rel='apple-touch-icon' sizes='180x180' href='/imgs/favicon/apple-icon-180x180.png')
+		link(rel='icon' type='image/png' sizes='192x192' href='/imgs/favicon/android-icon-192x192.png')
+		link(rel='icon' type='image/png' sizes='32x32' href='/imgs/favicon/favicon-32x32.png')
+		link(rel='icon' type='image/png' sizes='96x96' href='/imgs/favicon/favicon-96x96.png')
+		link(rel='icon' type='image/png' sizes='16x16' href='/imgs/favicon/favicon-16x16.png')
+		link(rel='manifest' href='/manifest.json')
+		meta(name='msapplication-TileColor' content='#2896EB')
+		meta(name='msapplication-TileImage' content='/imgs/favicon/ms-icon-144x144.png')
+		meta(name='theme-color' content='#2896EB')
+		link(rel='stylesheet' href='css/preloader.css')
+		link(rel='stylesheet' href='js/video-js-7.5.4/video-js.min.css')
+		script(type="text/javascript").
+			var userAgent = window.navigator.userAgent
+			var isIos =/iPhone|iPad|iPod/i.test(userAgent)
+			var isAndoid = /Android/i.test(userAgent)
+			var isMobile = isIos || isAndoid
+			var isGearProtek = window.location.search.toLowerCase().includes('gearprotek')
+			if (!isMobile) {
+				document.location = isGearProtek
+					? "https://gearprotek.com/"
+					: "https://instaprotek.com/a4/app"
+			} else {
+				var now = new Date().valueOf()
+				setTimeout(function() {
+					if (new Date().valueOf() - now > 100) return
+					if (isIos) {
+						document.location = isGearProtek
+							? "https://apps.apple.com/us/app/gearprotek/id1499412334"
+							: "https://apps.apple.com/us/app/instaprotek/id1456989327"
+					} else if (isAndoid) {
+						document.location = isGearProtek
+							? "https://play.google.com/store/apps/details?id=com.gearprotek.app&hl=en_US"
+							: "https://play.google.com/store/apps/details?id=com.instaprotek.app&hl=en"
+					}
+				}, 25)
+				document.location = isGearProtek
+					? "gearprotek://self-service-claim" + window.location.search
+					: "instaprotek://self-service-claim" + window.location.search
+			}

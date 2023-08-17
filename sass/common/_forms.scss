@@ -1,0 +1,156 @@
+.form {
+	// @include flex(flex-start, flex-start);
+	// flex-wrap: nowrap;
+
+	.form__container {
+
+		overflow: hidden;
+		width: 100%;
+		height: 100%;
+		max-height: 1200px;
+
+		transition: 0.5s ease-in-out, max-height 0s linear;
+
+		position: relative;
+		top: 0;
+		left: 0;
+
+		&--start { // .form__container--start
+
+		}
+		&--done { // .form__container--done
+			// width: 0;
+			max-height: 0;
+			transform: translateX(200%);
+
+			h2, h3 {
+				margin: 0;
+				padding: 0;
+			}
+
+			h2 {
+				font-size: 1.4rem;
+				line-height: 1.4;
+				font-size: 700;
+				margin-bottom: 1rem;
+			}
+
+			h3 {
+				font-size: 1rem;
+				line-height: 1.4;
+				font-size: 400;
+			}
+		}
+	}
+
+	&.done {
+		.form__container--start {
+			// width: 0;
+			max-height: 0;
+			transform: translateX(-200%);
+		}
+		.form__container--done {
+			// width: 100%;
+			max-height: 1200px;
+			transform: translateX(0%);
+		}
+	}
+
+	&.process {
+		.form__process {
+			display: flex;
+		}
+	}
+}
+
+
+.form__process {
+	position: absolute;
+	z-index: 1000;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba($color-white, 0.7);
+
+	@include flex(center, center);
+	display: none;
+
+	.spinner__wrapper {
+		@include flex(center, center);
+		flex-direction: column;
+		flex-wrap: nowrap;
+	}
+
+	.spinner {
+		border-left: 5px solid $color-primary;
+		border-right: 5px solid $color-primary;
+		border-bottom: 5px solid $color-primary;
+		border-top: 5px solid rgba($color-primary, 0);
+		border-radius: 50%;
+		width: 2rem;
+		height: 2rem;
+
+		animation: animate_form_spinner 1s linear infinite;
+	}
+
+	.spinner__text {
+		font-size: 1rem;
+		font-weight: 700;
+	}
+}
+
+@keyframes animate_form_spinner {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+
+.form__message {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-color: $color-light;
+	color: $color-dark;
+	padding: 1rem;
+	z-index: 500;
+	@include flex(center, center);
+	text-align: center;
+	box-shadow: 0 10px 10px 0px rgba($color-black, 0.4);
+}
+
+.form__footer, .modal-footer {
+	.btn {
+		&:not(:last-child) {
+			margin-right: 0.5rem;
+		}
+
+		&.form-reset, &.form-cancel {
+			text-transform: none !important
+		}
+
+		&.form-submit {
+			text-transform: uppercase !important;
+		}
+	}
+}
+
+.form__footer {
+	border-top: 1px solid $theme-border;
+	background-color: rgba($color-gray, 0.1);
+	padding: 1rem !important;
+	margin: 0 !important;
+	@include flex(space-between, center);
+
+	&--left {
+		text-align: left;
+	}
+	&--right {
+		text-align: right;
+	}
+}

@@ -1,0 +1,11 @@
+{
+	"gzip": true,
+	"listen_port": "4300",
+	"sendgrid_api_key": "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",
+	"API": "https://instaprotek-api.dnaqa.net",
+	"API_OTTERBOX": "https://otterbox-api.dnaqa.net",
+	"API_USERNAME": "instaprotek",
+	"API_PASSWORD": "F0nch3rt0",
+	"UPLOAD_API": "https://instaprotek-upload.dnaqa.net",
+	"UPLOAD_API_OTTERBOX": "https://otterbox-upload.dnaqa.net"
+}

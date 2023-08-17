@@ -1,0 +1,153 @@
+.download_content-wrapper {
+	padding: 1rem;
+    width: 100%;
+    height: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+}
+
+.download_background {
+	position: absolute;
+	background: linear-gradient(45deg, rgba(0, 0, 0, .9), rgba(37,145,143,0.9));
+	// background: linear-gradient(45deg, rgba(37,145,143,0.85), rgba(70, 152, 122, 0.95));
+	width: 100%;
+	height: 100%;
+	top: 0;
+}
+
+.download_container {	
+	display: flex;
+	flex-grow: 1;
+	flex-direction: row;
+	width: 100%;
+	margin: 5rem 0;
+	// padding-top: 5rem;
+	// margin-bottom: 5rem;
+
+	.content_direction {
+		display: flex;
+	    flex-direction: column;
+	    max-width: 60%;
+	    margin: auto 0;
+	    padding-right: 10%;
+	    .download_app {
+	    	display: inline-block;
+	    	margin-bottom: -1.5rem;
+			.download_icon {
+				width: 80px;
+				height: 80px;
+				margin: 1rem;
+				margin-bottom: 0;
+				border-radius: 20px; 
+			}
+			.download_logo {
+				display: block;
+				width: 180px;
+				height: auto;
+				filter: brightness(100);
+			}
+		}
+		
+		.download_txt {
+			color: #fff;
+			margin: 1rem;
+			width: 100%;
+
+			.download_desc {
+				line-height: 1.4;
+				font-size: 1.5rem;
+				font-weight: 200;
+			}
+		}
+
+		.download_links {
+			display: flex;
+			flex-direction: row;
+			// justify-content: space-between;
+			.download_store_link {
+				img {
+					width: 250px;
+				}
+			}
+		}
+	}
+
+	.content_appimage {
+		text-align: center;
+		max-width: 40%;
+		margin: auto;
+		.app_image {
+			img {
+				height: 500px;
+				width: auto;
+			}
+		}
+	}
+
+	@media (max-width: 1024px)  {
+		.content_appimage {
+			display: none;
+		}
+		.content_direction {
+			max-width: 100%;
+
+			.download_app, .download_txt, .download_links {
+				margin: auto;
+			}
+			.download_app .download_logo{
+				display: none;
+			}
+			.download_txt {
+				text-align: center;
+			}
+		}
+	}
+
+	@media only screen and #{$responsive-tablet--portrait} {
+		margin-top: 5rem;
+		.content_direction {
+			padding: 0;
+		}
+	}
+
+	@media only screen and #{$responsive-phone} {
+		.download_links {
+			display: block !important;
+			.download_store_link {
+				display: block;
+				margin: auto;
+			}
+		}
+	}
+}
+
+.download_footer {
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+
+		
+	@media only screen and #{$responsive-phone} {
+		position: unset;
+	}
+}
+
+.endwave {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 80vh;
+}
+
+.bgimage_lightenimage {
+	background: url("/imgs/warranty/Hero2.jpg");
+	background-size: cover;
+	position: absolute;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	// filter: brightness(0.5);
+}

@@ -1,0 +1,12 @@
+.error404 {
+	.step__doc__content {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+
+		h3, p {
+			margin: 0 0 1em 0;
+		}
+	}
+}

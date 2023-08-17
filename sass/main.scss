@@ -1,0 +1,86 @@
+/*
+Theme: UIUX Boilerplate SASS
+Author: Carlo Abella
+Instagram: @carloabella
+Twitter: @carloabella
+Facebook: fb.com/carlo.abella
+URL: http://www.dnamicro.com
+Copyright 2015-2019 DNA Micro Software Solutions - All Rights Reserved
+*/
+
+:root {
+  font-size: 14px;
+}
+
+//  VENDORS
+//================================
+@import "vendors/animate.min.scss";
+@import "vendors/materialize.scss";
+
+$primary-color: color("materialize-red", "lighten-2") !default;
+$primary-color-light: false !default;
+$primary-color-dark: false !default;
+@if not $primary-color-light {
+  $primary-color-light: lighten($primary-color, 15%);
+}
+@if not $primary-color-dark {
+  $primary-color-dark: darken($primary-color, 15%);
+}
+$secondary-color: color("teal", "lighten-1") !default;
+$success-color: color("green", "base") !default;
+$error-color: color("red", "base") !default;
+
+$link-color: color("light-blue", "darken-1") !default;
+
+//  ASSETS
+//================================
+@import "fonts";
+
+// TEMPLATE SETUP
+// ================================
+@import "variables";
+@import "mixin";
+@import "icons";
+@import "base";
+
+// TEMPLATE COMMONS
+// ================================
+@import "common/header";
+@import "common/footer";
+@import "common/branding";
+@import "common/input";
+@import "common/forms";
+@import "common/images";
+
+// TEMPLATE COMPONENTS
+// ================================
+// Preloaders
+// @import "components/preloaders/preloaders.scss";
+// Lists
+@import "components/lists/lists";
+// Lists
+@import "components/charts/charts";
+// Modals
+@import "components/modals/modals";
+// Sliders
+@import "components/sliders/sliders";
+
+// SECTIONS
+// ================================
+@import "sections/sections";
+
+// CUSTOM PAGES
+// ================================
+@import "pages/404";
+@import "pages/cterms";
+@import "pages/faq";
+@import "pages/downloadapp";
+
+// MEDIA / PRINT / MISC
+// ================================
+@import "utils/overrides";
+@import "utils/cross-browser";
+@import "utils/print";
+@import "utils/fullscreenview";
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;700;800&display=swap');

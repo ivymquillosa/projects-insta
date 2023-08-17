@@ -1,0 +1,99 @@
+{
+	"company": {
+		"instaprotek": {
+			"id": "instaprotek",
+			"uselogo": true,
+			"label": "<img class='image--small' src='/imgs/instaprotek_logo.png' />",
+			"bgcolor": "#46B60C",
+			"textcolor": "#FFFFFF"
+		},
+
+		"bestbuy": {
+			"id": "bestbuy",
+			"uselogo": false,
+			"label": "Best Buy",
+			"bgcolor": "#CCCCCC",
+			"textcolor": "#FFFFFF"
+		},
+
+		"squaretrade": {
+			"id": "squaretrade",
+			"uselogo": false,
+			"label": "Squaretrade",
+			"bgcolor": "#CCCCCC",
+			"textcolor": "#FFFFFF"
+		},
+
+		"verizon": {
+			"id": "verizon",
+			"uselogo": false,
+			"label": "Verizon",
+			"bgcolor": "#CCCCCC",
+			"textcolor": "#FFFFFF"
+		}
+	},
+
+	"devices": {
+		"device-phone": {
+			"id": "device-phone",
+			"title": "iPhone X 64GB ($999.99)",
+			"subtitle": {
+				"en": "2-year warranty with accidental damage",
+				"ja": "事故による破損も2年保証"
+			},
+			"file": "/img/devices/device_phone.webp",
+			"label": "Smartphone",
+			"index": 3,
+			"default": true,
+			"prices": {
+				"instaprotek": {
+					"id": "instaprotek",
+					"symbol": "$",
+					"price": 120.99,
+					"deductible": "$75 Deductible",
+					"label": {
+						"en": "Deductible",
+						"ja": "節約可能"
+					},
+					"index": 0
+				},
+
+				"bestbuy": {
+					"id": "bestbuy",
+					"symbol": "$",
+					"price": 369.99,
+					"deductible": "$129 Deductible",
+					"label": {
+						"en": "Deductible",
+						"ja": "節約可能"
+					},
+					"index": 1
+				},
+
+				"squaretrade": {
+					"id": "squaretrade",
+					"symbol": "$",
+					"price": 325.99,
+					"deductible": "$199 Deductible",
+					"label": {
+						"en": "Deductible",
+						"ja": "節約可能"
+					},
+					"index": 2
+				},
+
+				"verizon": {
+					"id": "verizon",
+					"symbol": "$",
+					"price": 424.99,
+					"deductible": "$199 Deductible",
+					"label": {
+						"en": "Deductible",
+						"ja": "節約可能"
+					},
+					"index": 3
+				}
+			}
+		}
+	}
+}

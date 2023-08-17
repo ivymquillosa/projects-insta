@@ -1,0 +1,26 @@
+.list {
+	@include flex(flex-start, flex-start);
+	flex-direction: column;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+
+	li, &__item {
+		@include flex(flex-start, flex-start);
+		padding: 1rem;
+		margin: 0;
+		list-style: none;
+		width: 100%;
+
+		// .wider{
+		// 	width: 8rem;
+		// }
+	}
+
+	&.list--horizontal {
+		flex-direction: row;
+	}
+}
+.lang_responsive{
+	margin-left: -2.5rem;
+}

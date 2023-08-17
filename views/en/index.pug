@@ -1,0 +1,117 @@
+extends layout
+
+block content
+    section.section.section__hero
+      .section--wrapper
+        .slider
+          .slide-item
+            .slide-captions2
+              .slide-context
+                h1.section__title.hide-mobile
+                  span.anim(data-anim='fadeInUp', data-delay='.5s', data-duration='0.6s') #{data.lbl_set_your_product_apart_using_an_itelligent_product.en}
+                  br
+                  span.anim(data-anim='fadeInUp', data-delay='.6s', data-duration='0.6s').instant  INSTANT
+                  //- span.anim.reanim(data-anim='fadeInUp', data-delay='1.3s', data-duration='1s') bbbb
+                  //- span.anim.reanim(data-anim='fadeInUp', data-delay='1.6s', data-duration='1s') abbbbaa
+                
+                p.section__subtitle.anim.hide-mobile(data-anim='fadeInUp', data-delay='.7s', data-duration='0.6s')
+                  span.instaprotek Instaprotek's
+                  span #{data.lbl_a_low_cost_and_easy_to_use_prodiuct_guarantee.en}
+
+                .show-mobile.anim(data-anim='fadeInUp', data-delay='0s', data-duration='0.6s')
+                  p.section__title 
+                    | #{data.lbl_set_your_product_apart_using_an_itelligent_product.en}
+                    br
+                    span.instant  INSTANT
+                    
+                  p.section__subtitle.transformY-46px#hero__section__subtitle
+                    span Instaprotek's
+                    | #{data.lbl_a_low_cost_and_easy_to_use_prodiuct_guarantee.en}
+
+                .hero__buttons.transformY-46px
+                  button.waves-effect.waves-light.btn.calltoaction.calltoaction--primary.anim.modal-trigger(data-target='modalGetStarted', data-anim='fadeInDown', data-delay='.8s', data-duration='0.6s', href='#getstartednow')
+                    span.btn__text #{data.btn_get_started_now.en}
+
+            .bgimage.tint2.antimoderate.antimoderate-bg(data-hdsrc='/img/bg-update.webp' alt='Instaprotek hero lady holding her phone', data-antimoderate-scale='1', data-ldsrc='/img/bg-update.webp', classnames='bgimage tint2 overlay-hero')
+    
+	
+    div.hero__footer
+      div.hero__footer_container
+        div.hero__footer_text
+          a(href='#intelligent_analytics').after Intelligent Analytics  
+        div.hero__footer_text
+          a(href='#automated_product_reviews').after Automated Product Reviews  
+        div.hero__footer_text
+          a(href='#product_warranty') Product Guarantee/Warranty Management 
+
+    section.section.section__one#intelligent_analytics
+      div.section__one_container
+        div.section__one_container-content.anim(data-anim='fadeInLeft', data-delay='0s', data-duration='1s')
+          h3 Intelligent Analytics 
+          p Connects you with your customers for actionable insights that lead into better product offerings. Instantly turn siloed data into a customized dashboard showcasing, customer behavior, segmentation, and feedback.
+        div.section__one_container-content.flex-order-1.anim(data-anim='fadeInRight', data-delay='0s', data-duration='1s')
+          img(src="img/section2-new-image.webp", alt="")
+
+    section.section.section__two.section--withbg#automated_product_reviews
+      div.section__two_container
+        div.section__two_container-content.no-content
+        div.section__two_container-content.anim(data-anim='fadeInDown', data-delay='0s', data-duration='1s')
+          div.section__two_text_container
+            h3 AI Driven
+            h3.line-height-1 Product Reviews
+            
+          p AI driven, automated and <span style="font-weight:700">REAL-TIME</span>; our review generation process leads to the highest 5-star review conversion in the industry and the Fastest and Easiest review process for your customers.
+      .bgimage.antimoderate.antimoderate-bg(data-hdsrc='/img/section-2-bg.webp', data-antimoderate-scale='1', data-ldsrc='/img/section-2-bg.webp', classnames='bgimage bgimagepostition')
+
+    section.section.section__three
+      div.section__three_container
+        div.section__three_container-content.anim(data-anim='fadeInLeft', data-delay='0s', data-duration='1s')
+          h3 93% of shoppers say reviews impact their purchasing decisions
+        div.section__three_container-content.anim(data-anim='fadeInRight', data-delay='0s', data-duration='1s')
+          img(src="img/section-3-img.webp", alt="")
+    
+    section.section.section__four#product_warranty
+      div.section__four_container
+        div.section__four_container-content.anim(data-anim='fadeInLeft', data-delay='0s', data-duration='1s')
+          img(src="img/section-4-img.webp", alt="")
+        div.section__four_container-content.pl-5.anim(data-anim='fadeInRight', data-delay='0s', data-duration='1s')
+          h3 Product Guarantee/
+          h3 Warranty Management
+          p Product Guarantee/Warranty Management make it easy to incentivize platform adoption <span style="font-weight:700">AND</span> add value to all of your products.
+        
+    section.section.section__five
+      div.section__five_container
+        div.section__five_head
+          h3.anim(data-anim='fadeInDown', data-delay='.5s', data-duration='.5s') Review Conversion Rate Comparison 
+          p.anim(data-anim='fadeInDown', data-delay='.5s', data-duration='.5s') 60% success rate, based on customers who register
+        div.section__five_content_container
+          div.anim(data-anim='fadeInLeft', data-delay='.5s', data-duration='1s')(style="text-align:center;")
+            img(src="img/section-5-img-1.webp", alt="").img1
+            h4.section__five_content_title Everyone else
+            p.section__five_content_parag <span style="font-weight:700;">5-10%</span> of sales result in reviews*
+          div.ty-25.anim(data-anim='fadeInRight', data-delay='.5s', data-duration='1s')(style="text-align:center;")
+            img(src="img/section-5-img-2.webp", alt="").img2
+            img.logoastext(src="/img/logo_full_dark.webp", alt="")
+            p.section__five_content_parag2 <span style="font-weight:700;">60%</span> of instaProtek users leave reviews**
+        div.section__five_info
+          span *Source: 
+            a(href="https://websitebuilder.org/blog/online-review-statistics/" target="_blank") https://websitebuilder.org/blog/online-review-statistics/
+          span **Based from 30% registration rate 
+    div.section__six 
+      div.section__six_container
+        div.logo
+          img.brand(src="/img/walmart.png", alt="" loading="lazy")
+        div.logo 
+          img.brand(src="/img/bestbuy.png", alt="" loading="lazy")
+        div.logo
+          img.brand(src="/img/riteaid.png", alt="" loading="lazy")
+        div.logo
+          img.brand(src="/img/target.png", alt="" loading="lazy")
+        div.logo 
+          img.brand(src="/img/verizon.png", alt="" loading="lazy")
+        div.logo
+          img.brand(src="/img/t-mobile.png", alt="" loading="lazy")
+        div.logo(style="width:150px; height:100px") 
+          img.brand(src="/img/atnt.png", alt="" loading="lazy")
+        //- img#mobile(src="/img/section-6-mobile.png", alt="")
+      

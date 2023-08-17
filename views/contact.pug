@@ -1,0 +1,99 @@
+extends layoutdoc
+
+block content
+    .section.section__documenthero
+      .section--wrapper
+        .bgimage.antimoderate.antimoderate-bg(data-hdsrc='/imgs/getstarted_bg.png' alt='Instaprotek Background', data-antimoderate-scale='1', data-ldsrc='/imgs/getstarted_bg_alt.png', classnames='bgimage')
+
+    .section__group.section__group--offset.bg--darkgray
+
+      section.section.section__documents
+        .section--wrapper
+          .row
+            .col.s12.m12
+              .step__doc.anim(data-anim='fadeInDown', data-delay='0s', data-duration='1s')
+                h1.step__doc__label #{title}
+                .step__doc__form
+
+                  form.form__getstarted.form.formjs
+                    input(type='hidden', id='form_targetname', value='InstaProtek Support')
+                    input(type='hidden', id='form_targetemail', value='support@instaprotek.com')
+                    input(type='hidden', id='form_emailtitle', value='InstaProtek Contact')
+                    .form__process
+                      .spinner__wrapper
+                        span.spinner
+                        span.spinner__text Processing...
+                    .form__container.form__container--start
+                      .row
+                        .col.s4.border-right
+                          p.icontext
+                            span.icontext-icon
+                              i.material-icons.prefix local_phone
+                            span.icontext-label (888) 908-2078 
+                          p.icontext
+                            span.icontext-icon
+                              i.material-icons.prefix store
+                            span.icontext-label
+                              span.breakline 1 Wrigley
+                              span.breakline Irvine, CA 92618
+                              span.breakline U.S.A
+                          p.icontext
+                            span.icontext-icon
+                              i.material-icons.prefix email
+                            span.icontext-label
+                              a(href='mailto:support@instaprotek.com') support@instaprotek.com
+                          p.icontext
+                            span.icontext-icon
+                              i.material-icons.prefix access_time
+                            span.icontext-label
+                              span.breaklineclass.faq__group__title Customer Service Hours
+                              span.breakline 9AM - 11PM PST Daily
+                              //- span.breakline Saturday-Sunday: 9 AM - 6 PM PST
+                        .col.s8
+                          .col.s12
+                            p Please fill-up this form and we&apos;ll get back to you as soon as possible.
+                          .input-field.inline.col.s6
+                            i.material-icons.prefix account_circle
+                            input#form_first_name.input.validate(type='text', required, inputtype='alphabet', data-placeholder='First Name')
+                            label(for='form_first_name') First Name
+                            span.helper-text(data-error='Required.')
+                          .input-field.inline.col.s6
+                            input#form_last_name.input.validate(type='text', required, inputtype='alphabet', data-placeholder='Last Name')
+                            label(for='form_last_name') Last Name
+                            span.helper-text(data-error='Required.')
+                          .input-field.inline.col.s12
+                            i.material-icons.prefix account_balance
+                            input#form_company_name.input.validate(type='text', required, inputtype='alphabet', data-placeholder='Company Name')
+                            label(for='form_company_name') Company Name
+                            span.helper-text(data-error='Required.')
+                          .input-field.inline.col.s12
+                            i.material-icons.prefix email
+                            input#form_email_address.input.validate(type='email', required, inputtype='email', data-placeholder='Email Address')
+                            label(for='form_email_address') Email Address
+                            span.helper-text(data-error='Please provide a valid emaill address.')
+                          .input-field.inline.col.s12
+                            i.material-icons.prefix phone
+                            input#form_phone_number.input.validate(type='text', required, inputtype='phone', data-placeholder='Phone Number')
+                            label(for='form_phone_number') Phone Number
+                            span.helper-text(data-error='Required.')
+                          .input-field.inline.col.s12
+                            i.material-icons.prefix message
+                            textarea#form_message.input.materialize-textarea(required, inputtype='alphabet', data-placeholder='Message')
+                            label(for='form_message') Message
+                            span.helper-text(data-error='Required.')
+                      .row
+                        .col.s12.form__footer
+                          .form__footer--left
+                            a.form-reset.waves-effect.waves-defaul.btn.btn-flat(href='#!') Reset
+                          .form__footer--right
+                            a.form-submit.waves-effect.waves-light.btn(href='#!') Submit
+
+                    .form__container.form__container--done
+                      .row
+                        .col.s12
+                          h2 Thank you for your interest.
+                          h3 Please allow at least 24 hours for us to process your enquiry. We will get back to you as soon as possible.
+
+              .step__footer
+                a.backtop.btn-floating.btn-large.waves-effect.waves-light.red(href='#backtotop')
+                  i.material-icons keyboard_arrow_up

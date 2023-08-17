@@ -1,0 +1,18 @@
+
+user-agent: *
+disallow: /ebooks/* .pdf
+Disallow: /app/
+Disallow: /cgi-bin/
+Disallow: /downloader/
+Disallow: /includes/
+Disallow: /magento/
+Disallow: /pkginfo/
+Disallow: /shell/
+Disallow: /var/
+Allow: /skin/frontend/default/MAG090181/images/
+Allow: /skin/frontend/default/MAG090181/css/
+Allow: /skin/frontend/default/MAG090181/js/
+Allow: /skin/frontend/default/MAG090181/products/
+
+# Website Sitemap
+Sitemap: https://instaprotek.com/en

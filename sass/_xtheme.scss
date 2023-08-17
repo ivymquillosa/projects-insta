@@ -1,0 +1,118 @@
+/* ADD/REMOVE/CHANGE THEMES HERE */
+
+
+// Giving the default theme a name
+@include theme-maker("default", ());
+
+// GENERICS
+html, body {
+	color: $dna-theme-body-text;
+	background-color: $dna-theme-body;
+	width: 100vw;
+	height: 100vh;
+}
+body {
+	z-index: 1;
+	transition: none;
+	-webkit-transition: none;
+	-moz-transition: none;
+	-ms-transition: none;
+	-o-transition: none;
+}
+a {
+	color: $dna-theme-link;
+	text-decoration: none;
+	transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	
+	&:hover, &:focus {
+		color: darken($dna-theme-link, 40%);
+	}
+	&:visited, &:active {
+		color: $dna-theme-link;
+	}
+}
+
+
+
+
+.dropshadow {
+	box-shadow: 0px 5px 10px rgba(0,0,0,0.2);
+}
+
+
+@-webkit-keyframes clockwise {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+@keyframes clockwise {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+
+// TOOLTIP
+.tooltip-inner {
+	min-width: 80px;
+}
+
+@media (max-width: 1024px) {
+	html.default body #body > .container-fluid {
+		padding: 0 !important;
+	}
+	html.default body #body > .container-fluid > .row > .col-xs-12 .container-fluid {
+		padding: 25px !important;
+	}
+}
+
+
+// BADGE
+.badge {
+	@include flexbox;
+	@include justify-content(center);
+	@include align-items(center);
+	
+	font-size: 10px;
+	line-height: 0;
+	border-radius: 50%;
+	padding: 4px;
+	min-width: 20px;
+	min-height: 20px;
+	
+	color: $dna-color-white;
+	background-color: $dna-color-default;
+	
+	&.badge-warning {
+		background-color: $dna-color-warning;
+	}
+	&.badge-danger {
+		background-color: $dna-color-danger;
+	}
+	&.badge-info {
+		background-color: $dna-color-info;
+	}
+	&.badge-success {
+		background-color: $dna-color-success;
+	}
+	&.badge-primary {
+		background-color: $dna-color-primary;
+	}
+}
+
+// ANIMATION DELAY
+@include generate_animation_delay;
+
+// ANIMATION DURATION
+@include generate_animation_duration;
+

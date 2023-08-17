@@ -1,0 +1,121 @@
+extends layoutcontact
+
+block content
+    .section.section__documenthero
+      .section--wrapper
+        .bgimage.antimoderate.antimoderate-bg(data-hdsrc='/img/getstarted_bg.webp', data-antimoderate-scale='1', data-ldsrc='/img/getstarted_bg_alt.webp', classnames='bgimage')
+
+    .section__group.section__group--offset.bg--darkgray
+
+      section.section.section__documents
+        .section--wrapper
+          .row
+            .col.s12.m12
+              .step__doc.anim(data-anim='fadeInDown', data-delay='0s', data-duration='1s')
+                h1.step__doc__label #{data.lbl_contact_us.fr}
+                .step__doc__form
+
+                  form.form__getstarted.form.formjs
+                    input(type='hidden', id='form_targetname', value='InstaProtek Support')
+                    input(type='hidden', id='form_targetemail', value='support@instaprotek.com')
+                    input(type='hidden', id='form_emailtitle', value='InstaProtek Contact')
+                    .form__process
+                      .spinner__wrapper
+                        span.spinner
+                        span.spinner__text #{data.lbl_processing.fr}...
+                    .form__container.form__container--start
+                      .row
+                        .col.s4
+                          .row.border-right
+                            p.icontext
+                              span.icontext-label-otterbox instaProtek
+                            p.icontext
+                              span.icontext-icon
+                                i.material-icons.prefix local_phone
+                              span.icontext-label (888) 908-2078 
+                            p.icontext
+                              span.icontext-icon
+                                i.material-icons.prefix store
+                              span.icontext-label
+                                span.breakline 1 Wrigley
+                                span.breakline Irvine, CA 92618
+                                span.breakline U.S.A
+                            p.icontext
+                              span.icontext-icon
+                                i.material-icons.prefix email
+                              span.icontext-label
+                                a(href='mailto:support@instaprotek.com') support@instaprotek.com
+                            p.icontext
+                              span.icontext-icon
+                                i.material-icons.prefix access_time
+                              span.icontext-label
+                                span.breaklineclass.faq__group__title #{data.lbl_customer_service_hours.fr}
+                                span.breakline #{data.lbl_instaprotek_service_hours.fr}
+                                //- span.breakline Saturday-Sunday: 9 AM - 6 PM PST
+                          .row.border-right
+                            p.icontext
+                              span.icontext-label-otterbox OtterBox Protection Program
+                            p.icontext
+                              span.icontext-icon
+                                i.material-icons.prefix local_phone
+                              span.icontext-label 1-888-908-5891
+                            p.icontext
+                              span.icontext-icon
+                                i.material-icons.prefix email
+                              span.icontext-label
+                                a(href='mailto:ottersupport@instaprotek.com') ottersupport@instaprotek.com
+                            p.icontext
+                              span.icontext-icon
+                                i.material-icons.prefix access_time
+                              span.icontext-label
+                                span.breaklineclass.faq__group__title #{data.lbl_customer_service_hours.fr}
+                                span.breakline #{data.lbl_otterbox_service_hours.fr}
+                                //- span.breakline Saturday-Sunday: 9 AM - 6 PM PST
+                        .col.s8
+                          .col.s12
+                            p #{data.lbl_please_fill_up_this_form.fr}
+                          .input-field.inline.col.s6
+                            i.material-icons.prefix account_circle
+                            input#form_first_name.input.validate(type='text', required, inputtype='alphabet', data-placeholder=data.err_txt_first_name_required.fr)
+                            label(for='form_first_name') #{data.txt_first_name.fr}
+                            span.helper-text(data-error=data.err_txt_required.fr)
+                          .input-field.inline.col.s6.input_without_icon
+                            input#form_last_name.input.validate(type='text', required, inputtype='alphabet', data-placeholder=data.err_txt_last_name_required.fr)
+                            label(for='form_last_name') #{data.txt_last_name.fr}
+                            span.helper-text(data-error=data.err_txt_required.fr)
+                          .input-field.inline.col.s12
+                            i.material-icons.prefix account_balance
+                            input#form_company_name.input.validate(type='text', required, inputtype='alphabet', data-placeholder=data.err_txt_company_name_required.fr)
+                            label(for='form_company_name') #{data.txt_company_name.fr}
+                            span.helper-text(data-error=data.err_txt_required.fr)
+                          .input-field.inline.col.s12
+                            i.material-icons.prefix email
+                            input#form_email_address.input.validate(type='email', required, inputtype='email', data-placeholder=data.err_txt_email_address_required.fr)
+                            label(for='form_email_address') #{data.txt_email_address.fr}
+                            span.helper-text(data-error=data.err_txt_please_provide_valid_email.fr)
+                          .input-field.inline.col.s12
+                            i.material-icons.prefix phone
+                            input#form_phone_number.input.validate(type='text', required, inputtype='phone', data-placeholder=data.err_txt_phone_number_required.fr)
+                            label(for='form_phone_number') #{data.txt_phone_number.fr}
+                            span.helper-text(data-error=data.err_txt_required.fr)
+                          .input-field.inline.col.s12
+                            i.material-icons.prefix message
+                            textarea#form_message.input.materialize-textarea(required, inputtype='alphabet', data-placeholder=data.err_txt_message_required.fr)
+                            label(for='form_message') #{data.txt_message.fr}
+                            span.helper-text(data-error=data.err_txt_required.fr)
+                      .row
+                        .col.s12.form__footer
+                          .form__footer--left
+                            a.form-reset.waves-effect.waves-defaul.btn.btn-flat(href='#!') #{data.btn_reset.fr}
+                          .form__footer--right
+                            a.form-submit.waves-effect.waves-light.btn(href='#!') #{data.btn_submit.fr}
+
+                    .form__container.form__container--done
+                      .row
+                        .col.s12
+                          h2 #{data.lbl_thank_you_for_interest.fr}
+                          h3 #{data.lbl_please_allow_24_hours_for_us_to_process.fr}
+
+              .step__footer
+                a.backtop.btn-floating.btn-large.waves-effect.waves-light.red(href='#backtotop')
+                  i.material-icons keyboard_arrow_up

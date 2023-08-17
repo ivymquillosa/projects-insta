@@ -1,0 +1,107 @@
+extends layoutwarranty
+
+block content
+
+    section.section.section__hero
+      .section--wrapper
+        .slider
+          .slide-item
+            .slide-captions
+              h1.section__title.hide-mobile
+                span.anim.reanim(data-anim='fadeInUp', data-delay='1s', data-duration='1s') #{data.lbl_affordable_protection_plan.fr}
+              h1.section__title.show-mobile.anim.reanim(data-anim='fadeInUp', data-delay='1s', data-duration='1s')
+                | #{data.lbl_affordable_protection_plan.fr}
+              h3.section__subtitle.anim.reanim.hide-mobile(data-anim='fadeInUp', data-delay='1.6s', data-duration='1s')
+                span #{data.lbl_reliable_protection_for_all_your_tech.fr}
+              h3.section__subtitle.anim.reanim.show-mobile(data-anim='fadeInUp', data-delay='1.6s', data-duration='1s')
+                | #{data.lbl_reliable_protection_for_all_your_tech.fr}
+              .hero__buttons
+                button.waves-effect.waves-light.btn.calltoaction.calltoaction--primary.anim.reanim.modal-trigger(data-target='modalGetStarted', data-anim='fadeInDown', data-delay='2s', data-duration='1s', href='#getstartednow')
+                  span.btn__text #{data.btn_get_started_now.fr}
+            .bgimage.tint2.antimoderate.antimoderate-bg(data-hdsrc='/img/slider/hero_bg.webp' alt='Woman dancing and jumping in the air in an outdoor party', data-antimoderate-scale='1', data-ldsrc='/img/slider/hero_bg_alt.webp', classnames='bgimage tint2')
+
+          .slide-item
+            .slide-captions
+              h1.section__title.hide-mobile
+                span.anim.reanim(data-anim='fadeInUp', data-delay='1s', data-duration='1s') #{data.lbl_affordable_protection_plan.fr}
+              h1.section__title.show-mobile.anim.reanim(data-anim='fadeInUp', data-delay='1s', data-duration='1s')
+                | #{data.lbl_affordable_protection_plan.fr}
+              h3.section__subtitle.anim.reanim.hide-mobile(data-anim='fadeInUp', data-delay='1.6s', data-duration='1s')
+                span #{data.lbl_reliable_protection_for_all_your_tech.fr}
+              h3.section__subtitle.anim.reanim.show-mobile(data-anim='fadeInUp', data-delay='1.6s', data-duration='1s')
+                | #{data.lbl_reliable_protection_for_all_your_tech.fr}
+              .hero__buttons
+                button.waves-effect.waves-light.btn.calltoaction.calltoaction--primary.anim.reanim.modal-trigger(data-target='modalGetStarted', data-anim='fadeInDown', data-delay='2s', data-duration='1s', href='#getstartednow')
+                  span.btn__text #{data.btn_get_started_now.fr}
+            .bgimage.tint2.antimoderate.antimoderate-bg(data-hdsrc='/img/slider/hero_bg2.webp' alt='A woman laughing with her partner while holding a Smartphone', data-antimoderate-scale='1', data-ldsrc='/img/slider/hero_bg2_alt.webp', classnames='bgimage tint2')
+    .section__group.bg--gray
+
+      section.section.section__steps
+        .section--wrapper
+          .row
+            .col.s12.m4
+              .step__box.anim(data-anim='fadeInDown', data-delay='0s', data-duration='1s')
+                .step__icon
+                  img.anim(src='/img/icons/icon_affordable.webp' alt='Instaprotek affordable icon', data-anim='zoomIn', data-delay='1.0s', data-duration='0.3s')
+                h2.step__label #{data.lbl_affordable.fr}
+                .step__description
+                  p
+                    | #{data.lbl_smart_platform_combined_with_sophisticated_app.fr}
+            .col.s12.m4
+              .step__box.anim(data-anim='fadeInDown', data-delay='0.4s', data-duration='1s')
+                .step__icon
+                  img.anim(src='/img/icons/icon_easytouse.webp' alt='Instaprotek easy to use icon', data-anim='zoomIn', data-delay='1.3s', data-duration='0.3s')
+                h2.step__label #{data.lbl_easy_to_use.fr}
+                .step__description
+                  p
+                    | #{data.lbl_on_demand_easy_to_use_app_driven_protection_that_enables_purchases.fr}
+            .col.s12.m4
+              .step__box.anim(data-anim='fadeInDown', data-delay='0.8s', data-duration='1s')
+                .step__icon
+                  img.anim(src='/img/icons/icon_greatcoverage.webp' alt='Instaprotek great coverage icon', data-anim='zoomIn', data-delay='1.6s', data-duration='0.3s')
+                h2.step__label #{data.lbl_competitive.fr}
+                .step__description
+                  p
+                    | #{data.lbl_unmatched_nationwide_coverage.fr}
+
+      section#download-app.section.section__download
+        .section--wrapper
+          .row
+            .col.s12.m6.download--left
+              .device__box.anim.reanim(data-anim='zoomIn', data-delay='0s', data-duration='1s')
+                .download__phoneimg1
+                  img(src='/img/device_hero_alt.webp').antimoderate(data-hdsrc='/img/warranty/device_hero_fr.webp' alt="Instaprotek App Activate Your Warranty page displaying on Smartphone's screen", data-antimoderate-scale='1', ldsrc='/img/device_hero_alt.webp')
+                .download__phoneimg2
+                  img(src='/img/device_registration_alt.webp').antimoderate(data-hdsrc='/img/warranty/device_2_fr.webp' alt="Instaprotek App Device Registration page displaying on a Smartphone's screen", data-antimoderate-scale='1', ldsrc='/img/device_registration_alt.webp')
+            .col.s12.m6.download--right
+              h2.download__title.anim.reanim(data-anim='fadeInRight', data-delay='0.4s', data-duration='1s')
+                span #{data.lbl_on_demand_easy_to_use_app_driven_protection.fr}
+      .bgimage
+        svg#Layer_1(version='1.0', xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink', x='0px', y='0px', width='100px', height='75px', viewBox='0 0 100 100', enable-background='new 0 0 100 75', xml:space='preserve', preserveAspectRatio='none')
+          lineargradient#SVGID_1_(gradientUnits='userSpaceOnUse', x1='0', y1='37.5', x2='100', y2='37.5')
+            stop(offset='0', style='stop-color:#59ACB0')
+            stop(offset='1', style='stop-color:#67AD6E')
+          polygon(fill='url(#SVGID_1_)', points='100,71.5 0,51.5 0,3.5 100,23.5 ')
+
+    section#chart.section.section__chart
+      .section--wrapper
+        .row
+          h1.col.s12.section__title.anim.reanim(data-anim='fadeInUp', data-delay='0s', data-duration='1s') #{data.lbl_same_reliable_coverage_at_lower_prices.fr}
+          .col.s12
+            .pricingChart
+              .pricingChart__title
+                .pricingChart__titleGroup
+                  h2 Device Title
+                  h3 #{data.lbl_2year_warranty_with_accidental_damage.fr}
+              .pricingChart__legend
+              .pricingChart__graph
+              .pricingChart__devices
+
+    section#getstarted.section.section__getstarted
+      .section--wrapper
+        .row
+          h1.section__title.anim.reanim(data-anim='fadeInUp', data-delay='0s', data-duration='1s') #{data.lbl_protect_your_electronics.fr}
+          h3.section__subtitle.anim.reanim(data-anim='fadeInUp', data-delay='0.3s', data-duration='1s') #{data.lbl_no_hassle_electronics_protection.fr}
+          a.waves-effect.waves-light.btn.calltoaction.calltoaction--secondary.anim.reanim.modal-trigger(href='#getstartednow', data-target='modalGetStarted', data-anim='fadeInDown', data-delay='0.8s', data-duration='1s') #{data.btn_get_started_now.fr}
+
+      .bgimage.antimoderate.antimoderate-bg(data-hdsrc='/img/getstarted_bg.webp' alt='Instaprotek Background', data-antimoderate-scale='1', data-ldsrc='/img/getstarted_bg_alt.webp', classnames='bgimage')
